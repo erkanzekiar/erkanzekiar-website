@@ -1096,26 +1096,37 @@ main {
 }
 
 .btn-outline {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(21, 24, 36, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   color: var(--text-main);
-  border-color: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.32);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
 }
 
 .btn-outline:hover {
   border-color: var(--accent-gold);
   color: var(--accent-gold-light);
-  background: rgba(235, 100, 52, 0.1);
+  background: rgba(235, 100, 52, 0.18);
   transform: translateY(-2px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
 }
 
 .btn-ghost {
-  background: transparent;
-  color: var(--text-muted);
+  background: rgba(21, 24, 36, 0.65);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: var(--text-main);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
 }
 
 .btn-ghost:hover {
-  color: var(--text-main);
+  color: var(--accent-gold-light);
+  border-color: var(--accent-gold);
+  background: rgba(21, 24, 36, 0.85);
   transform: translateY(-2px);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
 }
 
 /* ==========================================================================
@@ -1169,13 +1180,25 @@ main {
   pointer-events: none;
 }
 
-/* Delicate text readability veil + bottom transition (panoramic canvas is already seamlessly blended) */
+/* Deep studio console scrim + bottom transition: ensures 100% legibility over mixing knobs & faders */
 .hero-bg-fade {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(21, 24, 36, 0.72) 0%, rgba(21, 24, 36, 0.45) 32%, transparent 65%),
-    linear-gradient(180deg, rgba(21, 24, 36, 0.25) 0%, transparent 16%, transparent 75%, var(--bg-dark) 100%);
+    linear-gradient(90deg,
+      rgba(21, 24, 36, 0.96) 0%,
+      rgba(21, 24, 36, 0.90) 36%,
+      rgba(21, 24, 36, 0.68) 56%,
+      rgba(21, 24, 36, 0.25) 75%,
+      transparent 90%
+    ),
+    linear-gradient(180deg,
+      rgba(21, 24, 36, 0.5) 0%,
+      transparent 18%,
+      rgba(21, 24, 36, 0.45) 54%,
+      rgba(21, 24, 36, 0.88) 82%,
+      var(--bg-dark) 100%
+    );
   pointer-events: none;
 }
 
@@ -1215,43 +1238,51 @@ main {
 .hero-statement {
   font-size: 1.02rem;
   line-height: 1.75;
-  color: #c8cdd6;
+  color: #dbe0ea;
   max-width: 540px;
   margin-bottom: 2.2rem;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.85);
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2.6rem;
 }
 
 .hero-metrics {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
-  padding-top: 1.75rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-  max-width: 560px;
+  padding: 1.35rem 1.6rem;
+  background: rgba(21, 24, 36, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-md);
+  max-width: 580px;
+  box-shadow: 0 14px 34px -8px rgba(0, 0, 0, 0.6);
 }
 
 .metric-num {
   display: block;
   font-family: var(--font-heading);
-  font-size: 1.6rem;
+  font-size: 1.65rem;
   font-weight: 800;
   color: var(--accent-gold-light);
   letter-spacing: 0;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
 }
 
 .metric-label {
   display: block;
-  font-size: 0.72rem;
-  font-weight: 600;
-  color: var(--text-muted);
-  letter-spacing: 0.06em;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #e4e9f2;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.85);
 }
 
 
@@ -1274,7 +1305,14 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 0.45rem;
-  color: var(--text-muted);
+  padding: 0.55rem 1.25rem 0.65rem;
+  background: rgba(21, 24, 36, 0.72);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-pill);
+  box-shadow: 0 10px 28px -6px rgba(0, 0, 0, 0.55);
+  color: var(--text-main);
   transition: var(--transition-smooth);
 }
 
@@ -1284,6 +1322,8 @@ main {
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+  color: #e4e9f2;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
 }
 
 .oa-scroll-line {
@@ -1334,8 +1374,19 @@ main {
   }
   .hero-bg-fade {
     background:
-      linear-gradient(90deg, rgba(21, 24, 36, 0.8) 0%, rgba(21, 24, 36, 0.55) 45%, transparent 75%),
-      linear-gradient(180deg, rgba(21, 24, 36, 0.25) 0%, transparent 14%, transparent 72%, var(--bg-dark) 100%);
+      linear-gradient(90deg,
+        rgba(21, 24, 36, 0.96) 0%,
+        rgba(21, 24, 36, 0.90) 45%,
+        rgba(21, 24, 36, 0.65) 70%,
+        transparent 92%
+      ),
+      linear-gradient(180deg,
+        rgba(21, 24, 36, 0.5) 0%,
+        transparent 16%,
+        rgba(21, 24, 36, 0.45) 55%,
+        rgba(21, 24, 36, 0.88) 80%,
+        var(--bg-dark) 100%
+      );
   }
 }
 
@@ -1353,7 +1404,12 @@ main {
   }
   .hero-bg-fade {
     background:
-      linear-gradient(180deg, rgba(21, 24, 36, 0.2) 0%, rgba(21, 24, 36, 0.6) 26%, var(--bg-dark) 48%, var(--bg-dark) 100%);
+      linear-gradient(180deg,
+        rgba(21, 24, 36, 0.25) 0%,
+        rgba(21, 24, 36, 0.72) 26%,
+        var(--bg-dark) 48%,
+        var(--bg-dark) 100%
+      );
   }
   .hero-metrics {
     grid-template-columns: repeat(2, 1fr);
