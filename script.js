@@ -120,6 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
       );
       foldableSections.forEach((sec) => setSectionFolded(sec, !allFolded));
     });
+    updateFoldAllButtonState();
   }
 
   // Automatically unfold target section when navigating via INDEX menu or CTA buttons
