@@ -4,16 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Erkan Zeki Ar — Musician, Composer & Music Producer</title>
-  <meta name="description" content="Official portfolio of Erkan Zeki Ar — Istanbul-based multi-instrumentalist, jazz & electric guitarist, composer, and music producer with over 10 years of professional experience. 2026 European Tour.">
-  <meta name="keywords" content="Erkan Zeki Ar, Guitarist, Composer, Music Producer, Jazz, Tecelli, Kontrast, Selin Sümbültepe, Istanbul, Germany, Tour 2026">
+  <meta name="description" content="Official portfolio of Erkan Zeki Ar — Berlin & Istanbul-based multi-instrumentalist, jazz & electric guitarist, composer, and music producer with over 10 years of professional experience.">
+  <meta name="keywords" content="Erkan Zeki Ar, Guitarist, Composer, Music Producer, Jazz, Tecelli, Kontrast, Selin Sümbültepe, Downbeat Collective, Berlin, Istanbul, Tour 2026">
   <meta name="author" content="Erkan Zeki Ar">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#08080a">
+  <link rel="canonical" href="https://erkanzekiar.com/">
+
+  <!-- Content Security Policy -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://www.youtube-nocookie.com https://www.youtube.com https://open.spotify.com; connect-src 'self';">
 
   <!-- Open Graph / Social Sharing -->
   <meta property="og:title" content="Erkan Zeki Ar — Musician, Composer & Producer">
-  <meta property="og:description" content="Portfolio, Discography, Tour Dates & Press for guitarist and composer Erkan Zeki Ar.">
+  <meta property="og:description" content="Official Portfolio, Discography, Live Sessions, Tour Dates & Press for guitarist, composer, and music producer Erkan Zeki Ar.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://erkanzekiar.com">
-  <meta property="og:image" content="assets/images/hero.jpg">
+  <meta property="og:url" content="https://erkanzekiar.com/">
+  <meta property="og:image" content="https://erkanzekiar.com/assets/images/hero.jpg">
+  <meta property="og:site_name" content="Erkan Zeki Ar">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Erkan Zeki Ar — Musician, Composer & Producer">
+  <meta name="twitter:description" content="Berlin & Istanbul-based guitarist, composer, and music producer. Explore selected works, live sessions, and 2026 tour dates.">
+  <meta name="twitter:image" content="https://erkanzekiar.com/assets/images/hero.jpg">
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-family=%22serif%22 fill=%22%23c5a059%22>E</text></svg>">
@@ -24,8 +37,109 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data (Schema.org JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://erkanzekiar.com/#artist",
+        "name": "Erkan Zeki Ar",
+        "url": "https://erkanzekiar.com/",
+        "image": "https://erkanzekiar.com/assets/images/hero.jpg",
+        "jobTitle": ["Musician", "Guitarist", "Composer", "Music Producer", "Educator"],
+        "sameAs": [
+          "https://instagram.com/erkanzekiar",
+          "https://youtube.com/@erkanzekiar",
+          "https://open.spotify.com/playlist/0UtFGcjtkOkcR5oxFCXMml"
+        ],
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Yıldız Technical University"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Marmara University"
+          }
+        ]
+      },
+      {
+        "@type": "MusicEvent",
+        "name": "Erkan Zeki Ar - Headout Live at Bova",
+        "startDate": "2026-11-07",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "location": {
+          "@type": "MusicVenue",
+          "name": "Bova",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "İstanbul",
+            "addressCountry": "TR"
+          }
+        },
+        "performer": { "@id": "https://erkanzekiar.com/#artist" }
+      },
+      {
+        "@type": "MusicEvent",
+        "name": "Downbeat Collective at Beyoğlu Caz Festivali",
+        "startDate": "2026-11-15",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "location": {
+          "@type": "Place",
+          "name": "Beyoğlu Caz Festivali",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "İstanbul",
+            "addressCountry": "TR"
+          }
+        },
+        "performer": { "@id": "https://erkanzekiar.com/#artist" }
+      },
+      {
+        "@type": "MusicEvent",
+        "name": "Selin Sümbültepe Live at Le Grand-Quevilly",
+        "startDate": "2026-11-17",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "location": {
+          "@type": "Place",
+          "name": "Le Grand-Quevilly",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Paris",
+            "addressCountry": "FR"
+          }
+        },
+        "performer": { "@id": "https://erkanzekiar.com/#artist" }
+      },
+      {
+        "@type": "MusicEvent",
+        "name": "Selin Sümbültepe Live at Villepinte",
+        "startDate": "2026-11-20",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "location": {
+          "@type": "Place",
+          "name": "Villepinte",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Paris",
+            "addressCountry": "FR"
+          }
+        },
+        "performer": { "@id": "https://erkanzekiar.com/#artist" }
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="dark-theme">
+
+  <!-- Top Viewport Scroll Progress Bar -->
+  <div class="scroll-progress-track" aria-hidden="true">
+    <div id="scroll-progress-bar" class="scroll-progress-bar"></div>
+  </div>
 
   <!-- Background Ambience -->
   <div class="ambient-glow glow-1"></div>
@@ -34,6 +148,11 @@
 
   <!-- Corner Decision Navigation Button -->
   <header class="corner-header">
+    <div id="active-section-pill" class="active-section-pill" aria-live="polite">
+      <span class="pill-dot"></span>
+      <span id="active-section-label">01 // HOME</span>
+    </div>
+
     <button id="menu-toggle" class="corner-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
       <span class="btn-text">INDEX</span>
       <div class="hamburger-box">
@@ -48,59 +167,64 @@
     <div class="nav-backdrop"></div>
     <div class="nav-panel">
       <div class="nav-panel-header">
-        <div class="nav-badge">NAVIGATION</div>
+        <div class="nav-header-actions">
+          <div class="nav-badge">NAVIGATION</div>
+          <button id="toggle-all-sections-btn" class="fold-all-btn" type="button" title="Fold or unfold all sections">
+            Fold All Sections
+          </button>
+        </div>
         <button id="close-menu-btn" class="close-btn" aria-label="Close menu">&times;</button>
       </div>
 
-      <nav class="nav-links-container">
+      <nav class="nav-links-container" aria-label="Primary Portfolio Navigation">
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="#hero" class="nav-link" data-num="01">
+            <a href="#hero" class="nav-link active" data-num="01" data-section="hero">
               <span class="nav-num">01</span>
               <span class="nav-title">Home / Profile</span>
               <span class="nav-desc">Overview & Statement</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#discography" class="nav-link" data-num="02">
+            <a href="#discography" class="nav-link" data-num="02" data-section="discography">
               <span class="nav-num">02</span>
               <span class="nav-title">Selected Works</span>
               <span class="nav-desc">Albums, Production & Singles</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#live-gallery" class="nav-link" data-num="03">
+            <a href="#live-gallery" class="nav-link" data-num="03" data-section="live-gallery">
               <span class="nav-num">03</span>
               <span class="nav-title">Live & Stage</span>
-              <span class="nav-desc">Performances & Festivals</span>
+              <span class="nav-desc">Performances & Video Sessions</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#tour-dates" class="nav-link" data-num="04">
+            <a href="#tour-dates" class="nav-link" data-num="04" data-section="tour-dates">
               <span class="nav-num">04</span>
               <span class="nav-title">Tour 2026</span>
-              <span class="nav-desc">European & International Schedule</span>
+              <span class="nav-desc">Upcoming & Recent Schedule</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#biography" class="nav-link" data-num="05">
+            <a href="#biography" class="nav-link" data-num="05" data-section="biography">
               <span class="nav-num">05</span>
               <span class="nav-title">Biography & Research</span>
               <span class="nav-desc">Academic Rigor & Expertise</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#press" class="nav-link" data-num="06">
+            <a href="#press" class="nav-link" data-num="06" data-section="press">
               <span class="nav-num">06</span>
               <span class="nav-title">Press & Reviews</span>
-              <span class="nav-desc">Media Clippings & DE Translations</span>
+              <span class="nav-desc">Media Clippings (EN / DE)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#contact" class="nav-link" data-num="07">
+            <a href="#contact" class="nav-link" data-num="07" data-section="contact">
               <span class="nav-num">07</span>
               <span class="nav-title">Contact & Inquiries</span>
-              <span class="nav-desc">Booking, Production & Lessons</span>
+              <span class="nav-desc">Direct Email & Social Channels</span>
             </a>
           </li>
         </ul>
@@ -108,11 +232,11 @@
 
       <div class="nav-footer">
         <div class="nav-contact-quick">
-          <a href="mailto:erkanzekiar@gmail.com">erkanzekiar@gmail.com</a>
+          <a href="#" class="obfuscated-email" data-user="erkanzekiar" data-domain="gmail.com">erkanzekiar@gmail.com</a>
         </div>
         <div class="nav-socials">
-          <a href="https://instagram.com/erkanzekiar" target="_blank" rel="noopener">Instagram</a>
-          <a href="https://youtube.com/@erkanzekiar" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://instagram.com/erkanzekiar" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://youtube.com/@erkanzekiar" target="_blank" rel="noopener noreferrer">YouTube</a>
         </div>
       </div>
     </div>
@@ -122,10 +246,10 @@
   <main id="main-content">
 
     <!-- 01 // HERO SECTION -->
-    <section id="hero" class="hero-section">
+    <section id="hero" class="hero-section" data-section-title="01 // HOME">
       <div class="hero-container">
         
-        <div class="hero-content">
+        <div class="hero-content reveal-up">
           <div class="hero-tag-wrap">
             <span class="status-indicator"></span>
             <span class="hero-tag">Berlin - Istanbul</span>
@@ -152,14 +276,14 @@
           </p>
 
           <div class="hero-actions">
-            <a href="#discography" class="btn btn-primary">
+            <a href="#discography" class="btn btn-primary" data-unfold-target="discography">
               <span>Selected Works</span>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
             </a>
-            <a href="#tour-dates" class="btn btn-outline">
+            <a href="#tour-dates" class="btn btn-outline" data-unfold-target="tour-dates">
               <span>Upcoming Dates</span>
             </a>
-            <a href="#contact" class="btn btn-ghost">
+            <a href="#contact" class="btn btn-ghost" data-unfold-target="contact">
               <span>Get in Touch</span>
             </a>
           </div>
@@ -184,7 +308,7 @@
           </div>
         </div>
 
-        <div class="hero-visual-frame">
+        <div class="hero-visual-frame reveal-up">
           <div class="image-wrapper">
             <img src="assets/images/hero.jpg" alt="Erkan Zeki Ar performing live with guitar" class="hero-img" loading="eager">
             <div class="image-gradient-blend"></div>
@@ -197,7 +321,7 @@
 
       </div>
 
-      <a href="#discography" class="scroll-prompt" aria-label="Scroll to next section">
+      <a href="#discography" class="scroll-prompt" data-unfold-target="discography" aria-label="Scroll to next section">
         <span class="scroll-text">EXPLORE</span>
         <div class="scroll-arrow">↓</div>
       </a>
@@ -205,913 +329,986 @@
 
 
     <!-- 02 // SELECTED WORKS & DISCOGRAPHY -->
-    <section id="discography" class="section discography-section">
+    <section id="discography" class="section discography-section foldable-section" data-section-title="02 // WORKS">
       <div class="section-container">
         
-        <div class="section-header">
-          <div class="section-pretitle">02 // CATALOGUE</div>
-          <h2 class="section-title">Selected Works & Discography</h2>
-          <p class="section-subtitle">Original compositions, studio productions, arrangements, and instrumental collaborations.</p>
+        <div class="section-header" role="button" tabindex="0" aria-expanded="true" aria-controls="content-discography">
+          <span class="section-watermark" aria-hidden="true">02</span>
+          <div class="section-header-main">
+            <div class="section-pretitle">02 // CATALOGUE</div>
+            <h2 class="section-title">Selected Works & Discography</h2>
+            <p class="section-subtitle">Original compositions, studio productions, arrangements, and instrumental collaborations.</p>
+          </div>
+          <div class="section-header-controls">
+            <span class="folded-summary-pill">10 Releases · Spotify Player</span>
+            <button type="button" class="section-fold-btn" aria-label="Toggle section visibility">
+              <span class="fold-btn-label">Fold</span>
+              <span class="fold-icon" aria-hidden="true"></span>
+            </button>
+          </div>
         </div>
 
-        <!-- Filter Controls -->
-        <div class="filter-bar">
-          <button class="filter-btn active" data-filter="all">All Works</button>
-          <button class="filter-btn" data-filter="solo">Primary Artist</button>
-          <button class="filter-btn" data-filter="producer">Production & Mix</button>
-          <button class="filter-btn" data-filter="guitarist">Instrumentalist</button>
-        </div>
+        <div id="content-discography" class="section-collapsible">
+          <div class="section-collapsible-inner">
 
-        <!-- Discography Grid -->
-        <div class="disco-grid">
-          
-          <!-- Album: Tecelli -->
-          <article class="work-card" data-category="solo">
-            <div class="card-thumb">
-              <img src="assets/images/extracted_02.jpg" alt="Tecelli Album Cover — Erkan Zeki Ar" loading="lazy">
-              <div class="card-badge">Primary Artist / 2020</div>
-            </div>
-            <div class="card-body">
-              <span class="card-meta">Full Album · Jazz / Modern Classical</span>
-              <h3 class="card-title">Tecelli</h3>
-              <p class="card-desc">
-                Meditative and expansive narrative featuring a 4-piece string quartet, piano, trumpet, and jazz rhythm section. All compositions and arrangements by Erkan Zeki Ar.
-              </p>
-              <div class="card-tags">
-                <span>Composer</span>
-                <span>Arranger</span>
-                <span>Guitars & Piano</span>
+            <!-- Embedded Spotify Discography Strip -->
+            <div class="spotify-player-bar reveal-up">
+              <div class="spotify-bar-info">
+                <div class="spotify-badge-row">
+                  <span class="live-dot"></span>
+                  <span class="spotify-eyebrow">STREAM DISCOGRAPHY</span>
+                </div>
+                <h3>Official Discography & Production Playlist</h3>
+                <p>Listen to Erkan Zeki Ar’s solo albums, studio productions, and guitar sessions directly while browsing.</p>
               </div>
-              <div class="card-credits">
-                Featuring: Efe Gazi (Trumpet), Baturay Yarkın & Gökhan Sürer (Keys), Eren Turgut & Enver Muhamedi (Bass), Mert Can Bilgin & Burak Cihangirli (Drums), and String Quartet
+              <div class="spotify-embed-wrap">
+                <iframe
+                  title="Erkan Zeki Ar Spotify Discography Playlist"
+                  style="border-radius:12px"
+                  src="https://open.spotify.com/embed/playlist/0UtFGcjtkOkcR5oxFCXMml?utm_source=generator&theme=0"
+                  width="100%"
+                  height="152"
+                  frameBorder="0"
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy">
+                </iframe>
               </div>
             </div>
-          </article>
 
-          <!-- Album: Kontrast -->
-          <article class="work-card" data-category="solo">
-            <div class="card-thumb">
-              <img src="assets/images/extracted_03.jpg" alt="Kontrast Debut Album Cover — Erkan Zeki Ar Trio" loading="lazy">
-              <div class="card-badge">Primary Artist / 2018</div>
+            <!-- Filter Controls -->
+            <div class="filter-bar reveal-up" role="tablist" aria-label="Filter discography by role">
+              <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Works <span class="filter-count">10</span></button>
+              <button class="filter-btn" data-filter="solo" role="tab" aria-selected="false">Primary Artist <span class="filter-count">2</span></button>
+              <button class="filter-btn" data-filter="producer" role="tab" aria-selected="false">Production & Mix <span class="filter-count">4</span></button>
+              <button class="filter-btn" data-filter="guitarist" role="tab" aria-selected="false">Instrumentalist <span class="filter-count">4</span></button>
             </div>
-            <div class="card-body">
-              <span class="card-meta">Debut Album · Modern Jazz Trio</span>
-              <h3 class="card-title">Kontrast</h3>
-              <p class="card-desc">
-                Dynamic guitar-trio jazz recorded with Eren Turgut on bass and Mert Can Bilgin on drums. Synthesizes years of modern jazz composition and improvisation.
-              </p>
-              <div class="card-tags">
-                <span>Composer</span>
-                <span>Electric Guitar</span>
-                <span>Trio Leader</span>
-              </div>
-              <div class="card-credits">
-                Featuring: Eren Turgut (Bass), Mert Can Bilgin (Drums)
-              </div>
-            </div>
-          </article>
 
-          <!-- Production: Işıl Kahraman -->
-          <article class="work-card" data-category="producer">
-            <div class="card-thumb">
-              <img src="assets/images/extracted_12.jpg" alt="Işıl Kahraman - Sustu Sözler" loading="lazy">
-              <div class="card-badge">Production / 2021–2026</div>
-            </div>
-            <div class="card-body">
-              <span class="card-meta">Singles Discography · Indie Pop / Acoustic</span>
-              <h3 class="card-title">Işıl Kahraman</h3>
-              <p class="card-desc">
-                End-to-end music production, guitar performance, and arrangements across consecutive releases: <em>Korkmamış Olsaydım (2025)</em>, <em>Sustu Sözler (2024)</em>, <em>Sevemedim Bilinmezi (2023)</em>, and <em>Yol Uzun (2022)</em>.
-              </p>
-              <div class="card-tags">
-                <span>Producer</span>
-                <span>Arranger</span>
-                <span>Guitarist</span>
-              </div>
-            </div>
-          </article>
+            <!-- Discography Grid -->
+            <div class="disco-grid">
+              
+              <!-- Album: Tecelli -->
+              <article class="work-card reveal-up" data-category="solo">
+                <div class="card-thumb">
+                  <img src="assets/images/extracted_02.jpg" alt="Tecelli Album Cover — Erkan Zeki Ar" loading="lazy">
+                  <div class="card-badge">Primary Artist / 2020</div>
+                </div>
+                <div class="card-body">
+                  <span class="card-meta">Full Album · Jazz / Modern Classical</span>
+                  <h3 class="card-title">Tecelli</h3>
+                  <p class="card-desc">
+                    Meditative and expansive narrative featuring a 4-piece string quartet, piano, trumpet, and jazz rhythm section. All compositions and arrangements by Erkan Zeki Ar.
+                  </p>
+                  <div class="card-tags">
+                    <span>Composer</span>
+                    <span>Arranger</span>
+                    <span>Guitars & Piano</span>
+                  </div>
+                  <div class="card-credits">
+                    Featuring: Efe Gazi (Trumpet), Baturay Yarkın & Gökhan Sürer (Keys), Eren Turgut & Enver Muhamedi (Bass), Mert Can Bilgin & Burak Cihangirli (Drums), and String Quartet
+                  </div>
+                </div>
+              </article>
 
-          <!-- Production: Tolgay Keskin - Gentrification -->
-          <article class="work-card" data-category="producer">
-            <div class="card-thumb">
-              <img src="assets/images/extracted_10.jpg" alt="Tolgay Keskin - Gentrification" loading="lazy">
-              <div class="card-badge">Production / 2025</div>
-            </div>
-            <div class="card-body">
-              <span class="card-meta">Single · Alternative</span>
-              <h3 class="card-title">Tolgay Keskin — Gentrification</h3>
-              <p class="card-desc">
-                Full record production and sound design. Followed the 2024 single <em>Zifiri</em>.
-              </p>
-              <div class="card-tags">
-                <span>Producer</span>
-                <span>Mixing</span>
-              </div>
-            </div>
-          </article>
+              <!-- Album: Kontrast -->
+              <article class="work-card reveal-up" data-category="solo">
+                <div class="card-thumb">
+                  <img src="assets/images/extracted_03.jpg" alt="Kontrast Debut Album Cover — Erkan Zeki Ar Trio" loading="lazy">
+                  <div class="card-badge">Primary Artist / 2018</div>
+                </div>
+                <div class="card-body">
+                  <span class="card-meta">Debut Album · Modern Jazz Trio</span>
+                  <h3 class="card-title">Kontrast</h3>
+                  <p class="card-desc">
+                    Dynamic guitar-trio jazz recorded with Eren Turgut on bass and Mert Can Bilgin on drums. Synthesizes years of modern jazz composition and improvisation.
+                  </p>
+                  <div class="card-tags">
+                    <span>Composer</span>
+                    <span>Electric Guitar</span>
+                    <span>Trio Leader</span>
+                  </div>
+                  <div class="card-credits">
+                    Featuring: Eren Turgut (Bass), Mert Can Bilgin (Drums)
+                  </div>
+                </div>
+              </article>
 
-          <!-- Production: Tolgay Keskin - Zifiri -->
-          <article class="work-card" data-category="producer">
-            <div class="card-thumb">
-              <img src="assets/images/extracted_05.jpg" alt="Tolgay Keskin - Zifiri" loading="lazy">
-              <div class="card-badge">Production / 2024</div>
-            </div>
-            <div class="card-body">
-              <span class="card-meta">Single · Alternative</span>
-              <h3 class="card-title">Tolgay Keskin — Zifiri</h3>
-              <p class="card-desc">
-                Studio tracking, sound sculpting, and production for singer-songwriter Tolgay Keskin.
-              </p>
-              <div class="card-tags">
-                <span>Producer</span>
-                <span>Audio Engineering</span>
-              </div>
-            </div>
-          </article>
+              <!-- Production: Işıl Kahraman -->
+              <article class="work-card reveal-up" data-category="producer">
+                <div class="card-thumb">
+                  <img src="assets/images/extracted_12.jpg" alt="Işıl Kahraman - Sustu Sözler" loading="lazy">
+                  <div class="card-badge">Production / 2021–2026</div>
+                </div>
+                <div class="card-body">
+                  <span class="card-meta">Singles Discography · Indie Pop / Acoustic</span>
+                  <h3 class="card-title">Işıl Kahraman</h3>
+                  <p class="card-desc">
+                    End-to-end music production, guitar performance, and arrangements across consecutive releases: <em>Korkmamış Olsaydım (2025)</em>, <em>Sustu Sözler (2024)</em>, <em>Sevemedim Bilinmezi (2023)</em>, and <em>Yol Uzun (2022)</em>.
+                  </p>
+                  <div class="card-tags">
+                    <span>Producer</span>
+                    <span>Arranger</span>
+                    <span>Guitarist</span>
+                  </div>
+                </div>
+              </article>
 
-          <!-- Production: Bahar Çalışkan -->
-          <article class="work-card" data-category="producer">
-            <div class="card-thumb">
-              <img src="assets/images/extracted_08.jpg" alt="Bahar Çalışkan - Solmuş" loading="lazy">
-              <div class="card-badge">Production / 2021</div>
-            </div>
-            <div class="card-body">
-              <span class="card-meta">Single · Indie Soul</span>
-              <h3 class="card-title">Bahar Çalışkan — Solmuş</h3>
-              <p class="card-desc">
-                Arranged, produced, and recorded into an intimate, warm acoustic atmosphere.
-              </p>
-              <div class="card-tags">
-                <span>Producer</span>
-                <span>Acoustic Arrangement</span>
-              </div>
-            </div>
-          </article>
+              <!-- Production: Tolgay Keskin - Gentrification -->
+              <article class="work-card reveal-up" data-category="producer">
+                <div class="card-thumb">
+                  <img src="assets/images/extracted_10.jpg" alt="Tolgay Keskin - Gentrification" loading="lazy">
+                  <div class="card-badge">Production / 2025</div>
+                </div>
+                <div class="card-body">
+                  <span class="card-meta">Single · Alternative</span>
+                  <h3 class="card-title">Tolgay Keskin — Gentrification</h3>
+                  <p class="card-desc">
+                    Full record production and sound design. Followed the 2024 single <em>Zifiri</em>.
+                  </p>
+                  <div class="card-tags">
+                    <span>Producer</span>
+                    <span>Mixing</span>
+                  </div>
+                </div>
+              </article>
 
-          <!-- Instrumentalist: Ceren Gündoğdu -->
-          <article class="work-card" data-category="guitarist">
-            <div class="card-thumb">
-              <img src="assets/images/extracted_07.jpg" alt="Ceren Gündoğdu - Ben Hep Seni Sevdim" loading="lazy">
-              <div class="card-badge">Guitarist / 2019</div>
-            </div>
-            <div class="card-body">
-              <span class="card-meta">Single · Pop / Ballad</span>
-              <h3 class="card-title">Ceren Gündoğdu — Ben Hep Seni Sevdim</h3>
-              <p class="card-desc">
-                Studio session guitar performance on Ceren Gündoğdu's popular single.
-              </p>
-              <div class="card-tags">
-                <span>Acoustic Guitar</span>
-                <span>Electric Guitar</span>
-              </div>
-            </div>
-          </article>
+              <!-- Production: Tolgay Keskin - Zifiri -->
+              <article class="work-card reveal-up" data-category="producer">
+                <div class="card-thumb">
+                  <img src="assets/images/extracted_05.jpg" alt="Tolgay Keskin - Zifiri" loading="lazy">
+                  <div class="card-badge">Production / 2024</div>
+                </div>
+                <div class="card-body">
+                  <span class="card-meta">Single · Alternative</span>
+                  <h3 class="card-title">Tolgay Keskin — Zifiri</h3>
+                  <p class="card-desc">
+                    Studio tracking, sound sculpting, and production for singer-songwriter Tolgay Keskin.
+                  </p>
+                  <div class="card-tags">
+                    <span>Producer</span>
+                    <span>Audio Engineering</span>
+                  </div>
+                </div>
+              </article>
 
-          <!-- Instrumentalist: Simge Pınar -->
-          <article class="work-card" data-category="guitarist">
-            <div class="card-thumb">
-              <img src="assets/images/extracted_09.jpg" alt="Simge Pınar - Güzel Şeyler" loading="lazy">
-              <div class="card-badge">Guitarist / 2019</div>
-            </div>
-            <div class="card-body">
-              <span class="card-meta">Album & Live · Indie Folk</span>
-              <h3 class="card-title">Simge Pınar — Yeni Bir Hayat (Live) & Güzel Şeyler</h3>
-              <p class="card-desc">
-                Electric and hollowbody guitar performances for live sessions (Sofar Istanbul) and studio releases.
-              </p>
-              <div class="card-tags">
-                <span>Session Guitarist</span>
-                <span>Live Arranger</span>
-              </div>
-            </div>
-          </article>
+              <!-- Production: Bahar Çalışkan -->
+              <article class="work-card reveal-up" data-category="producer">
+                <div class="card-thumb">
+                  <img src="assets/images/extracted_08.jpg" alt="Bahar Çalışkan - Solmuş" loading="lazy">
+                  <div class="card-badge">Production / 2021</div>
+                </div>
+                <div class="card-body">
+                  <span class="card-meta">Single · Indie Soul</span>
+                  <h3 class="card-title">Bahar Çalışkan — Solmuş</h3>
+                  <p class="card-desc">
+                    Arranged, produced, and recorded into an intimate, warm acoustic atmosphere.
+                  </p>
+                  <div class="card-tags">
+                    <span>Producer</span>
+                    <span>Acoustic Arrangement</span>
+                  </div>
+                </div>
+              </article>
 
-          <!-- Instrumentalist: Güler Özince -->
-          <article class="work-card" data-category="guitarist">
-            <div class="card-thumb">
-              <img src="assets/images/extracted_11.jpg" alt="Güler Özince - Benim Adım Hayat" loading="lazy">
-              <div class="card-badge">Guitarist / Collaborator</div>
-            </div>
-            <div class="card-body">
-              <span class="card-meta">Single · Acoustic / Indie</span>
-              <h3 class="card-title">Güler Özince — Benim Adım Hayat</h3>
-              <p class="card-desc">
-                Guitar arrangement and accompaniment for singer-songwriter Güler Özince.
-              </p>
-              <div class="card-tags">
-                <span>Acoustic Guitar</span>
-                <span>Arrangement</span>
-              </div>
-            </div>
-          </article>
+              <!-- Instrumentalist: Ceren Gündoğdu -->
+              <article class="work-card reveal-up" data-category="guitarist">
+                <div class="card-thumb">
+                  <img src="assets/images/extracted_07.jpg" alt="Ceren Gündoğdu - Ben Hep Seni Sevdim" loading="lazy">
+                  <div class="card-badge">Guitarist / 2019</div>
+                </div>
+                <div class="card-body">
+                  <span class="card-meta">Single · Pop / Ballad</span>
+                  <h3 class="card-title">Ceren Gündoğdu — Ben Hep Seni Sevdim</h3>
+                  <p class="card-desc">
+                    Studio session guitar performance on Ceren Gündoğdu's popular single.
+                  </p>
+                  <div class="card-tags">
+                    <span>Acoustic Guitar</span>
+                    <span>Electric Guitar</span>
+                  </div>
+                </div>
+              </article>
 
-          <!-- Pür Records / Nardis Jazz Vocal -->
-          <article class="work-card" data-category="guitarist">
-            <div class="card-thumb">
-              <img src="assets/images/extracted_04.jpg" alt="Nardis Jazz Club - 19th Jazz Vocal Competition" loading="lazy">
-              <div class="card-badge">Live Jazz / 2024</div>
-            </div>
-            <div class="card-body">
-              <span class="card-meta">Jazz Club Ensemble · Pür Records</span>
-              <h3 class="card-title">19th Nardis Jazz Vocal Competition</h3>
-              <p class="card-desc">
-                Ensemble guitarist at Turkey's premier jazz venue Nardis Jazz Club, collaborating with Pür Records.
-              </p>
-              <div class="card-tags">
-                <span>Jazz Guitar</span>
-                <span>Ensemble</span>
-              </div>
-            </div>
-          </article>
+              <!-- Instrumentalist: Simge Pınar -->
+              <article class="work-card reveal-up" data-category="guitarist">
+                <div class="card-thumb">
+                  <img src="assets/images/extracted_09.jpg" alt="Simge Pınar - Güzel Şeyler" loading="lazy">
+                  <div class="card-badge">Guitarist / 2019</div>
+                </div>
+                <div class="card-body">
+                  <span class="card-meta">Album & Live · Indie Folk</span>
+                  <h3 class="card-title">Simge Pınar — Yeni Bir Hayat (Live) & Güzel Şeyler</h3>
+                  <p class="card-desc">
+                    Electric and hollowbody guitar performances for live sessions (Sofar Istanbul) and studio releases.
+                  </p>
+                  <div class="card-tags">
+                    <span>Session Guitarist</span>
+                    <span>Live Arranger</span>
+                  </div>
+                </div>
+              </article>
 
+              <!-- Instrumentalist: Güler Özince -->
+              <article class="work-card reveal-up" data-category="guitarist">
+                <div class="card-thumb">
+                  <img src="assets/images/extracted_11.jpg" alt="Güler Özince - Benim Adım Hayat" loading="lazy">
+                  <div class="card-badge">Guitarist / Collaborator</div>
+                </div>
+                <div class="card-body">
+                  <span class="card-meta">Single · Acoustic / Indie</span>
+                  <h3 class="card-title">Güler Özince — Benim Adım Hayat</h3>
+                  <p class="card-desc">
+                    Guitar arrangement and accompaniment for singer-songwriter Güler Özince.
+                  </p>
+                  <div class="card-tags">
+                    <span>Acoustic Guitar</span>
+                    <span>Arrangement</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Pür Records / Nardis Jazz Vocal -->
+              <article class="work-card reveal-up" data-category="guitarist">
+                <div class="card-thumb">
+                  <img src="assets/images/extracted_04.jpg" alt="Nardis Jazz Club - 19th Jazz Vocal Competition" loading="lazy">
+                  <div class="card-badge">Live Jazz / 2024</div>
+                </div>
+                <div class="card-body">
+                  <span class="card-meta">Jazz Club Ensemble · Pür Records</span>
+                  <h3 class="card-title">19th Nardis Jazz Vocal Competition</h3>
+                  <p class="card-desc">
+                    Ensemble guitarist at Turkey's premier jazz venue Nardis Jazz Club, collaborating with Pür Records.
+                  </p>
+                  <div class="card-tags">
+                    <span>Jazz Guitar</span>
+                    <span>Ensemble</span>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
 
     <!-- 03 // LIVE & STAGE GALLERY -->
-    <section id="live-gallery" class="section live-section">
+    <section id="live-gallery" class="section live-section foldable-section" data-section-title="03 // LIVE & STAGE">
       <div class="section-container">
         
-        <div class="section-header">
-          <div class="section-pretitle">03 // STAGE & PERFORMANCE</div>
-          <h2 class="section-title">Live Atmosphere & Festivals</h2>
-          <p class="section-subtitle">Moments from international tours, jazz festivals, and concert halls across Europe and Turkey.</p>
-        </div>
-
-        <div class="gallery-mosaic">
-          
-          <div class="mosaic-item large" data-title="FFM Sines Festival, Portugal (2025)" data-caption="Erkan Zeki Ar & Selin Sümbültepe on the main stage at Festival Músicas do Mundo in Sines, Portugal.">
-            <img src="assets/images/extracted_42.jpg" alt="Erkan Zeki Ar & Selin Sümbültepe at FFM Sines, Portugal" loading="lazy">
-            <div class="mosaic-overlay">
-              <span class="loc">FFM Sines, Portugal · 2025</span>
-              <h4>Festival Músicas do Mundo (Main Stage)</h4>
-            </div>
+        <div class="section-header" role="button" tabindex="0" aria-expanded="true" aria-controls="content-live-gallery">
+          <span class="section-watermark" aria-hidden="true">03</span>
+          <div class="section-header-main">
+            <div class="section-pretitle">03 // STAGE & PERFORMANCE</div>
+            <h2 class="section-title">Live Atmosphere & Festivals</h2>
+            <p class="section-subtitle">Moments from international tours, jazz festivals, and concert halls across Europe and Turkey.</p>
           </div>
-
-          <div class="mosaic-item" data-title="Festival Músicas do Mundo — Band Celebration (2025)" data-caption="Main stage celebration with Selin Sümbültepe ensemble in Sines, Portugal.">
-            <img src="assets/images/extracted_45.jpg" alt="Band celebration at FFM Sines" loading="lazy">
-            <div class="mosaic-overlay">
-              <span class="loc">FFM Sines · Portugal</span>
-              <h4>Main Stage Celebration</h4>
-            </div>
-          </div>
-
-          <div class="mosaic-item" data-title="Import Export, Munich (2025)" data-caption="European Tour live performance with Selin Sümbültepe in Munich.">
-            <img src="assets/images/extracted_49.jpg" alt="Live concert at Import Export Munich" loading="lazy">
-            <div class="mosaic-overlay">
-              <span class="loc">Munich, Germany · 2025</span>
-              <h4>Import Export</h4>
-            </div>
-          </div>
-
-          <div class="mosaic-item" data-title="Le Pédiluve, Paris (2025)" data-caption="European Tour performance in Paris with Selin Sümbültepe.">
-            <img src="assets/images/extracted_46.jpg" alt="Live concert at Le Pediluve Paris" loading="lazy">
-            <div class="mosaic-overlay">
-              <span class="loc">Paris, France · 2025</span>
-              <h4>Le Pédiluve</h4>
-            </div>
-          </div>
-
-          <div class="mosaic-item" data-title="Erkan Zeki Ar — Spotlight Live Performance" data-caption="Solo electric guitar performance under stage lighting.">
-            <img src="assets/images/extracted_47.jpg" alt="Erkan Zeki Ar live under spotlight" loading="lazy">
-            <div class="mosaic-overlay">
-              <span class="loc">Stage Spotlight</span>
-              <h4>Live Guitarist</h4>
-            </div>
-          </div>
-
-          <div class="mosaic-item" data-title="Küçükçiftlik Park, Istanbul (2022)" data-caption="Outdoor festival stage performance with Kalben.">
-            <img src="assets/images/extracted_38.jpg" alt="Erkan Zeki Ar at Küçükçiftlik Park festival stage" loading="lazy">
-            <div class="mosaic-overlay">
-              <span class="loc">Istanbul · Festival Stage</span>
-              <h4>Küçükçiftlik Park (Kalben)</h4>
-            </div>
-          </div>
-
-          <div class="mosaic-item" data-title="Downbeat Collective, Istanbul" data-caption="Live contemporary soul and jazz improvisation collective at SBCS Istanbul.">
-            <img src="assets/images/extracted_41.jpg" alt="Downbeat Collective live at SBCS Istanbul" loading="lazy">
-            <div class="mosaic-overlay">
-              <span class="loc">Istanbul · SBCS</span>
-              <h4>Downbeat Collective</h4>
-            </div>
-          </div>
-
-          <div class="mosaic-item" data-title="Paribu Art, Istanbul" data-caption="Selin Sümbültepe & Erkan Zeki Ar live at Paribu Art.">
-            <img src="assets/images/extracted_39.jpg" alt="Live performance at Paribu Art Istanbul" loading="lazy">
-            <div class="mosaic-overlay">
-              <span class="loc">Istanbul · Venue</span>
-              <h4>Paribu Art</h4>
-            </div>
-          </div>
-
-          <div class="mosaic-item" data-title="Backstage at FFM Sines, Portugal" data-caption="Backstage moment with Selin Sümbültepe and touring band.">
-            <img src="assets/images/extracted_50.jpg" alt="Backstage at FFM Sines, Portugal" loading="lazy">
-            <div class="mosaic-overlay">
-              <span class="loc">Sines, Portugal · Backstage</span>
-              <h4>Tour Ensemble</h4>
-            </div>
-          </div>
-
-          <div class="mosaic-item" data-title="European Tour Ensemble Portrait" data-caption="Touring collective with Selin Sümbültepe.">
-            <img src="assets/images/extracted_40.jpg" alt="Tour ensemble on stairs" loading="lazy">
-            <div class="mosaic-overlay">
-              <span class="loc">European Tour</span>
-              <h4>Selin Sümbültepe Band</h4>
-            </div>
-          </div>
-
-          <div class="mosaic-item" data-title="Erkan Zeki Ar — Live Trio/Quartet" data-caption="Stage performance on electric guitar with rhythm section.">
-            <img src="assets/images/extracted_37.jpg" alt="Live guitar and bass performance" loading="lazy">
-            <div class="mosaic-overlay">
-              <span class="loc">Live Stage</span>
-              <h4>Ensemble Guitar</h4>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Video Highlights Showcase -->
-        <div class="video-highlights-block">
-          <div class="block-header-flex">
-            <div>
-              <h3 class="block-heading">Documented Live Sessions & Broadcasts</h3>
-              <p class="block-subheading">Click any performance below to watch the official video on YouTube in a new tab.</p>
-            </div>
-            <a href="https://www.youtube.com/watch?v=PYSGcSNQ31A&list=PLGQhdL6kF5EwwzsOYn0Hay5Q1mp0iqGKw" target="_blank" rel="noopener noreferrer" class="btn btn-outline playlist-btn">
-              <span>View Full YouTube Playlist</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-            </a>
-          </div>
-
-          <div class="video-grid">
-            
-            <!-- Video: Erkan Zeki Ar - Family -->
-            <a href="https://youtu.be/-bkj_ILZHN0" target="_blank" rel="noopener noreferrer" class="video-card">
-              <div class="video-thumb-wrap">
-                <img src="assets/images/video_family.jpg" alt="Erkan Zeki Ar - Family" loading="lazy">
-                <div class="play-overlay">
-                  <div class="play-icon-circle">▶</div>
-                </div>
-                <div class="play-badge">FEATURED</div>
-              </div>
-              <div class="video-details">
-                <h4>Erkan Zeki Ar — Family</h4>
-                <p>Original live session performance · YouTube ↗</p>
-              </div>
-            </a>
-
-            <!-- Video: Selin Sümbültepe - Akantüs -->
-            <a href="https://www.youtube.com/watch?v=H63IFpZecn0" target="_blank" rel="noopener noreferrer" class="video-card">
-              <div class="video-thumb-wrap">
-                <img src="assets/images/extracted_17.jpg" alt="Selin Sümbültepe - Akantüs / Hatay'a Ağıt video session" loading="lazy">
-                <div class="play-overlay">
-                  <div class="play-icon-circle">▶</div>
-                </div>
-                <div class="play-badge">HRANT DINK AWARD</div>
-              </div>
-              <div class="video-details">
-                <h4>Selin Sümbültepe — Akantüs / Hatay'a Ağıt</h4>
-                <p>Guitarist, Record, Mix & Mastering Engineer · YouTube ↗</p>
-              </div>
-            </a>
-
-            <!-- Video: Baturay Yarkın & Erkan Zeki Ar Duo -->
-            <a href="https://www.youtube.com/watch?v=uFofzaGF56E" target="_blank" rel="noopener noreferrer" class="video-card">
-              <div class="video-thumb-wrap">
-                <img src="assets/images/extracted_20.jpg" alt="Baturay Yarkın & Erkan Zeki Ar Duo at Akbank Sanat" loading="lazy">
-                <div class="play-overlay">
-                  <div class="play-icon-circle">▶</div>
-                </div>
-                <div class="play-badge">AKBANK SANAT</div>
-              </div>
-              <div class="video-details">
-                <h4>Erkan Zeki Ar & Baturay Yarkın Duo</h4>
-                <p>Evin Caz Hali · Original jazz duo compositions · YouTube ↗</p>
-              </div>
-            </a>
-
-            <!-- Video: Erkan Zeki Ar - Sense (Sofar) -->
-            <a href="https://www.youtube.com/watch?v=vzaUtImUs04" target="_blank" rel="noopener noreferrer" class="video-card">
-              <div class="video-thumb-wrap">
-                <img src="assets/images/extracted_15.jpg" alt="Erkan Zeki Ar - Sense Live Sofar" loading="lazy">
-                <div class="play-overlay">
-                  <div class="play-icon-circle">▶</div>
-                </div>
-                <div class="play-badge">SOFAR SOUNDS</div>
-              </div>
-              <div class="video-details">
-                <h4>Erkan Zeki Ar — Sense (Live)</h4>
-                <p>Sofar Istanbul acoustic live jazz ensemble · YouTube ↗</p>
-              </div>
-            </a>
-
-            <!-- Video: Suzin - Sır -->
-            <a href="https://www.youtube.com/watch?v=Ai3LVa8a90w" target="_blank" rel="noopener noreferrer" class="video-card">
-              <div class="video-thumb-wrap">
-                <img src="assets/images/extracted_16.jpg" alt="Suzin, Sır // KİTAPÇI video recording" loading="lazy">
-                <div class="play-overlay">
-                  <div class="play-icon-circle">▶</div>
-                </div>
-                <div class="play-badge">KİTAPÇI</div>
-              </div>
-              <div class="video-details">
-                <h4>Suzin — Sır // KİTAPÇI</h4>
-                <p>Acoustic guitar live recording session · YouTube ↗</p>
-              </div>
-            </a>
-
-            <!-- Video: Simge Pınar -->
-            <a href="https://www.youtube.com/watch?v=HSagelVvGlI" target="_blank" rel="noopener noreferrer" class="video-card">
-              <div class="video-thumb-wrap">
-                <img src="assets/images/extracted_18.jpg" alt="Simge Pınar - Yeni Bir Hayat Sofar Sounds" loading="lazy">
-                <div class="play-overlay">
-                  <div class="play-icon-circle">▶</div>
-                </div>
-                <div class="play-badge">SOFAR SOUNDS</div>
-              </div>
-              <div class="video-details">
-                <h4>Simge Pınar — Yeni Bir Hayat (Live)</h4>
-                <p>Sofar Istanbul live guitar performance · YouTube ↗</p>
-              </div>
-            </a>
-
-            <!-- Video: Selin Sümbültepe - Babylon -->
-            <a href="https://www.youtube.com/watch?v=byRBH-84nzs" target="_blank" rel="noopener noreferrer" class="video-card">
-              <div class="video-thumb-wrap">
-                <img src="assets/images/extracted_19.jpg" alt="Selin Sümbültepe - Live at Babylon" loading="lazy">
-                <div class="play-overlay">
-                  <div class="play-icon-circle">▶</div>
-                </div>
-                <div class="play-badge">BABYLON</div>
-              </div>
-              <div class="video-details">
-                <h4>Selin Sümbültepe — Live at Babylon</h4>
-                <p>Babylon Istanbul concert hall performance · YouTube ↗</p>
-              </div>
-            </a>
-
+          <div class="section-header-controls">
+            <span class="folded-summary-pill">11 Photos · 7 Live Videos</span>
+            <button type="button" class="section-fold-btn" aria-label="Toggle section visibility">
+              <span class="fold-btn-label">Fold</span>
+              <span class="fold-icon" aria-hidden="true"></span>
+            </button>
           </div>
         </div>
 
+        <div id="content-live-gallery" class="section-collapsible">
+          <div class="section-collapsible-inner">
+
+            <div class="gallery-mosaic">
+              
+              <div class="mosaic-item large reveal-up" role="button" tabindex="0" data-title="FFM Sines Festival, Portugal (2025)" data-caption="Erkan Zeki Ar & Selin Sümbültepe on the main stage at Festival Músicas do Mundo in Sines, Portugal.">
+                <img src="assets/images/extracted_42.jpg" alt="Erkan Zeki Ar & Selin Sümbültepe at FFM Sines, Portugal" loading="lazy">
+                <div class="mosaic-overlay">
+                  <span class="loc">FFM Sines, Portugal · 2025</span>
+                  <h4>Festival Músicas do Mundo (Main Stage)</h4>
+                </div>
+              </div>
+
+              <div class="mosaic-item reveal-up" role="button" tabindex="0" data-title="Festival Músicas do Mundo — Band Celebration (2025)" data-caption="Main stage celebration with Selin Sümbültepe ensemble in Sines, Portugal.">
+                <img src="assets/images/extracted_45.jpg" alt="Band celebration at FFM Sines" loading="lazy">
+                <div class="mosaic-overlay">
+                  <span class="loc">FFM Sines · Portugal</span>
+                  <h4>Main Stage Celebration</h4>
+                </div>
+              </div>
+
+              <div class="mosaic-item reveal-up" role="button" tabindex="0" data-title="Import Export, Munich (2025)" data-caption="European Tour live performance with Selin Sümbültepe in Munich.">
+                <img src="assets/images/extracted_49.jpg" alt="Live concert at Import Export Munich" loading="lazy">
+                <div class="mosaic-overlay">
+                  <span class="loc">Munich, Germany · 2025</span>
+                  <h4>Import Export</h4>
+                </div>
+              </div>
+
+              <div class="mosaic-item reveal-up" role="button" tabindex="0" data-title="Le Pédiluve, Paris (2025)" data-caption="European Tour performance in Paris with Selin Sümbültepe.">
+                <img src="assets/images/extracted_46.jpg" alt="Live concert at Le Pediluve Paris" loading="lazy">
+                <div class="mosaic-overlay">
+                  <span class="loc">Paris, France · 2025</span>
+                  <h4>Le Pédiluve</h4>
+                </div>
+              </div>
+
+              <div class="mosaic-item reveal-up" role="button" tabindex="0" data-title="Erkan Zeki Ar — Spotlight Live Performance" data-caption="Solo electric guitar performance under stage lighting.">
+                <img src="assets/images/extracted_47.jpg" alt="Erkan Zeki Ar live under spotlight" loading="lazy">
+                <div class="mosaic-overlay">
+                  <span class="loc">Stage Spotlight</span>
+                  <h4>Live Guitarist</h4>
+                </div>
+              </div>
+
+              <div class="mosaic-item reveal-up" role="button" tabindex="0" data-title="Küçükçiftlik Park, Istanbul (2022)" data-caption="Outdoor festival stage performance with Kalben.">
+                <img src="assets/images/extracted_38.jpg" alt="Erkan Zeki Ar at Küçükçiftlik Park festival stage" loading="lazy">
+                <div class="mosaic-overlay">
+                  <span class="loc">Istanbul · Festival Stage</span>
+                  <h4>Küçükçiftlik Park (Kalben)</h4>
+                </div>
+              </div>
+
+              <div class="mosaic-item reveal-up" role="button" tabindex="0" data-title="Downbeat Collective, Istanbul" data-caption="Live contemporary soul and jazz improvisation collective at SBCS Istanbul.">
+                <img src="assets/images/extracted_41.jpg" alt="Downbeat Collective live at SBCS Istanbul" loading="lazy">
+                <div class="mosaic-overlay">
+                  <span class="loc">Istanbul · SBCS</span>
+                  <h4>Downbeat Collective</h4>
+                </div>
+              </div>
+
+              <div class="mosaic-item reveal-up" role="button" tabindex="0" data-title="Paribu Art, Istanbul" data-caption="Selin Sümbültepe & Erkan Zeki Ar live at Paribu Art.">
+                <img src="assets/images/extracted_39.jpg" alt="Live performance at Paribu Art Istanbul" loading="lazy">
+                <div class="mosaic-overlay">
+                  <span class="loc">Istanbul · Venue</span>
+                  <h4>Paribu Art</h4>
+                </div>
+              </div>
+
+              <div class="mosaic-item reveal-up" role="button" tabindex="0" data-title="Backstage at FFM Sines, Portugal" data-caption="Backstage moment with Selin Sümbültepe and touring band.">
+                <img src="assets/images/extracted_50.jpg" alt="Backstage at FFM Sines, Portugal" loading="lazy">
+                <div class="mosaic-overlay">
+                  <span class="loc">Sines, Portugal · Backstage</span>
+                  <h4>Tour Ensemble</h4>
+                </div>
+              </div>
+
+              <div class="mosaic-item reveal-up" role="button" tabindex="0" data-title="European Tour Ensemble Portrait" data-caption="Touring collective with Selin Sümbültepe.">
+                <img src="assets/images/extracted_40.jpg" alt="Tour ensemble on stairs" loading="lazy">
+                <div class="mosaic-overlay">
+                  <span class="loc">European Tour</span>
+                  <h4>Selin Sümbültepe Band</h4>
+                </div>
+              </div>
+
+              <div class="mosaic-item reveal-up" role="button" tabindex="0" data-title="Erkan Zeki Ar — Live Trio/Quartet" data-caption="Stage performance on electric guitar with rhythm section.">
+                <img src="assets/images/extracted_37.jpg" alt="Live guitar and bass performance" loading="lazy">
+                <div class="mosaic-overlay">
+                  <span class="loc">Live Stage</span>
+                  <h4>Ensemble Guitar</h4>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Video Highlights Showcase -->
+            <div class="video-highlights-block">
+              <div class="block-header-flex reveal-up">
+                <div>
+                  <h3 class="block-heading">Documented Live Sessions & Broadcasts</h3>
+                  <p class="block-subheading">Click any performance to watch on YouTube in a new tab, or use the quick preview button to watch inline.</p>
+                </div>
+                <a href="https://www.youtube.com/watch?v=PYSGcSNQ31A&list=PLGQhdL6kF5EwwzsOYn0Hay5Q1mp0iqGKw" target="_blank" rel="noopener noreferrer" class="btn btn-outline playlist-btn">
+                  <span>View Full YouTube Playlist</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                </a>
+              </div>
+
+              <div class="video-grid">
+                
+                <!-- Video: Erkan Zeki Ar - Family -->
+                <a href="https://youtu.be/-bkj_ILZHN0" target="_blank" rel="noopener noreferrer" class="video-card reveal-up" data-video-id="-bkj_ILZHN0" data-video-title="Erkan Zeki Ar — Family">
+                  <div class="video-thumb-wrap">
+                    <img src="assets/images/video_family.jpg" alt="Erkan Zeki Ar - Family" loading="lazy">
+                    <div class="play-overlay">
+                      <div class="play-icon-circle">▶</div>
+                    </div>
+                    <div class="play-badge">FEATURED</div>
+                  </div>
+                  <div class="video-details">
+                    <h4>Erkan Zeki Ar — Family</h4>
+                    <p>Original live session performance · YouTube ↗</p>
+                  </div>
+                </a>
+
+                <!-- Video: Selin Sümbültepe - Akantüs -->
+                <a href="https://www.youtube.com/watch?v=H63IFpZecn0" target="_blank" rel="noopener noreferrer" class="video-card reveal-up" data-video-id="H63IFpZecn0" data-video-title="Selin Sümbültepe — Akantüs / Hatay'a Ağıt">
+                  <div class="video-thumb-wrap">
+                    <img src="assets/images/extracted_17.jpg" alt="Selin Sümbültepe - Akantüs / Hatay'a Ağıt video session" loading="lazy">
+                    <div class="play-overlay">
+                      <div class="play-icon-circle">▶</div>
+                    </div>
+                    <div class="play-badge">HRANT DINK AWARD</div>
+                  </div>
+                  <div class="video-details">
+                    <h4>Selin Sümbültepe — Akantüs / Hatay'a Ağıt</h4>
+                    <p>Guitarist, Record, Mix & Mastering Engineer · YouTube ↗</p>
+                  </div>
+                </a>
+
+                <!-- Video: Baturay Yarkın & Erkan Zeki Ar Duo -->
+                <a href="https://www.youtube.com/watch?v=uFofzaGF56E" target="_blank" rel="noopener noreferrer" class="video-card reveal-up" data-video-id="uFofzaGF56E" data-video-title="Erkan Zeki Ar & Baturay Yarkın Duo">
+                  <div class="video-thumb-wrap">
+                    <img src="assets/images/extracted_20.jpg" alt="Baturay Yarkın & Erkan Zeki Ar Duo at Akbank Sanat" loading="lazy">
+                    <div class="play-overlay">
+                      <div class="play-icon-circle">▶</div>
+                    </div>
+                    <div class="play-badge">AKBANK SANAT</div>
+                  </div>
+                  <div class="video-details">
+                    <h4>Erkan Zeki Ar & Baturay Yarkın Duo</h4>
+                    <p>Evin Caz Hali · Original jazz duo compositions · YouTube ↗</p>
+                  </div>
+                </a>
+
+                <!-- Video: Erkan Zeki Ar - Sense (Sofar) -->
+                <a href="https://www.youtube.com/watch?v=vzaUtImUs04" target="_blank" rel="noopener noreferrer" class="video-card reveal-up" data-video-id="vzaUtImUs04" data-video-title="Erkan Zeki Ar — Sense (Live)">
+                  <div class="video-thumb-wrap">
+                    <img src="assets/images/extracted_15.jpg" alt="Erkan Zeki Ar - Sense Live Sofar" loading="lazy">
+                    <div class="play-overlay">
+                      <div class="play-icon-circle">▶</div>
+                    </div>
+                    <div class="play-badge">SOFAR SOUNDS</div>
+                  </div>
+                  <div class="video-details">
+                    <h4>Erkan Zeki Ar — Sense (Live)</h4>
+                    <p>Sofar Istanbul acoustic live jazz ensemble · YouTube ↗</p>
+                  </div>
+                </a>
+
+                <!-- Video: Suzin - Sır -->
+                <a href="https://www.youtube.com/watch?v=Ai3LVa8a90w" target="_blank" rel="noopener noreferrer" class="video-card reveal-up" data-video-id="Ai3LVa8a90w" data-video-title="Suzin — Sır // KİTAPÇI">
+                  <div class="video-thumb-wrap">
+                    <img src="assets/images/extracted_16.jpg" alt="Suzin, Sır // KİTAPÇI video recording" loading="lazy">
+                    <div class="play-overlay">
+                      <div class="play-icon-circle">▶</div>
+                    </div>
+                    <div class="play-badge">KİTAPÇI</div>
+                  </div>
+                  <div class="video-details">
+                    <h4>Suzin — Sır // KİTAPÇI</h4>
+                    <p>Acoustic guitar live recording session · YouTube ↗</p>
+                  </div>
+                </a>
+
+                <!-- Video: Simge Pınar -->
+                <a href="https://www.youtube.com/watch?v=HSagelVvGlI" target="_blank" rel="noopener noreferrer" class="video-card reveal-up" data-video-id="HSagelVvGlI" data-video-title="Simge Pınar — Yeni Bir Hayat (Live)">
+                  <div class="video-thumb-wrap">
+                    <img src="assets/images/extracted_18.jpg" alt="Simge Pınar - Yeni Bir Hayat Sofar Sounds" loading="lazy">
+                    <div class="play-overlay">
+                      <div class="play-icon-circle">▶</div>
+                    </div>
+                    <div class="play-badge">SOFAR SOUNDS</div>
+                  </div>
+                  <div class="video-details">
+                    <h4>Simge Pınar — Yeni Bir Hayat (Live)</h4>
+                    <p>Sofar Istanbul live guitar performance · YouTube ↗</p>
+                  </div>
+                </a>
+
+                <!-- Video: Selin Sümbültepe - Babylon -->
+                <a href="https://www.youtube.com/watch?v=byRBH-84nzs" target="_blank" rel="noopener noreferrer" class="video-card reveal-up" data-video-id="byRBH-84nzs" data-video-title="Selin Sümbültepe — Live at Babylon">
+                  <div class="video-thumb-wrap">
+                    <img src="assets/images/extracted_19.jpg" alt="Selin Sümbültepe - Live at Babylon" loading="lazy">
+                    <div class="play-overlay">
+                      <div class="play-icon-circle">▶</div>
+                    </div>
+                    <div class="play-badge">BABYLON</div>
+                  </div>
+                  <div class="video-details">
+                    <h4>Selin Sümbültepe — Live at Babylon</h4>
+                    <p>Babylon Istanbul concert hall performance · YouTube ↗</p>
+                  </div>
+                </a>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
     </section>
 
 
     <!-- 04 // TOUR DATES & SELECTED PERFORMANCES -->
-    <section id="tour-dates" class="section tour-section">
+    <section id="tour-dates" class="section tour-section foldable-section" data-section-title="04 // TOUR 2026">
       <div class="section-container">
         
-        <div class="section-header">
-          <div class="section-pretitle">04 // LIVE ITINERARY</div>
-          <h2 class="section-title">Concerts & Tour Schedule</h2>
-          <p class="section-subtitle">Confirmed upcoming appearances in Istanbul and Paris, alongside completed European tour highlights.</p>
+        <div class="section-header" role="button" tabindex="0" aria-expanded="true" aria-controls="content-tour-dates">
+          <span class="section-watermark" aria-hidden="true">04</span>
+          <div class="section-header-main">
+            <div class="section-pretitle">04 // LIVE ITINERARY</div>
+            <h2 class="section-title">Concerts & Tour Schedule</h2>
+            <p class="section-subtitle">Confirmed upcoming appearances in Istanbul and Paris, alongside completed European tour highlights.</p>
+          </div>
+          <div class="section-header-controls">
+            <span class="folded-summary-pill">4 Upcoming (Nov 2026) · 5 Completed</span>
+            <button type="button" class="section-fold-btn" aria-label="Toggle section visibility">
+              <span class="fold-btn-label">Fold</span>
+              <span class="fold-icon" aria-hidden="true"></span>
+            </button>
+          </div>
         </div>
 
-        <!-- 1. UPCOMING CONCERTS -->
-        <div class="tour-block-wrap">
-          <h3 class="tour-table-section-title">
-            <span class="live-dot"></span>
-            Upcoming Concerts (November 2026)
-          </h3>
-          <div class="tour-table-card">
-            <div class="tour-row header-row">
-              <div class="t-col date-col">DATE</div>
-              <div class="t-col city-col">CITY / COUNTRY</div>
-              <div class="t-col venue-col">EVENT & ARTIST</div>
-              <div class="t-col status-col">STATUS</div>
+        <div id="content-tour-dates" class="section-collapsible">
+          <div class="section-collapsible-inner">
+
+            <!-- 1. UPCOMING CONCERTS -->
+            <div class="tour-block-wrap reveal-up">
+              <h3 class="tour-table-section-title">
+                <span class="live-dot"></span>
+                Upcoming Concerts (November 2026)
+              </h3>
+              <div class="tour-table-card">
+                <div class="tour-row header-row">
+                  <div class="t-col date-col">DATE</div>
+                  <div class="t-col city-col">CITY / COUNTRY</div>
+                  <div class="t-col venue-col">EVENT & ARTIST</div>
+                  <div class="t-col status-col">STATUS</div>
+                </div>
+
+                <div class="tour-row">
+                  <div class="t-col date-col">
+                    <span class="day">07.11.2026</span>
+                  </div>
+                  <div class="t-col city-col">
+                    <strong>İstanbul</strong>, Turkey
+                  </div>
+                  <div class="t-col venue-col">
+                    Bova <span class="artist-collab">Erkan Zeki Ar - Headout</span>
+                  </div>
+                  <div class="t-col status-col">
+                    <span class="badge upcoming">Upcoming</span>
+                  </div>
+                </div>
+
+                <div class="tour-row">
+                  <div class="t-col date-col">
+                    <span class="day">15.11.2026</span>
+                  </div>
+                  <div class="t-col city-col">
+                    <strong>İstanbul</strong>, Turkey
+                  </div>
+                  <div class="t-col venue-col">
+                    Beyoğlu Caz Festivali <span class="artist-collab">Downbeat Collective</span>
+                  </div>
+                  <div class="t-col status-col">
+                    <span class="badge upcoming">Upcoming</span>
+                  </div>
+                </div>
+
+                <div class="tour-row">
+                  <div class="t-col date-col">
+                    <span class="day">17.11.2026</span>
+                  </div>
+                  <div class="t-col city-col">
+                    <strong>Paris</strong>, France
+                  </div>
+                  <div class="t-col venue-col">
+                    Le Grand-Quevilly <span class="artist-collab">with Selin Sümbültepe</span>
+                  </div>
+                  <div class="t-col status-col">
+                    <span class="badge upcoming">Upcoming</span>
+                  </div>
+                </div>
+
+                <div class="tour-row">
+                  <div class="t-col date-col">
+                    <span class="day">20.11.2026</span>
+                  </div>
+                  <div class="t-col city-col">
+                    <strong>Paris</strong>, France
+                  </div>
+                  <div class="t-col venue-col">
+                    Villepinte <span class="artist-collab">with Selin Sümbültepe</span>
+                  </div>
+                  <div class="t-col status-col">
+                    <span class="badge upcoming">Upcoming</span>
+                  </div>
+                </div>
+
+              </div>
             </div>
 
-            <div class="tour-row">
-              <div class="t-col date-col">
-                <span class="day">07.11.2026</span>
-              </div>
-              <div class="t-col city-col">
-                <strong>İstanbul</strong>, Turkey
-              </div>
-              <div class="t-col venue-col">
-                Bova <span class="artist-collab">Erkan Zeki Ar - Headout</span>
-              </div>
-              <div class="t-col status-col">
-                <span class="badge upcoming">Upcoming</span>
+            <!-- 2. RECENT 2026 EUROPEAN TOUR HIGHLIGHTS -->
+            <div class="tour-block-wrap tour-recent-wrap reveal-up">
+              <h3 class="tour-table-section-title">
+                Recent 2026 European Tour Highlights
+              </h3>
+              <div class="tour-table-card">
+                <div class="tour-row header-row">
+                  <div class="t-col date-col">DATE</div>
+                  <div class="t-col city-col">CITY / COUNTRY</div>
+                  <div class="t-col venue-col">VENUE & EVENT</div>
+                  <div class="t-col status-col">STATUS</div>
+                </div>
+
+                <div class="tour-row">
+                  <div class="t-col date-col">
+                    <span class="day">18.04.2026</span>
+                  </div>
+                  <div class="t-col city-col">
+                    <strong>Amsterdam</strong>, Netherlands
+                  </div>
+                  <div class="t-col venue-col">
+                    Evden Uzakta (Acoustic) <span class="artist-collab">with Selin Sümbültepe</span>
+                  </div>
+                  <div class="t-col status-col">
+                    <span class="badge confirmed">Completed</span>
+                  </div>
+                </div>
+
+                <div class="tour-row">
+                  <div class="t-col date-col">
+                    <span class="day">17.04.2026</span>
+                  </div>
+                  <div class="t-col city-col">
+                    <strong>Waiblingen</strong>, Germany
+                  </div>
+                  <div class="t-col venue-col">
+                    Kulturhaus Schwanen <span class="artist-collab">with Selin Sümbültepe</span>
+                  </div>
+                  <div class="t-col status-col">
+                    <span class="badge confirmed">Completed</span>
+                  </div>
+                </div>
+
+                <div class="tour-row">
+                  <div class="t-col date-col">
+                    <span class="day">16.04.2026</span>
+                  </div>
+                  <div class="t-col city-col">
+                    <strong>Munich</strong>, Germany
+                  </div>
+                  <div class="t-col venue-col">
+                    Import Export <span class="artist-collab">with Selin Sümbültepe</span>
+                  </div>
+                  <div class="t-col status-col">
+                    <span class="badge confirmed">Completed</span>
+                  </div>
+                </div>
+
+                <div class="tour-row">
+                  <div class="t-col date-col">
+                    <span class="day">15.04.2026</span>
+                  </div>
+                  <div class="t-col city-col">
+                    <strong>Frankfurt</strong>, Germany
+                  </div>
+                  <div class="t-col venue-col">
+                    Elfer Music Club <span class="artist-collab">with Selin Sümbültepe</span>
+                  </div>
+                  <div class="t-col status-col">
+                    <span class="badge confirmed">Completed</span>
+                  </div>
+                </div>
+
+                <div class="tour-row">
+                  <div class="t-col date-col">
+                    <span class="day">11.04.2026</span>
+                  </div>
+                  <div class="t-col city-col">
+                    <strong>Vienna</strong>, Austria
+                  </div>
+                  <div class="t-col venue-col">
+                    G5 <span class="artist-collab">with Selin Sümbültepe</span>
+                  </div>
+                  <div class="t-col status-col">
+                    <span class="badge confirmed">Completed</span>
+                  </div>
+                </div>
+
               </div>
             </div>
 
-            <div class="tour-row">
-              <div class="t-col date-col">
-                <span class="day">15.11.2026</span>
-              </div>
-              <div class="t-col city-col">
-                <strong>İstanbul</strong>, Turkey
-              </div>
-              <div class="t-col venue-col">
-                Beyoğlu Caz Festivali <span class="artist-collab">Downbeat Collective</span>
-              </div>
-              <div class="t-col status-col">
-                <span class="badge upcoming">Upcoming</span>
-              </div>
-            </div>
-
-            <div class="tour-row">
-              <div class="t-col date-col">
-                <span class="day">17.11.2026</span>
-              </div>
-              <div class="t-col city-col">
-                <strong>Paris</strong>, France
-              </div>
-              <div class="t-col venue-col">
-                Le Grand-Quevilly <span class="artist-collab">with Selin Sümbültepe</span>
-              </div>
-              <div class="t-col status-col">
-                <span class="badge upcoming">Upcoming</span>
-              </div>
-            </div>
-
-            <div class="tour-row">
-              <div class="t-col date-col">
-                <span class="day">20.11.2026</span>
-              </div>
-              <div class="t-col city-col">
-                <strong>Paris</strong>, France
-              </div>
-              <div class="t-col venue-col">
-                Villepinte <span class="artist-collab">with Selin Sümbültepe</span>
-              </div>
-              <div class="t-col status-col">
-                <span class="badge upcoming">Upcoming</span>
-              </div>
+            <div class="tour-cta reveal-up">
+              <p>For booking inquiries, residency offers, and festival programming:</p>
+              <a href="#contact" class="btn btn-primary" data-unfold-target="contact">Book Erkan Zeki Ar</a>
             </div>
 
           </div>
         </div>
-
-        <!-- 2. RECENT 2026 EUROPEAN TOUR HIGHLIGHTS -->
-        <div class="tour-block-wrap" style="margin-top: 3.5rem;">
-          <h3 class="tour-table-section-title">
-            Recent 2026 European Tour Highlights
-          </h3>
-          <div class="tour-table-card">
-            <div class="tour-row header-row">
-              <div class="t-col date-col">DATE</div>
-              <div class="t-col city-col">CITY / COUNTRY</div>
-              <div class="t-col venue-col">VENUE & EVENT</div>
-              <div class="t-col status-col">STATUS</div>
-            </div>
-
-            <div class="tour-row">
-              <div class="t-col date-col">
-                <span class="day">18.04.2026</span>
-              </div>
-              <div class="t-col city-col">
-                <strong>Amsterdam</strong>, Netherlands
-              </div>
-              <div class="t-col venue-col">
-                Evden Uzakta (Acoustic) <span class="artist-collab">with Selin Sümbültepe</span>
-              </div>
-              <div class="t-col status-col">
-                <span class="badge confirmed">Completed</span>
-              </div>
-            </div>
-
-            <div class="tour-row">
-              <div class="t-col date-col">
-                <span class="day">17.04.2026</span>
-              </div>
-              <div class="t-col city-col">
-                <strong>Waiblingen</strong>, Germany
-              </div>
-              <div class="t-col venue-col">
-                Kulturhaus Schwanen <span class="artist-collab">with Selin Sümbültepe</span>
-              </div>
-              <div class="t-col status-col">
-                <span class="badge confirmed">Completed</span>
-              </div>
-            </div>
-
-            <div class="tour-row">
-              <div class="t-col date-col">
-                <span class="day">16.04.2026</span>
-              </div>
-              <div class="t-col city-col">
-                <strong>Munich</strong>, Germany
-              </div>
-              <div class="t-col venue-col">
-                Import Export <span class="artist-collab">with Selin Sümbültepe</span>
-              </div>
-              <div class="t-col status-col">
-                <span class="badge confirmed">Completed</span>
-              </div>
-            </div>
-
-            <div class="tour-row">
-              <div class="t-col date-col">
-                <span class="day">15.04.2026</span>
-              </div>
-              <div class="t-col city-col">
-                <strong>Frankfurt</strong>, Germany
-              </div>
-              <div class="t-col venue-col">
-                Elfer Music Club <span class="artist-collab">with Selin Sümbültepe</span>
-              </div>
-              <div class="t-col status-col">
-                <span class="badge confirmed">Completed</span>
-              </div>
-            </div>
-
-            <div class="tour-row">
-              <div class="t-col date-col">
-                <span class="day">11.04.2026</span>
-              </div>
-              <div class="t-col city-col">
-                <strong>Vienna</strong>, Austria
-              </div>
-              <div class="t-col venue-col">
-                G5 <span class="artist-collab">with Selin Sümbültepe</span>
-              </div>
-              <div class="t-col status-col">
-                <span class="badge confirmed">Completed</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="tour-cta">
-          <p>For booking inquiries, residency offers, and festival programming:</p>
-          <a href="#contact" class="btn btn-primary">Book Erkan Zeki Ar</a>
-        </div>
-
       </div>
     </section>
 
 
     <!-- 05 // BIOGRAPHY, EDUCATION & RESEARCH -->
-    <section id="biography" class="section bio-section">
+    <section id="biography" class="section bio-section foldable-section" data-section-title="05 // BIOGRAPHY">
       <div class="section-container">
         
-        <div class="section-header">
-          <div class="section-pretitle">05 // PROFILE & ROLES</div>
-          <h2 class="section-title">Biography & Academic Depth</h2>
-          <p class="section-subtitle">Bridging sociological analysis with intuitive musical craftsmanship.</p>
+        <div class="section-header" role="button" tabindex="0" aria-expanded="true" aria-controls="content-biography">
+          <span class="section-watermark" aria-hidden="true">05</span>
+          <div class="section-header-main">
+            <div class="section-pretitle">05 // PROFILE & ROLES</div>
+            <h2 class="section-title">Biography & Academic Depth</h2>
+            <p class="section-subtitle">Bridging sociological analysis with intuitive musical craftsmanship.</p>
+          </div>
+          <div class="section-header-controls">
+            <span class="folded-summary-pill">Artist Statement · M.A. Thesis & Roles</span>
+            <button type="button" class="section-fold-btn" aria-label="Toggle section visibility">
+              <span class="fold-btn-label">Fold</span>
+              <span class="fold-icon" aria-hidden="true"></span>
+            </button>
+          </div>
         </div>
 
-        <div class="bio-grid">
-          
-          <div class="bio-text-card">
-            <h3 class="card-subtitle">Artist Statement</h3>
-            <p>
-              Erkan Zeki Ar is an Istanbul-born multi-instrumentalist, composer, and music producer with over 10 years of professional immersion in contemporary music. Having graduated in Sociology from Marmara University before completing his Master's in Music and Performing Arts at Yıldız Technical University, his artistic outlook is distinctly shaped by a double consciousness: analytical sociology and instinctive sound sculpting.
-            </p>
-            <p>
-              His master’s thesis, <em>"Alienation in Music Production"</em>, examines modern studio workflows and the psychology of sonic creation. This research directly informs his production style: organic, emotionally attentive, and rich in textural space.
-            </p>
-            <p>
-              As a Musical Director and session guitarist, he has led ensembles at premier venues including <strong>Zorlu PSM, Nardis Jazz Club, Babylon</strong>, and landmark festivals including <strong>Akbank Jazz Festival and IKSV Istanbul Jazz Festival</strong>. Currently expanding his base to Germany, Erkan works across acoustic, fretless, and electric instruments, producing records and touring internationally.
-            </p>
+        <div id="content-biography" class="section-collapsible">
+          <div class="section-collapsible-inner">
 
-            <div class="bio-roles-list">
-              <div class="role-box">
-                <h4>Musical Director (2016–Present)</h4>
-                <p>Ensemble curation, live arrangement, repertoire direction (Selin Sümbültepe and touring collectives).</p>
+            <div class="bio-grid">
+              
+              <div class="bio-text-card reveal-up">
+                <h3 class="card-subtitle">Artist Statement</h3>
+                <p>
+                  Erkan Zeki Ar is an Istanbul-born multi-instrumentalist, composer, and music producer with over 10 years of professional immersion in contemporary music. Having graduated in Sociology from Marmara University before completing his Master's in Music and Performing Arts at Yıldız Technical University, his artistic outlook is distinctly shaped by a double consciousness: analytical sociology and instinctive sound sculpting.
+                </p>
+                <p>
+                  His master’s thesis, <em>"Alienation in Music Production"</em>, examines modern studio workflows and the psychology of sonic creation. This research directly informs his production style: organic, emotionally attentive, and rich in textural space.
+                </p>
+                <p>
+                  As a Musical Director and session guitarist, he has led ensembles at premier venues including <strong>Zorlu PSM, Nardis Jazz Club, Babylon</strong>, and landmark festivals including <strong>Akbank Jazz Festival and IKSV Istanbul Jazz Festival</strong>. Currently expanding his base to Germany, Erkan works across acoustic, fretless, and electric instruments, producing records and touring internationally.
+                </p>
+
+                <div class="bio-roles-list">
+                  <div class="role-box">
+                    <h4>Musical Director (2016–Present)</h4>
+                    <p>Ensemble curation, live arrangement, repertoire direction (Selin Sümbültepe and touring collectives).</p>
+                  </div>
+                  <div class="role-box">
+                    <h4>Audio Engineer & Producer (2018–Present)</h4>
+                    <p>Tracking, mixing, mastering, original theatre (<em>Apsolit</em>) and film (<em>Bağlanma Hali</em>) scores.</p>
+                  </div>
+                  <div class="role-box">
+                    <h4>Educator (2024–Present)</h4>
+                    <p>Ensemble instructor at Randy Esen’s S.O.S. (Singers Only Space), focusing on orchestra leadership and chart writing.</p>
+                  </div>
+                </div>
               </div>
-              <div class="role-box">
-                <h4>Audio Engineer & Producer (2018–Present)</h4>
-                <p>Tracking, mixing, mastering, original theatre (<em>Apsolit</em>) and film (<em>Bağlanma Hali</em>) scores.</p>
+
+              <div class="bio-sidebar-card reveal-up">
+                
+                <div class="sub-block">
+                  <h4>Academic Education</h4>
+                  <ul class="timeline-list">
+                    <li>
+                      <span class="period">2018 – 2021</span>
+                      <strong>M.A. Music & Performing Arts</strong>
+                      <span class="inst">Yıldız Technical University, Istanbul</span>
+                      <span class="note">Thesis: "Alienation in Music Production"</span>
+                    </li>
+                    <li>
+                      <span class="period">2011 – 2016</span>
+                      <strong>B.A. Sociology</strong>
+                      <span class="inst">Marmara University, Istanbul</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="sub-block">
+                  <h4>Masterclasses & Mentors</h4>
+                  <ul class="skills-bullets">
+                    <li><strong>Randy Esen (2024):</strong> Jazz Singing & Improvisation</li>
+                    <li><strong>Adham Farid (2018, 2019, 2024):</strong> Mixing & Mastering</li>
+                    <li><strong>Cenk Erdoğan (2017):</strong> Music Production & Fretless Techniques</li>
+                    <li><strong>Dave Allen (2016):</strong> Modern Jazz Guitar</li>
+                    <li><strong>Nezih Yeşilnil:</strong> Early Professional Collaborations</li>
+                  </ul>
+                </div>
+
+                <div class="sub-block">
+                  <h4>Disciplines & Tools</h4>
+                  <div class="skills-chips">
+                    <span>Acoustic Guitar</span>
+                    <span>Electric Guitar</span>
+                    <span>Fretless Guitar</span>
+                    <span>Bass</span>
+                    <span>Keys & Piano</span>
+                    <span>Ableton Live</span>
+                    <span>Logic Pro</span>
+                    <span>DaVinci Resolve</span>
+                    <span>Mixing / Mastering</span>
+                  </div>
+                </div>
+
+                <div class="sub-block">
+                  <h4>Languages</h4>
+                  <p class="lang-text">
+                    Turkish (Native) · English (Fluent C1/C2) · Turkish Sign Language (Fluent) · German (A1/A2 currently learning)
+                  </p>
+                </div>
+
               </div>
-              <div class="role-box">
-                <h4>Educator (2024–Present)</h4>
-                <p>Ensemble instructor at Randy Esen’s S.O.S. (Singers Only Space), focusing on orchestra leadership and chart writing.</p>
-              </div>
+
             </div>
+
           </div>
-
-          <div class="bio-sidebar-card">
-            
-            <div class="sub-block">
-              <h4>Academic Education</h4>
-              <ul class="timeline-list">
-                <li>
-                  <span class="period">2018 – 2021</span>
-                  <strong>M.A. Music & Performing Arts</strong>
-                  <span class="inst">Yıldız Technical University, Istanbul</span>
-                  <span class="note">Thesis: "Alienation in Music Production"</span>
-                </li>
-                <li>
-                  <span class="period">2011 – 2016</span>
-                  <strong>B.A. Sociology</strong>
-                  <span class="inst">Marmara University, Istanbul</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="sub-block">
-              <h4>Masterclasses & Mentors</h4>
-              <ul class="skills-bullets">
-                <li><strong>Randy Esen (2024):</strong> Jazz Singing & Improvisation</li>
-                <li><strong>Adham Farid (2018, 2019, 2024):</strong> Mixing & Mastering</li>
-                <li><strong>Cenk Erdoğan (2017):</strong> Music Production & Fretless Techniques</li>
-                <li><strong>Dave Allen (2016):</strong> Modern Jazz Guitar</li>
-                <li><strong>Nezih Yeşilnil:</strong> Early Professional Collaborations</li>
-              </ul>
-            </div>
-
-            <div class="sub-block">
-              <h4>Disciplines & Tools</h4>
-              <div class="skills-chips">
-                <span>Acoustic Guitar</span>
-                <span>Electric Guitar</span>
-                <span>Fretless Guitar</span>
-                <span>Bass</span>
-                <span>Keys & Piano</span>
-                <span>Ableton Live</span>
-                <span>Logic Pro</span>
-                <span>DaVinci Resolve</span>
-                <span>Mixing / Mastering</span>
-              </div>
-            </div>
-
-            <div class="sub-block">
-              <h4>Languages</h4>
-              <p class="lang-text">
-                Turkish (Native) · English (Fluent C1/C2) · Turkish Sign Language (Fluent) · German (A1/A2 currently learning)
-              </p>
-            </div>
-
-          </div>
-
         </div>
-
       </div>
     </section>
 
 
     <!-- 06 // PRESS & CRITIQUE -->
-    <section id="press" class="section press-section">
+    <section id="press" class="section press-section foldable-section" data-section-title="06 // PRESS">
       <div class="section-container">
         
-        <div class="section-header">
-          <div class="section-pretitle">06 // PRESS & REVIEWS</div>
-          <h2 class="section-title">Critical Acclaim & Media</h2>
-          <p class="section-subtitle">Excerpts from leading jazz journalists, cultural critics, and newspapers.</p>
+        <div class="section-header" role="button" tabindex="0" aria-expanded="true" aria-controls="content-press">
+          <span class="section-watermark" aria-hidden="true">06</span>
+          <div class="section-header-main">
+            <div class="section-pretitle">06 // PRESS & REVIEWS</div>
+            <h2 class="section-title">Critical Acclaim & Media</h2>
+            <p class="section-subtitle">Excerpts from leading jazz journalists, cultural critics, and newspapers.</p>
+          </div>
+          <div class="section-header-controls">
+            <span class="folded-summary-pill">4 Reviews · EN / DE Switcher</span>
+            <button type="button" class="section-fold-btn" aria-label="Toggle section visibility">
+              <span class="fold-btn-label">Fold</span>
+              <span class="fold-icon" aria-hidden="true"></span>
+            </button>
+          </div>
         </div>
 
-        <!-- Press Language Switcher -->
-        <div class="lang-toggle-wrap">
-          <span class="toggle-label">Reading Language:</span>
-          <button id="press-lang-en" class="lang-btn active">English</button>
-          <button id="press-lang-de" class="lang-btn">Deutsch (Deutsche Übersetzung)</button>
+        <div id="content-press" class="section-collapsible">
+          <div class="section-collapsible-inner">
+
+            <!-- Press Language Switcher -->
+            <div class="lang-toggle-wrap reveal-up">
+              <span class="toggle-label">Reading Language:</span>
+              <button id="press-lang-en" class="lang-btn active" type="button">English</button>
+              <button id="press-lang-de" class="lang-btn" type="button">Deutsch (Deutsche Übersetzung)</button>
+            </div>
+
+            <div class="press-cards-grid">
+              
+              <!-- Murat Beşer / Cumhuriyet -->
+              <blockquote class="press-quote-card reveal-up">
+                <div class="press-origin">
+                  <span class="pub">Cumhuriyet Gazetesi</span>
+                  <span class="author">Murat Beşer · 18.05.2020</span>
+                </div>
+                <div class="quote-body" data-lang="en">
+                  “Erkan Zeki Ar belongs to our new generation of guitarists who has translated his sociological background into music... All compositions and arrangements stem from him. Erkan tells stories that emerge like mental meditations—calm, subtly dramatic, and mystic, accompanied by melancholic soundscapes.”
+                </div>
+                <div class="quote-body is-hidden" data-lang="de">
+                  „Erkan Zeki Ar gehört zu unserer neuen Generation von Gitarristen; er hat seinen soziologischen Hintergrund in Musik umgewandelt... Alle Kompositionen und Arrangements stammen von ihm selbst. Erkan erzählt Geschichten, die aus gedanklichen Übungen hervorgegangen sind – fast wie eine Meditation. Die Geschichten sind ruhig, etwas dramatisch und mystisch, begleitet von melancholischen Klanglandschaften.“
+                </div>
+                <footer class="quote-topic">On Album: <em>Tecelli</em></footer>
+              </blockquote>
+
+              <!-- Cazkolik / Eray Aytimur -->
+              <blockquote class="press-quote-card reveal-up">
+                <div class="press-origin">
+                  <span class="pub">Cazkolik</span>
+                  <span class="author">Eray Aytimur</span>
+                </div>
+                <div class="quote-body" data-lang="en">
+                  “One of Turkey's gifted young guitarists whose artistic maturity we had the privilege of witnessing on the stages of The Badau. With his second album <em>Tecelli</em>, he brings together a gifted ensemble, touching a far wider musical universe spanning jazz and alternative sensibilities.”
+                </div>
+                <div class="quote-body is-hidden" data-lang="de">
+                  „Erkan Zeki Ar, einer der jungen Gitarristen der Türkei, ist einer der talentierten Musiker, deren Reifeprozess wir miterleben durften. In seinem zweiten Album <em>Tecelli</em> bringt er die junge Generation von Musikern zusammen und berührt mit seinen Kompositionen eine viel weitere musikalische Welt.“
+                </div>
+                <footer class="quote-topic">Album Review: <em>Tecelli</em></footer>
+              </blockquote>
+
+              <!-- Jazz Dergisi / Elif Seven -->
+              <blockquote class="press-quote-card reveal-up">
+                <div class="press-origin">
+                  <span class="pub">Jazz Dergisi</span>
+                  <span class="author">Elif Seven</span>
+                </div>
+                <div class="quote-body" data-lang="en">
+                  “I had the opportunity to hear his own original compositions together with his trio: Eren Turgut on bass and Mert Can Bilgin on drums. His compositions feel distinctly more mature than his age suggests, demonstrating an unmistakable command of jazz syntax.”
+                </div>
+                <div class="quote-body is-hidden" data-lang="de">
+                  „Ich hatte die Gelegenheit, seine eigenen Kompositionen zu hören, zusammen mit seinem Team: Eren Turgut am Bass und Mert Can Bilgin am Schlagzeug. Seine Kompositionen wirken reifer, als es sein Alter vermuten lässt.“
+                </div>
+                <footer class="quote-topic">Interview: Debut Album <em>Kontrast</em></footer>
+              </blockquote>
+
+              <!-- Nouvart -->
+              <blockquote class="press-quote-card reveal-up">
+                <div class="press-origin">
+                  <span class="pub">Nouvart</span>
+                  <span class="author">Music Editorial</span>
+                </div>
+                <div class="quote-body" data-lang="en">
+                  “Active across jazz, alternative, and pop projects, Erkan Zeki Ar continues to expand modern sonic horizons, establishing himself as a prolific producer and arranger for new generation artists.”
+                </div>
+                <div class="quote-body is-hidden" data-lang="de">
+                  „Erkan Zeki Ar, der seit einiger Zeit an Projekten in den Bereichen Jazz, Alternative und Pop mitwirkt, setzt diesen Weg in seinem zweiten Albumprojekt fort und etabliert sich als versierter Produzent und Arrangeur.“
+                </div>
+                <footer class="quote-topic">Release Spotlight</footer>
+              </blockquote>
+
+            </div>
+
+          </div>
         </div>
-
-        <div class="press-cards-grid">
-          
-          <!-- Murat Beşer / Cumhuriyet -->
-          <blockquote class="press-quote-card">
-            <div class="press-origin">
-              <span class="pub">Cumhuriyet Gazetesi</span>
-              <span class="author">Murat Beşer · 18.05.2020</span>
-            </div>
-            <div class="quote-body" data-lang="en">
-              “Erkan Zeki Ar belongs to our new generation of guitarists who has translated his sociological background into music... All compositions and arrangements stem from him. Erkan tells stories that emerge like mental meditations—calm, subtly dramatic, and mystic, accompanied by melancholic soundscapes.”
-            </div>
-            <div class="quote-body" data-lang="de" style="display: none;">
-              „Erkan Zeki Ar gehört zu unserer neuen Generation von Gitarristen; er hat seinen soziologischen Hintergrund in Musik umgewandelt... Alle Kompositionen und Arrangements stammen von ihm selbst. Erkan erzählt Geschichten, die aus gedanklichen Übungen hervorgegangen sind – fast wie eine Meditation. Die Geschichten sind ruhig, etwas dramatisch und mystisch, begleitet von melancholischen Klanglandschaften.“
-            </div>
-            <footer class="quote-topic">On Album: <em>Tecelli</em></footer>
-          </blockquote>
-
-          <!-- Cazkolik / Eray Aytimur -->
-          <blockquote class="press-quote-card">
-            <div class="press-origin">
-              <span class="pub">Cazkolik</span>
-              <span class="author">Eray Aytimur</span>
-            </div>
-            <div class="quote-body" data-lang="en">
-              “One of Turkey's gifted young guitarists whose artistic maturity we had the privilege of witnessing on the stages of The Badau. With his second album <em>Tecelli</em>, he brings together a gifted ensemble, touching a far wider musical universe spanning jazz and alternative sensibilities.”
-            </div>
-            <div class="quote-body" data-lang="de" style="display: none;">
-              „Erkan Zeki Ar, einer der jungen Gitarristen der Türkei, ist einer der talentierten Musiker, deren Reifeprozess wir miterleben durften. In seinem zweiten Album <em>Tecelli</em> bringt er die junge Generation von Musikern zusammen und berührt mit seinen Kompositionen eine viel weitere musikalische Welt.“
-            </div>
-            <footer class="quote-topic">Album Review: <em>Tecelli</em></footer>
-          </blockquote>
-
-          <!-- Jazz Dergisi / Elif Seven -->
-          <blockquote class="press-quote-card">
-            <div class="press-origin">
-              <span class="pub">Jazz Dergisi</span>
-              <span class="author">Elif Seven</span>
-            </div>
-            <div class="quote-body" data-lang="en">
-              “I had the opportunity to hear his own original compositions together with his trio: Eren Turgut on bass and Mert Can Bilgin on drums. His compositions feel distinctly more mature than his age suggests, demonstrating an unmistakable command of jazz syntax.”
-            </div>
-            <div class="quote-body" data-lang="de" style="display: none;">
-              „Ich hatte die Gelegenheit, seine eigenen Kompositionen zu hören, zusammen mit seinem Team: Eren Turgut am Bass und Mert Can Bilgin am Schlagzeug. Seine Kompositionen wirken reifer, als es sein Alter vermuten lässt.“
-            </div>
-            <footer class="quote-topic">Interview: Debut Album <em>Kontrast</em></footer>
-          </blockquote>
-
-          <!-- Nouvart -->
-          <blockquote class="press-quote-card">
-            <div class="press-origin">
-              <span class="pub">Nouvart</span>
-              <span class="author">Music Editorial</span>
-            </div>
-            <div class="quote-body" data-lang="en">
-              “Active across jazz, alternative, and pop projects, Erkan Zeki Ar continues to expand modern sonic horizons, establishing himself as a prolific producer and arranger for new generation artists.”
-            </div>
-            <div class="quote-body" data-lang="de" style="display: none;">
-              „Erkan Zeki Ar, der seit einiger Zeit an Projekten in den Bereichen Jazz, Alternative und Pop mitwirkt, setzt diesen Weg in seinem zweiten Albumprojekt fort und etabliert sich als versierter Produzent und Arrangeur.“
-            </div>
-            <footer class="quote-topic">Release Spotlight</footer>
-          </blockquote>
-
-        </div>
-
       </div>
     </section>
 
 
     <!-- 07 // CONTACT & INQUIRIES -->
-    <section id="contact" class="section contact-section">
+    <section id="contact" class="section contact-section foldable-section" data-section-title="07 // CONTACT">
       <div class="section-container">
         
-        <div class="section-header">
-          <div class="section-pretitle">07 // GET IN TOUCH</div>
-          <h2 class="section-title">Direct Inquiries & Booking</h2>
-          <p class="section-subtitle">For concerts, international touring, music production, arrangements, and education.</p>
+        <div class="section-header" role="button" tabindex="0" aria-expanded="true" aria-controls="content-contact">
+          <span class="section-watermark" aria-hidden="true">07</span>
+          <div class="section-header-main">
+            <div class="section-pretitle">07 // GET IN TOUCH</div>
+            <h2 class="section-title">Direct Inquiries & Booking</h2>
+            <p class="section-subtitle">For concerts, international touring, music production, arrangements, and education.</p>
+          </div>
+          <div class="section-header-controls">
+            <span class="folded-summary-pill">Direct Email · Social & Bases</span>
+            <button type="button" class="section-fold-btn" aria-label="Toggle section visibility">
+              <span class="fold-btn-label">Fold</span>
+              <span class="fold-icon" aria-hidden="true"></span>
+            </button>
+          </div>
         </div>
 
-        <div class="contact-split-grid">
-          
-          <div class="contact-info-panel">
-            <div class="info-card">
-              <span class="info-label">Direct Email</span>
-              <div class="copy-field">
-                <a href="mailto:erkanzekiar@gmail.com" class="info-value">erkanzekiar@gmail.com</a>
-                <button class="copy-btn" data-copy="erkanzekiar@gmail.com" title="Copy to clipboard">Copy</button>
-              </div>
-            </div>
+        <div id="content-contact" class="section-collapsible">
+          <div class="section-collapsible-inner">
 
-
-
-            <div class="info-card">
-              <span class="info-label">Social & Streaming</span>
-              <div class="social-pills-row">
-                <a href="https://instagram.com/erkanzekiar" target="_blank" rel="noopener" class="social-pill">
-                  <span>Instagram</span>
-                  <small>@erkanzekiar</small>
-                </a>
-                <a href="https://youtube.com/@erkanzekiar" target="_blank" rel="noopener" class="social-pill">
-                  <span>YouTube</span>
-                  <small>@erkanzekiar</small>
-                </a>
-              </div>
-            </div>
-
-            <div class="info-card location-card">
-              <span class="info-label">Bases of Activity</span>
-              <p class="info-value">Istanbul, Turkey & Germany (confirmed 2026 tour)</p>
-              <span class="avail-badge">Available for European & International Bookings</span>
-            </div>
-          </div>
-
-          <div class="contact-form-panel">
-            <form id="portfolio-contact-form" class="editorial-form">
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="name">Your Name / Organization *</label>
-                  <input type="text" id="name" name="name" required placeholder="e.g. Festival Director, Artist, Booker">
+            <div class="contact-cards-container reveal-up">
+              <div class="contact-info-panel">
+                <div class="info-card">
+                  <span class="info-label">Direct Email</span>
+                  <div class="copy-field">
+                    <a href="#" class="info-value obfuscated-email" data-user="erkanzekiar" data-domain="gmail.com">erkanzekiar@gmail.com</a>
+                    <button type="button" class="copy-btn" data-user="erkanzekiar" data-domain="gmail.com" title="Copy to clipboard">Copy</button>
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label for="email">Email Address *</label>
-                  <input type="email" id="email" name="email" required placeholder="name@domain.com">
+
+                <div class="info-card">
+                  <span class="info-label">Social & Streaming</span>
+                  <div class="social-pills-row">
+                    <a href="https://instagram.com/erkanzekiar" target="_blank" rel="noopener noreferrer" class="social-pill">
+                      <span>Instagram</span>
+                      <small>@erkanzekiar</small>
+                    </a>
+                    <a href="https://youtube.com/@erkanzekiar" target="_blank" rel="noopener noreferrer" class="social-pill">
+                      <span>YouTube</span>
+                      <small>@erkanzekiar</small>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="info-card location-card">
+                  <span class="info-label">Bases of Activity</span>
+                  <p class="info-value">Istanbul, Turkey & Germany (confirmed 2026 tour)</p>
+                  <span class="avail-badge">Available for European & International Bookings</span>
                 </div>
               </div>
+            </div>
 
-              <div class="form-group">
-                <label for="topic">Purpose of Inquiry *</label>
-                <select id="topic" name="topic" required>
-                  <option value="Concert Booking & Festivals">Concert Booking & Festival Performance</option>
-                  <option value="Music Production / Mixing / Mastering">Studio Production / Mixing & Mastering</option>
-                  <option value="Arrangement / Scoring">Arrangement / Film & Theatre Scoring</option>
-                  <option value="Educational Workshop / Masterclass">Masterclass / Educational Workshop</option>
-                  <option value="Other Inquiries">General Inquiries & Collaborations</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="message">Message *</label>
-                <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project, date, or event..."></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary submit-btn">
-                <span>Send Message</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-              </button>
-
-              <div id="form-feedback" class="form-feedback" style="display: none;"></div>
-            </form>
           </div>
-
         </div>
 
       </div>
@@ -1119,12 +1316,25 @@
 
   </main>
 
-  <!-- Interactive Lightbox Modal -->
-  <div id="lightbox" class="lightbox-modal" aria-hidden="true">
+  <!-- Interactive Lightbox Modal with Prev/Next Navigation -->
+  <div id="lightbox" class="lightbox-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Stage photography lightbox">
     <div class="lightbox-backdrop"></div>
     <div class="lightbox-content">
-      <button id="lightbox-close" class="lightbox-close" aria-label="Close modal">&times;</button>
-      <img id="lightbox-img" src="" alt="Enlarged view">
+      <div class="lightbox-topbar">
+        <span id="lightbox-counter" class="lightbox-counter">01 / 11</span>
+        <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="lightbox-stage">
+        <button id="lightbox-prev" class="lightbox-nav-btn prev" type="button" aria-label="Previous photo">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <img id="lightbox-img" src="" alt="Enlarged stage photograph">
+        <button id="lightbox-next" class="lightbox-nav-btn next" type="button" aria-label="Next photo">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+
       <div class="lightbox-meta">
         <h4 id="lightbox-title"></h4>
         <p id="lightbox-desc"></p>
