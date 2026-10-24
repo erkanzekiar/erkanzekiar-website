@@ -35,9 +35,9 @@
   --text-muted: #b8c0d2;
   --text-subtle: #8a92a6;
 
-  --text-dark-main: #ffffff;
-  --text-dark-muted: #b8c0d2;
-  --text-dark-subtle: #8a92a6;
+  --text-dark-main: #0c0e15;
+  --text-dark-muted: #3d4352;
+  --text-dark-subtle: #656c7d;
 
   /* 3. Primary Accent: Vibrant Live Stage Orange (from PIANO: BASS: DRUMS: in photo) */
   --accent-orange: #eb6434;
@@ -2054,34 +2054,64 @@ main {
 }
 
 .header-row {
-  background: var(--bg-dark-secondary);
+  background: #141622;
   font-family: var(--font-heading);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.15em;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: var(--accent-gold);
+  border-bottom: 1px solid rgba(235, 100, 52, 0.3);
+  padding: 1.15rem 2rem;
+}
+
+.header-row .t-col {
+  font-family: var(--font-heading);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.header-row .date-col {
   color: var(--accent-gold);
 }
 
-.date-col .day {
+.header-row .city-col {
+  color: #d1d8e6;
+  font-size: 0.74rem;
+}
+
+.header-row .venue-col {
+  color: #d1d8e6;
+  font-size: 0.74rem;
+}
+
+.header-row .status-col {
+  color: var(--accent-gold);
+  font-size: 0.74rem;
+  text-align: right;
+}
+
+.tour-row:not(.header-row) .date-col .day {
   font-family: var(--font-heading);
   font-weight: 700;
   font-size: 1.05rem;
-  color: var(--text-main);
+  color: #ffffff;
   letter-spacing: -0.01em;
 }
 
-.city-col {
+.tour-row:not(.header-row) .city-col {
   font-size: 0.95rem;
-  color: var(--text-muted);
+  color: #b0b8c9;
 }
 
-.city-col strong {
-  color: var(--text-main);
+.tour-row:not(.header-row) .city-col strong {
+  color: #ffffff;
 }
 
-.venue-col {
+.tour-row:not(.header-row) .venue-col {
   font-size: 0.95rem;
-  color: var(--text-main);
+  color: #ffffff;
 }
 
 .artist-collab {
@@ -2120,9 +2150,9 @@ main {
 
 .tour-table-section-title {
   font-family: var(--font-heading);
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 800;
-  color: var(--text-dark-main);
+  color: #0c0e15;
   margin-bottom: 1.25rem;
   display: flex;
   align-items: center;
@@ -2135,7 +2165,9 @@ main {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--accent-gold-deep);
+  background: var(--accent-orange, #eb6434);
+  box-shadow: 0 0 8px rgba(235, 100, 52, 0.5);
+  flex-shrink: 0;
 }
 
 .tour-recent-wrap {
