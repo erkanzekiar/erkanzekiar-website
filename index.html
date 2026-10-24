@@ -8,7 +8,7 @@
   <meta name="keywords" content="Erkan Zeki Ar, Guitarist, Composer, Music Producer, Jazz, Tecelli, Kontrast, Selin Sümbültepe, Downbeat Collective, Berlin, Istanbul, Tour 2026">
   <meta name="author" content="Erkan Zeki Ar">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta name="theme-color" content="#08080a">
+  <meta name="theme-color" content="#1b222c">
   <link rel="canonical" href="https://erkanzekiar.com/">
 
   <!-- Content Security Policy -->
@@ -28,13 +28,14 @@
   <meta name="twitter:description" content="Berlin & Istanbul-based guitarist, composer, and music producer. Explore selected works, live sessions, and 2026 tour dates.">
   <meta name="twitter:image" content="https://erkanzekiar.com/assets/images/hero.jpg">
 
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-family=%22serif%22 fill=%22%23c5a059%22>E</text></svg>">
+  <!-- New Custom Soundhole & Harmonic Wave Favicon Logo (replaces old E symbol) -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=2">
+  <link rel="shortcut icon" href="assets/favicon.svg?v=2">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 
@@ -53,7 +54,8 @@
         "sameAs": [
           "https://instagram.com/erkanzekiar",
           "https://youtube.com/@erkanzekiar",
-          "https://open.spotify.com/playlist/0UtFGcjtkOkcR5oxFCXMml"
+          "https://open.spotify.com/playlist/0UtFGcjtkOkcR5oxFCXMml",
+          "https://music.apple.com/us/artist/erkan-zeki-ar/1348865759"
         ],
         "alumniOf": [
           {
@@ -134,14 +136,29 @@
   }
   </script>
 </head>
-<body class="dark-theme">
+<body class="fresh-editorial-theme">
 
   <!-- Top Viewport Scroll Progress Bar -->
   <div class="scroll-progress-track" aria-hidden="true">
     <div id="scroll-progress-bar" class="scroll-progress-bar"></div>
   </div>
 
-  <!-- Background Ambience -->
+  <!-- Tigran Hamasyan Style Top Announcement Bar -->
+  <div class="announcement-bar" role="region" aria-label="Highlights">
+    <div class="announcement-inner">
+      <a href="#discography" class="announcement-link" data-unfold-target="discography">
+        <span>Stream &amp; Purchase Solo Albums <strong><em>Tecelli</em></strong> &amp; <strong><em>Kontrast</em></strong></span>
+        <span class="arr">→</span>
+      </a>
+      <span class="announcement-divider" aria-hidden="true">·</span>
+      <a href="#tour-dates" class="announcement-link" data-unfold-target="tour-dates">
+        <span>See <strong>Upcoming November 2026</strong> Tour Dates (Istanbul &amp; Paris)</span>
+        <span class="arr">→</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Background Ambience (Fresh Mineral & Warm Amber Daylight Glows) -->
   <div class="ambient-glow glow-1"></div>
   <div class="ambient-glow glow-2"></div>
   <div class="noise-overlay"></div>
@@ -162,13 +179,13 @@
     </button>
   </header>
 
-  <!-- Fullscreen / Corner Drawer Navigation Overlay -->
+  <!-- Fullscreen / Corner Drawer Navigation Overlay (Ólafur Arnalds Pill-Border + Mixed Serif Style) -->
   <div id="nav-overlay" class="nav-overlay" aria-hidden="true">
     <div class="nav-backdrop"></div>
     <div class="nav-panel">
       <div class="nav-panel-header">
         <div class="nav-header-actions">
-          <div class="nav-badge">NAVIGATION</div>
+          <div class="nav-badge">INDEX // NAVIGATION</div>
           <button id="toggle-all-sections-btn" class="fold-all-btn" type="button" title="Fold or unfold all sections">
             Fold All Sections
           </button>
@@ -181,50 +198,50 @@
           <li class="nav-item">
             <a href="#hero" class="nav-link active" data-num="01" data-section="hero">
               <span class="nav-num">01</span>
-              <span class="nav-title">Home / Profile</span>
-              <span class="nav-desc">Overview & Statement</span>
+              <span class="nav-title">H<i>o</i>me / Pr<i>o</i>file</span>
+              <span class="nav-desc">Overview &amp; Statement</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="#discography" class="nav-link" data-num="02" data-section="discography">
               <span class="nav-num">02</span>
-              <span class="nav-title">Selected Works</span>
-              <span class="nav-desc">Albums, Production & Singles</span>
+              <span class="nav-title">W<i>o</i>rks &amp; Cat<i>a</i>logue</span>
+              <span class="nav-desc">Stream &amp; Buy on Spotify, Apple Music &amp; YouTube</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="#live-gallery" class="nav-link" data-num="03" data-section="live-gallery">
               <span class="nav-num">03</span>
-              <span class="nav-title">Live & Stage</span>
-              <span class="nav-desc">Performances & Video Sessions</span>
+              <span class="nav-title">L<i>i</i>ve &amp; St<i>a</i>ge</span>
+              <span class="nav-desc">Festivals &amp; Documented Video Sessions</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="#tour-dates" class="nav-link" data-num="04" data-section="tour-dates">
               <span class="nav-num">04</span>
-              <span class="nav-title">Tour 2026</span>
-              <span class="nav-desc">Upcoming & Recent Schedule</span>
+              <span class="nav-title">T<i>o</i>ur Dat<i>e</i>s</span>
+              <span class="nav-desc">November 2026 &amp; European Schedule</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="#biography" class="nav-link" data-num="05" data-section="biography">
               <span class="nav-num">05</span>
-              <span class="nav-title">Biography & Research</span>
-              <span class="nav-desc">Academic Rigor & Expertise</span>
+              <span class="nav-title">Bi<i>o</i>graphy &amp; Res<i>e</i>arch</span>
+              <span class="nav-desc">Academic Rigor &amp; Studio Expertise</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="#press" class="nav-link" data-num="06" data-section="press">
               <span class="nav-num">06</span>
-              <span class="nav-title">Press & Reviews</span>
+              <span class="nav-title">Pr<i>e</i>ss &amp; Cr<i>i</i>tique</span>
               <span class="nav-desc">Media Clippings (EN / DE)</span>
             </a>
           </li>
           <li class="nav-item">
             <a href="#contact" class="nav-link" data-num="07" data-section="contact">
               <span class="nav-num">07</span>
-              <span class="nav-title">Contact & Inquiries</span>
-              <span class="nav-desc">Direct Email & Social Channels</span>
+              <span class="nav-title">C<i>o</i>nt<i>a</i>ct</span>
+              <span class="nav-desc">Direct Email &amp; Social Channels</span>
             </a>
           </li>
         </ul>
@@ -237,6 +254,8 @@
         <div class="nav-socials">
           <a href="https://instagram.com/erkanzekiar" target="_blank" rel="noopener noreferrer">Instagram</a>
           <a href="https://youtube.com/@erkanzekiar" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a href="https://open.spotify.com/playlist/0UtFGcjtkOkcR5oxFCXMml" target="_blank" rel="noopener noreferrer">Spotify</a>
+          <a href="https://music.apple.com/us/artist/erkan-zeki-ar/1348865759" target="_blank" rel="noopener noreferrer">Apple Music</a>
         </div>
       </div>
     </div>
@@ -257,7 +276,7 @@
 
           <h1 class="hero-name">
             <span class="name-first">ERKAN</span>
-            <span class="name-middle">ZEKİ</span>
+            <span class="name-middle">ZEK<i>İ</i></span>
             <span class="name-last">AR</span>
           </h1>
 
@@ -272,12 +291,12 @@
           </p>
 
           <p class="hero-statement">
-            Over a decade of combining academic rigor with intuitive stage musicianship. Specialized in jazz, pop, and indie production, fretless & electric guitars, and full-spectrum sound engineering. Currently expanding European engagements with confirmed 2026 tour dates.
+            Over a decade of combining academic rigor with intuitive stage musicianship. Specialized in jazz, pop, and indie production, fretless &amp; electric guitars, and full-spectrum sound engineering. Currently expanding European engagements with confirmed 2026 tour dates.
           </p>
 
           <div class="hero-actions">
             <a href="#discography" class="btn btn-primary" data-unfold-target="discography">
-              <span>Selected Works</span>
+              <span>Explore Catalogue</span>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
             </a>
             <a href="#tour-dates" class="btn btn-outline" data-unfold-target="tour-dates">
@@ -299,7 +318,7 @@
             </div>
             <div class="metric-item">
               <span class="metric-num">20+</span>
-              <span class="metric-label">Releases & Credits</span>
+              <span class="metric-label">Releases &amp; Credits</span>
             </div>
             <div class="metric-item">
               <span class="metric-num">2026</span>
@@ -321,26 +340,33 @@
 
       </div>
 
-      <a href="#discography" class="scroll-prompt" data-unfold-target="discography" aria-label="Scroll to next section">
-        <span class="scroll-text">EXPLORE</span>
-        <div class="scroll-arrow">↓</div>
+      <!-- Ólafur Arnalds Inspired Scroll Indicator -->
+      <a href="#discography" class="oa-scroll-indicator" data-unfold-target="discography" aria-label="Scroll to Works Catalogue">
+        <span class="oa-scroll-text">Scroll <i>o</i>r explore</span>
+        <span class="oa-scroll-line"></span>
+        <span class="oa-scroll-circle">
+          <svg width="26" height="26" viewBox="0 0 26 26">
+            <circle fill="none" cx="13" cy="13" r="11.5" stroke="currentColor" stroke-width="1.25" />
+          </svg>
+          <span class="oa-scroll-dot"></span>
+        </span>
       </a>
     </section>
 
 
-    <!-- 02 // SELECTED WORKS & DISCOGRAPHY -->
-    <section id="discography" class="section discography-section foldable-section" data-section-title="02 // WORKS">
+    <!-- 02 // SELECTED WORKS & DISCOGRAPHY (Ólafur Arnalds Warm Alabaster Gallery Theme + Full Streaming/Buy Links) -->
+    <section id="discography" class="section section-light discography-section foldable-section" data-section-title="02 // WORKS">
       <div class="section-container">
         
         <div class="section-header" role="button" tabindex="0" aria-expanded="true" aria-controls="content-discography">
           <span class="section-watermark" aria-hidden="true">02</span>
           <div class="section-header-main">
             <div class="section-pretitle">02 // CATALOGUE</div>
-            <h2 class="section-title">Selected Works & Discography</h2>
-            <p class="section-subtitle">Original compositions, studio productions, arrangements, and instrumental collaborations.</p>
+            <h2 class="section-title">Sel<i>e</i>cted W<i>o</i>rks &amp; Disc<i>o</i>graphy</h2>
+            <p class="section-subtitle">Stream or purchase original albums, studio productions, and guitar collaborations across Spotify, Apple Music / iTunes, and YouTube.</p>
           </div>
           <div class="section-header-controls">
-            <span class="folded-summary-pill">10 Releases · Spotify Player</span>
+            <span class="folded-summary-pill">10 Works · Stream &amp; Buy</span>
             <button type="button" class="section-fold-btn" aria-label="Toggle section visibility">
               <span class="fold-btn-label">Fold</span>
               <span class="fold-icon" aria-hidden="true"></span>
@@ -351,19 +377,25 @@
         <div id="content-discography" class="section-collapsible">
           <div class="section-collapsible-inner">
 
-            <!-- Embedded Spotify Discography Strip -->
-            <div class="spotify-player-bar reveal-up">
+            <!-- Interactive Spotify Audio Player Bar (updates dynamically when clicking Preview on any work) -->
+            <div id="catalogue-player-bar" class="spotify-player-bar reveal-up">
               <div class="spotify-bar-info">
                 <div class="spotify-badge-row">
                   <span class="live-dot"></span>
-                  <span class="spotify-eyebrow">STREAM DISCOGRAPHY</span>
+                  <span id="player-status-eyebrow" class="spotify-eyebrow">ACTIVE STREAMING PLAYER</span>
                 </div>
-                <h3>Official Discography & Production Playlist</h3>
-                <p>Listen to Erkan Zeki Ar’s solo albums, studio productions, and guitar sessions directly while browsing.</p>
+                <h3 id="player-active-title">Official Discography &amp; Production Playlist</h3>
+                <p>Click <strong>▶ Preview</strong> on any work below to load it here, or open directly on <strong>Spotify</strong>, <strong>Apple Music / iTunes</strong>, and <strong>YouTube</strong>.</p>
+                <div class="artist-store-pills">
+                  <a href="https://open.spotify.com/playlist/0UtFGcjtkOkcR5oxFCXMml" target="_blank" rel="noopener noreferrer" class="store-link-chip">Spotify Playlist ↗</a>
+                  <a href="https://music.apple.com/us/artist/erkan-zeki-ar/1348865759" target="_blank" rel="noopener noreferrer" class="store-link-chip">Apple Music / iTunes Store ↗</a>
+                  <a href="https://youtube.com/@erkanzekiar" target="_blank" rel="noopener noreferrer" class="store-link-chip">YouTube Channel ↗</a>
+                </div>
               </div>
               <div class="spotify-embed-wrap">
                 <iframe
-                  title="Erkan Zeki Ar Spotify Discography Playlist"
+                  id="spotify-embed-iframe"
+                  title="Erkan Zeki Ar Spotify Discography Player"
                   style="border-radius:12px"
                   src="https://open.spotify.com/embed/playlist/0UtFGcjtkOkcR5oxFCXMml?utm_source=generator&theme=0"
                   width="100%"
@@ -375,49 +407,77 @@
               </div>
             </div>
 
-            <!-- Filter Controls -->
-            <div class="filter-bar reveal-up" role="tablist" aria-label="Filter discography by role">
+            <!-- Ólafur Arnalds Style Minimal Tabs Filter -->
+            <div class="filter-bar oa-tabs reveal-up" role="tablist" aria-label="Filter discography by role">
               <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Works <span class="filter-count">10</span></button>
-              <button class="filter-btn" data-filter="solo" role="tab" aria-selected="false">Primary Artist <span class="filter-count">2</span></button>
-              <button class="filter-btn" data-filter="producer" role="tab" aria-selected="false">Production & Mix <span class="filter-count">4</span></button>
-              <button class="filter-btn" data-filter="guitarist" role="tab" aria-selected="false">Instrumentalist <span class="filter-count">4</span></button>
+              <button class="filter-btn" data-filter="solo" role="tab" aria-selected="false">Solo Albums <span class="filter-count">2</span></button>
+              <button class="filter-btn" data-filter="producer" role="tab" aria-selected="false">Production &amp; Mix <span class="filter-count">4</span></button>
+              <button class="filter-btn" data-filter="guitarist" role="tab" aria-selected="false">Collaborations <span class="filter-count">4</span></button>
             </div>
 
             <!-- Discography Grid -->
             <div class="disco-grid">
               
-              <!-- Album: Tecelli -->
+              <!-- 1. Album: Tecelli -->
               <article class="work-card reveal-up" data-category="solo">
                 <div class="card-thumb">
                   <img src="assets/images/extracted_02.jpg" alt="Tecelli Album Cover — Erkan Zeki Ar" loading="lazy">
                   <div class="card-badge">Primary Artist / 2020</div>
+                  <button type="button" class="thumb-preview-btn" data-spotify-uri="https://open.spotify.com/embed/track/6rL7j0e8gfAc089eYlim0O?utm_source=generator&theme=0" data-work-title="Erkan Zeki Ar — Tecelli (2020)">
+                    <span>▶ Preview Track</span>
+                  </button>
                 </div>
                 <div class="card-body">
+                  <div class="oa-card-header">
+                    <h3 class="card-title">Tecelli</h3>
+                    <span class="oa-year">2020</span>
+                  </div>
                   <span class="card-meta">Full Album · Jazz / Modern Classical</span>
-                  <h3 class="card-title">Tecelli</h3>
                   <p class="card-desc">
                     Meditative and expansive narrative featuring a 4-piece string quartet, piano, trumpet, and jazz rhythm section. All compositions and arrangements by Erkan Zeki Ar.
                   </p>
                   <div class="card-tags">
                     <span>Composer</span>
                     <span>Arranger</span>
-                    <span>Guitars & Piano</span>
+                    <span>Guitars &amp; Piano</span>
                   </div>
                   <div class="card-credits">
-                    Featuring: Efe Gazi (Trumpet), Baturay Yarkın & Gökhan Sürer (Keys), Eren Turgut & Enver Muhamedi (Bass), Mert Can Bilgin & Burak Cihangirli (Drums), and String Quartet
+                    Featuring: Efe Gazi (Trumpet), Baturay Yarkın &amp; Gökhan Sürer (Keys), Eren Turgut &amp; Enver Muhamedi (Bass), Mert Can Bilgin &amp; Burak Cihangirli (Drums), and String Quartet
+                  </div>
+
+                  <!-- Platform Stream & Purchase Links -->
+                  <div class="work-platform-links" aria-label="Stream or purchase Tecelli">
+                    <a href="https://open.spotify.com/track/6rL7j0e8gfAc089eYlim0O" target="_blank" rel="noopener noreferrer" class="platform-btn spotify" title="Stream Tecelli on Spotify">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                      <span>Spotify</span>
+                    </a>
+                    <a href="https://music.apple.com/us/album/tecelli/1502423982" target="_blank" rel="noopener noreferrer" class="platform-btn apple" title="Stream or Buy Tecelli on Apple Music & iTunes">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.33c.64-.78 1.08-1.86.96-2.94-.93.04-2.06.62-2.72 1.4-.58.68-1.1 1.79-.96 2.84 1.04.08 2.08-.52 2.72-1.3"/></svg>
+                      <span>Apple / Buy</span>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Erkan+Zeki+Ar+Tecelli" target="_blank" rel="noopener noreferrer" class="platform-btn youtube" title="Listen on YouTube">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                      <span>YouTube</span>
+                    </a>
                   </div>
                 </div>
               </article>
 
-              <!-- Album: Kontrast -->
+              <!-- 2. Album: Kontrast -->
               <article class="work-card reveal-up" data-category="solo">
                 <div class="card-thumb">
                   <img src="assets/images/extracted_03.jpg" alt="Kontrast Debut Album Cover — Erkan Zeki Ar Trio" loading="lazy">
                   <div class="card-badge">Primary Artist / 2018</div>
+                  <button type="button" class="thumb-preview-btn" data-spotify-uri="https://open.spotify.com/embed/track/2gAID6N0BUDZp8MqVv9UlP?utm_source=generator&theme=0" data-work-title="Erkan Zeki Ar Trio — Kontrast (2018)">
+                    <span>▶ Preview Track</span>
+                  </button>
                 </div>
                 <div class="card-body">
+                  <div class="oa-card-header">
+                    <h3 class="card-title">Kontrast</h3>
+                    <span class="oa-year">2018</span>
+                  </div>
                   <span class="card-meta">Debut Album · Modern Jazz Trio</span>
-                  <h3 class="card-title">Kontrast</h3>
                   <p class="card-desc">
                     Dynamic guitar-trio jazz recorded with Eren Turgut on bass and Mert Can Bilgin on drums. Synthesizes years of modern jazz composition and improvisation.
                   </p>
@@ -429,18 +489,40 @@
                   <div class="card-credits">
                     Featuring: Eren Turgut (Bass), Mert Can Bilgin (Drums)
                   </div>
+
+                  <!-- Platform Stream & Purchase Links -->
+                  <div class="work-platform-links" aria-label="Stream or purchase Kontrast">
+                    <a href="https://open.spotify.com/track/2gAID6N0BUDZp8MqVv9UlP" target="_blank" rel="noopener noreferrer" class="platform-btn spotify" title="Stream Kontrast on Spotify">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                      <span>Spotify</span>
+                    </a>
+                    <a href="https://music.apple.com/us/album/kontrast/1348865318" target="_blank" rel="noopener noreferrer" class="platform-btn apple" title="Stream or Buy Kontrast on Apple Music & iTunes">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.33c.64-.78 1.08-1.86.96-2.94-.93.04-2.06.62-2.72 1.4-.58.68-1.1 1.79-.96 2.84 1.04.08 2.08-.52 2.72-1.3"/></svg>
+                      <span>Apple / Buy</span>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Erkan+Zeki+Ar+Kontrast" target="_blank" rel="noopener noreferrer" class="platform-btn youtube" title="Listen on YouTube">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                      <span>YouTube</span>
+                    </a>
+                  </div>
                 </div>
               </article>
 
-              <!-- Production: Işıl Kahraman -->
+              <!-- 3. Production: Işıl Kahraman -->
               <article class="work-card reveal-up" data-category="producer">
                 <div class="card-thumb">
                   <img src="assets/images/extracted_12.jpg" alt="Işıl Kahraman - Sustu Sözler" loading="lazy">
                   <div class="card-badge">Production / 2021–2026</div>
+                  <button type="button" class="thumb-preview-btn" data-spotify-uri="https://open.spotify.com/embed/track/6o0iLidz71kOP4bwWAy2sF?utm_source=generator&theme=0" data-work-title="Işıl Kahraman — Korkmamış Olsaydım / Productions (2021–2026)">
+                    <span>▶ Preview Track</span>
+                  </button>
                 </div>
                 <div class="card-body">
+                  <div class="oa-card-header">
+                    <h3 class="card-title">Işıl Kahraman</h3>
+                    <span class="oa-year">2021–2026</span>
+                  </div>
                   <span class="card-meta">Singles Discography · Indie Pop / Acoustic</span>
-                  <h3 class="card-title">Işıl Kahraman</h3>
                   <p class="card-desc">
                     End-to-end music production, guitar performance, and arrangements across consecutive releases: <em>Korkmamış Olsaydım (2025)</em>, <em>Sustu Sözler (2024)</em>, <em>Sevemedim Bilinmezi (2023)</em>, and <em>Yol Uzun (2022)</em>.
                   </p>
@@ -449,18 +531,40 @@
                     <span>Arranger</span>
                     <span>Guitarist</span>
                   </div>
+
+                  <!-- Platform Stream & Purchase Links -->
+                  <div class="work-platform-links" aria-label="Stream or purchase Işıl Kahraman releases">
+                    <a href="https://open.spotify.com/track/6o0iLidz71kOP4bwWAy2sF" target="_blank" rel="noopener noreferrer" class="platform-btn spotify" title="Stream on Spotify">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                      <span>Spotify</span>
+                    </a>
+                    <a href="https://music.apple.com/us/artist/i%C5%9F%C4%B1l-kahraman/1556682365" target="_blank" rel="noopener noreferrer" class="platform-btn apple" title="Stream or Buy on Apple Music & iTunes">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.33c.64-.78 1.08-1.86.96-2.94-.93.04-2.06.62-2.72 1.4-.58.68-1.1 1.79-.96 2.84 1.04.08 2.08-.52 2.72-1.3"/></svg>
+                      <span>Apple / Buy</span>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=I%C5%9F%C4%B1l+Kahraman+Sustu+S%C3%B6zler" target="_blank" rel="noopener noreferrer" class="platform-btn youtube" title="Watch on YouTube">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                      <span>YouTube</span>
+                    </a>
+                  </div>
                 </div>
               </article>
 
-              <!-- Production: Tolgay Keskin - Gentrification -->
+              <!-- 4. Production: Tolgay Keskin - Gentrification -->
               <article class="work-card reveal-up" data-category="producer">
                 <div class="card-thumb">
                   <img src="assets/images/extracted_10.jpg" alt="Tolgay Keskin - Gentrification" loading="lazy">
                   <div class="card-badge">Production / 2025</div>
+                  <button type="button" class="thumb-preview-btn" data-spotify-uri="https://open.spotify.com/embed/track/5E2f5CS6WBtti17PY8yDoX?utm_source=generator&theme=0" data-work-title="Tolgay Keskin — Gentrification (2025)">
+                    <span>▶ Preview Track</span>
+                  </button>
                 </div>
                 <div class="card-body">
+                  <div class="oa-card-header">
+                    <h3 class="card-title">Tolgay Keskin — Gentrification</h3>
+                    <span class="oa-year">2025</span>
+                  </div>
                   <span class="card-meta">Single · Alternative</span>
-                  <h3 class="card-title">Tolgay Keskin — Gentrification</h3>
                   <p class="card-desc">
                     Full record production and sound design. Followed the 2024 single <em>Zifiri</em>.
                   </p>
@@ -468,18 +572,40 @@
                     <span>Producer</span>
                     <span>Mixing</span>
                   </div>
+
+                  <!-- Platform Stream & Purchase Links -->
+                  <div class="work-platform-links" aria-label="Stream or purchase Gentrification">
+                    <a href="https://open.spotify.com/track/5E2f5CS6WBtti17PY8yDoX" target="_blank" rel="noopener noreferrer" class="platform-btn spotify" title="Stream on Spotify">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                      <span>Spotify</span>
+                    </a>
+                    <a href="https://music.apple.com/us/album/gentrification/1839544536?i=1839544537" target="_blank" rel="noopener noreferrer" class="platform-btn apple" title="Stream or Buy on Apple Music & iTunes">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.33c.64-.78 1.08-1.86.96-2.94-.93.04-2.06.62-2.72 1.4-.58.68-1.1 1.79-.96 2.84 1.04.08 2.08-.52 2.72-1.3"/></svg>
+                      <span>Apple / Buy</span>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Tolgay+Keskin+Gentrification" target="_blank" rel="noopener noreferrer" class="platform-btn youtube" title="Watch on YouTube">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                      <span>YouTube</span>
+                    </a>
+                  </div>
                 </div>
               </article>
 
-              <!-- Production: Tolgay Keskin - Zifiri -->
+              <!-- 5. Production: Tolgay Keskin - Zifiri -->
               <article class="work-card reveal-up" data-category="producer">
                 <div class="card-thumb">
                   <img src="assets/images/extracted_05.jpg" alt="Tolgay Keskin - Zifiri" loading="lazy">
                   <div class="card-badge">Production / 2024</div>
+                  <button type="button" class="thumb-preview-btn" data-spotify-uri="https://open.spotify.com/embed/track/23itzeDqnXW86CcYkzYSXO?utm_source=generator&theme=0" data-work-title="Tolgay Keskin — Zifiri (2024)">
+                    <span>▶ Preview Track</span>
+                  </button>
                 </div>
                 <div class="card-body">
+                  <div class="oa-card-header">
+                    <h3 class="card-title">Tolgay Keskin — Zifiri</h3>
+                    <span class="oa-year">2024</span>
+                  </div>
                   <span class="card-meta">Single · Alternative</span>
-                  <h3 class="card-title">Tolgay Keskin — Zifiri</h3>
                   <p class="card-desc">
                     Studio tracking, sound sculpting, and production for singer-songwriter Tolgay Keskin.
                   </p>
@@ -487,18 +613,40 @@
                     <span>Producer</span>
                     <span>Audio Engineering</span>
                   </div>
+
+                  <!-- Platform Stream & Purchase Links -->
+                  <div class="work-platform-links" aria-label="Stream or purchase Zifiri">
+                    <a href="https://open.spotify.com/track/23itzeDqnXW86CcYkzYSXO" target="_blank" rel="noopener noreferrer" class="platform-btn spotify" title="Stream on Spotify">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                      <span>Spotify</span>
+                    </a>
+                    <a href="https://music.apple.com/us/album/zifiri/1746679847?i=1746679848" target="_blank" rel="noopener noreferrer" class="platform-btn apple" title="Stream or Buy on Apple Music & iTunes">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.33c.64-.78 1.08-1.86.96-2.94-.93.04-2.06.62-2.72 1.4-.58.68-1.1 1.79-.96 2.84 1.04.08 2.08-.52 2.72-1.3"/></svg>
+                      <span>Apple / Buy</span>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Tolgay+Keskin+Zifiri" target="_blank" rel="noopener noreferrer" class="platform-btn youtube" title="Watch on YouTube">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                      <span>YouTube</span>
+                    </a>
+                  </div>
                 </div>
               </article>
 
-              <!-- Production: Bahar Çalışkan -->
+              <!-- 6. Production: Bahar Çalışkan -->
               <article class="work-card reveal-up" data-category="producer">
                 <div class="card-thumb">
                   <img src="assets/images/extracted_08.jpg" alt="Bahar Çalışkan - Solmuş" loading="lazy">
                   <div class="card-badge">Production / 2021</div>
+                  <button type="button" class="thumb-preview-btn" data-spotify-uri="https://open.spotify.com/embed/track/20Nh6R4OjE34pPre7Vkl3i?utm_source=generator&theme=0" data-work-title="Bahar Çalışkan — Solmuş (2021)">
+                    <span>▶ Preview Track</span>
+                  </button>
                 </div>
                 <div class="card-body">
+                  <div class="oa-card-header">
+                    <h3 class="card-title">Bahar Çalışkan — Solmuş</h3>
+                    <span class="oa-year">2021</span>
+                  </div>
                   <span class="card-meta">Single · Indie Soul</span>
-                  <h3 class="card-title">Bahar Çalışkan — Solmuş</h3>
                   <p class="card-desc">
                     Arranged, produced, and recorded into an intimate, warm acoustic atmosphere.
                   </p>
@@ -506,18 +654,40 @@
                     <span>Producer</span>
                     <span>Acoustic Arrangement</span>
                   </div>
+
+                  <!-- Platform Stream & Purchase Links -->
+                  <div class="work-platform-links" aria-label="Stream or purchase Solmuş">
+                    <a href="https://open.spotify.com/track/20Nh6R4OjE34pPre7Vkl3i" target="_blank" rel="noopener noreferrer" class="platform-btn spotify" title="Stream on Spotify">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                      <span>Spotify</span>
+                    </a>
+                    <a href="https://music.apple.com/us/album/solmu%C5%9F/1563544100?i=1563544102" target="_blank" rel="noopener noreferrer" class="platform-btn apple" title="Stream or Buy on Apple Music & iTunes">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.33c.64-.78 1.08-1.86.96-2.94-.93.04-2.06.62-2.72 1.4-.58.68-1.1 1.79-.96 2.84 1.04.08 2.08-.52 2.72-1.3"/></svg>
+                      <span>Apple / Buy</span>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Bahar+%C3%87al%C4%B1%C5%9Fkan+Solmu%C5%9F" target="_blank" rel="noopener noreferrer" class="platform-btn youtube" title="Watch on YouTube">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                      <span>YouTube</span>
+                    </a>
+                  </div>
                 </div>
               </article>
 
-              <!-- Instrumentalist: Ceren Gündoğdu -->
+              <!-- 7. Instrumentalist: Ceren Gündoğdu -->
               <article class="work-card reveal-up" data-category="guitarist">
                 <div class="card-thumb">
                   <img src="assets/images/extracted_07.jpg" alt="Ceren Gündoğdu - Ben Hep Seni Sevdim" loading="lazy">
                   <div class="card-badge">Guitarist / 2019</div>
+                  <button type="button" class="thumb-preview-btn" data-spotify-uri="https://open.spotify.com/embed/track/2o8ZXI5T2AbkG8sItVM8Ns?utm_source=generator&theme=0" data-work-title="Ceren Gündoğdu — Ben Hep Seni Sevdim (2019)">
+                    <span>▶ Preview Track</span>
+                  </button>
                 </div>
                 <div class="card-body">
+                  <div class="oa-card-header">
+                    <h3 class="card-title">Ceren Gündoğdu — Ben Hep Seni Sevdim</h3>
+                    <span class="oa-year">2019</span>
+                  </div>
                   <span class="card-meta">Single · Pop / Ballad</span>
-                  <h3 class="card-title">Ceren Gündoğdu — Ben Hep Seni Sevdim</h3>
                   <p class="card-desc">
                     Studio session guitar performance on Ceren Gündoğdu's popular single.
                   </p>
@@ -525,18 +695,40 @@
                     <span>Acoustic Guitar</span>
                     <span>Electric Guitar</span>
                   </div>
+
+                  <!-- Platform Stream & Purchase Links -->
+                  <div class="work-platform-links" aria-label="Stream or purchase Ben Hep Seni Sevdim">
+                    <a href="https://open.spotify.com/track/2o8ZXI5T2AbkG8sItVM8Ns" target="_blank" rel="noopener noreferrer" class="platform-btn spotify" title="Stream on Spotify">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                      <span>Spotify</span>
+                    </a>
+                    <a href="https://music.apple.com/us/album/ben-hep-seni-sevdim-akustik/1497225979?i=1497225982" target="_blank" rel="noopener noreferrer" class="platform-btn apple" title="Stream or Buy on Apple Music & iTunes">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.33c.64-.78 1.08-1.86.96-2.94-.93.04-2.06.62-2.72 1.4-.58.68-1.1 1.79-.96 2.84 1.04.08 2.08-.52 2.72-1.3"/></svg>
+                      <span>Apple / Buy</span>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Ceren+G%C3%BCndo%C4%9Fdu+Ben+Hep+Seni+Sevdim" target="_blank" rel="noopener noreferrer" class="platform-btn youtube" title="Watch on YouTube">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                      <span>YouTube</span>
+                    </a>
+                  </div>
                 </div>
               </article>
 
-              <!-- Instrumentalist: Simge Pınar -->
+              <!-- 8. Instrumentalist: Simge Pınar -->
               <article class="work-card reveal-up" data-category="guitarist">
                 <div class="card-thumb">
                   <img src="assets/images/extracted_09.jpg" alt="Simge Pınar - Güzel Şeyler" loading="lazy">
                   <div class="card-badge">Guitarist / 2019</div>
+                  <button type="button" class="thumb-preview-btn" data-spotify-uri="https://open.spotify.com/embed/track/3SqD3zZjUBPJbhtKsaotFc?utm_source=generator&theme=0" data-work-title="Simge Pınar — Yeni Bir Hayat (Live) & Güzel Şeyler">
+                    <span>▶ Preview Track</span>
+                  </button>
                 </div>
                 <div class="card-body">
-                  <span class="card-meta">Album & Live · Indie Folk</span>
-                  <h3 class="card-title">Simge Pınar — Yeni Bir Hayat (Live) & Güzel Şeyler</h3>
+                  <div class="oa-card-header">
+                    <h3 class="card-title">Simge Pınar — Yeni Bir Hayat &amp; Güzel Şeyler</h3>
+                    <span class="oa-year">2019</span>
+                  </div>
+                  <span class="card-meta">Album &amp; Live · Indie Folk</span>
                   <p class="card-desc">
                     Electric and hollowbody guitar performances for live sessions (Sofar Istanbul) and studio releases.
                   </p>
@@ -544,18 +736,40 @@
                     <span>Session Guitarist</span>
                     <span>Live Arranger</span>
                   </div>
+
+                  <!-- Platform Stream & Purchase Links -->
+                  <div class="work-platform-links" aria-label="Stream or purchase Simge Pınar releases">
+                    <a href="https://open.spotify.com/track/3SqD3zZjUBPJbhtKsaotFc" target="_blank" rel="noopener noreferrer" class="platform-btn spotify" title="Stream on Spotify">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                      <span>Spotify</span>
+                    </a>
+                    <a href="https://music.apple.com/us/album/g%C3%BCzel-%C5%9Feyler-akustik-ep/1526841488" target="_blank" rel="noopener noreferrer" class="platform-btn apple" title="Stream or Buy on Apple Music & iTunes">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.33c.64-.78 1.08-1.86.96-2.94-.93.04-2.06.62-2.72 1.4-.58.68-1.1 1.79-.96 2.84 1.04.08 2.08-.52 2.72-1.3"/></svg>
+                      <span>Apple / Buy</span>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=HSagelVvGlI" target="_blank" rel="noopener noreferrer" class="platform-btn youtube" title="Watch Official Session on YouTube">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                      <span>YouTube</span>
+                    </a>
+                  </div>
                 </div>
               </article>
 
-              <!-- Instrumentalist: Güler Özince -->
+              <!-- 9. Instrumentalist: Güler Özince -->
               <article class="work-card reveal-up" data-category="guitarist">
                 <div class="card-thumb">
                   <img src="assets/images/extracted_11.jpg" alt="Güler Özince - Benim Adım Hayat" loading="lazy">
                   <div class="card-badge">Guitarist / Collaborator</div>
+                  <button type="button" class="thumb-preview-btn" data-spotify-uri="https://open.spotify.com/embed/track/4edAGvuHqFPK8vjs3ghXpW?utm_source=generator&theme=0" data-work-title="Güler Özince — Benim Adım Hayat">
+                    <span>▶ Preview Track</span>
+                  </button>
                 </div>
                 <div class="card-body">
+                  <div class="oa-card-header">
+                    <h3 class="card-title">Güler Özince — Benim Adım Hayat</h3>
+                    <span class="oa-year">Single</span>
+                  </div>
                   <span class="card-meta">Single · Acoustic / Indie</span>
-                  <h3 class="card-title">Güler Özince — Benim Adım Hayat</h3>
                   <p class="card-desc">
                     Guitar arrangement and accompaniment for singer-songwriter Güler Özince.
                   </p>
@@ -563,24 +777,62 @@
                     <span>Acoustic Guitar</span>
                     <span>Arrangement</span>
                   </div>
+
+                  <!-- Platform Stream & Purchase Links -->
+                  <div class="work-platform-links" aria-label="Stream or purchase Benim Adım Hayat">
+                    <a href="https://open.spotify.com/track/4edAGvuHqFPK8vjs3ghXpW" target="_blank" rel="noopener noreferrer" class="platform-btn spotify" title="Stream on Spotify">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                      <span>Spotify</span>
+                    </a>
+                    <a href="https://music.apple.com/us/album/benim-ad%C4%B1m-hayat/1819317284?i=1819317285" target="_blank" rel="noopener noreferrer" class="platform-btn apple" title="Stream or Buy on Apple Music & iTunes">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.33c.64-.78 1.08-1.86.96-2.94-.93.04-2.06.62-2.72 1.4-.58.68-1.1 1.79-.96 2.84 1.04.08 2.08-.52 2.72-1.3"/></svg>
+                      <span>Apple / Buy</span>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=G%C3%BCler+%C3%96zince+Benim+Ad%C4%B1m+Hayat" target="_blank" rel="noopener noreferrer" class="platform-btn youtube" title="Watch on YouTube">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                      <span>YouTube</span>
+                    </a>
+                  </div>
                 </div>
               </article>
 
-              <!-- Pür Records / Nardis Jazz Vocal -->
+              <!-- 10. Pür Records / Nardis Jazz Vocal (Ruby) -->
               <article class="work-card reveal-up" data-category="guitarist">
                 <div class="card-thumb">
                   <img src="assets/images/extracted_04.jpg" alt="Nardis Jazz Club - 19th Jazz Vocal Competition" loading="lazy">
                   <div class="card-badge">Live Jazz / 2024</div>
+                  <button type="button" class="thumb-preview-btn" data-spotify-uri="https://open.spotify.com/embed/track/7cemW3Y26nLR6IrcciN4n7?utm_source=generator&theme=0" data-work-title="19th Nardis Jazz Vocal Competition — Ruby (Pür Records)">
+                    <span>▶ Preview Track</span>
+                  </button>
                 </div>
                 <div class="card-body">
+                  <div class="oa-card-header">
+                    <h3 class="card-title">19th Nardis Jazz Vocal Competition (Ruby)</h3>
+                    <span class="oa-year">2024</span>
+                  </div>
                   <span class="card-meta">Jazz Club Ensemble · Pür Records</span>
-                  <h3 class="card-title">19th Nardis Jazz Vocal Competition</h3>
                   <p class="card-desc">
-                    Ensemble guitarist at Turkey's premier jazz venue Nardis Jazz Club, collaborating with Pür Records.
+                    Ensemble guitarist at Turkey's premier jazz venue Nardis Jazz Club, recorded and released in collaboration with Pür Records (<em>Ruby</em> with Adar Geçimli).
                   </p>
                   <div class="card-tags">
                     <span>Jazz Guitar</span>
                     <span>Ensemble</span>
+                  </div>
+
+                  <!-- Platform Stream & Purchase Links -->
+                  <div class="work-platform-links" aria-label="Stream or purchase Ruby">
+                    <a href="https://open.spotify.com/track/7cemW3Y26nLR6IrcciN4n7" target="_blank" rel="noopener noreferrer" class="platform-btn spotify" title="Stream Ruby on Spotify">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+                      <span>Spotify</span>
+                    </a>
+                    <a href="https://music.apple.com/us/artist/adar-ge%C3%A7imli/1830529688" target="_blank" rel="noopener noreferrer" class="platform-btn apple" title="Stream or Buy on Apple Music & iTunes">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.33c.64-.78 1.08-1.86.96-2.94-.93.04-2.06.62-2.72 1.4-.58.68-1.1 1.79-.96 2.84 1.04.08 2.08-.52 2.72-1.3"/></svg>
+                      <span>Apple / Buy</span>
+                    </a>
+                    <a href="https://www.youtube.com/results?search_query=Adar+Ge%C3%A7imli+Erkan+Zeki+Ar+Ruby" target="_blank" rel="noopener noreferrer" class="platform-btn youtube" title="Watch on YouTube">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                      <span>YouTube</span>
+                    </a>
                   </div>
                 </div>
               </article>
@@ -592,15 +844,15 @@
     </section>
 
 
-    <!-- 03 // LIVE & STAGE GALLERY -->
+    <!-- 03 // LIVE & STAGE GALLERY (Fresh Nordic Slate Showcase) -->
     <section id="live-gallery" class="section live-section foldable-section" data-section-title="03 // LIVE & STAGE">
       <div class="section-container">
         
         <div class="section-header" role="button" tabindex="0" aria-expanded="true" aria-controls="content-live-gallery">
           <span class="section-watermark" aria-hidden="true">03</span>
           <div class="section-header-main">
-            <div class="section-pretitle">03 // STAGE & PERFORMANCE</div>
-            <h2 class="section-title">Live Atmosphere & Festivals</h2>
+            <div class="section-pretitle">03 // STAGE &amp; PERFORMANCE</div>
+            <h2 class="section-title">L<i>i</i>ve Atm<i>o</i>sphere &amp; Fest<i>i</i>vals</h2>
             <p class="section-subtitle">Moments from international tours, jazz festivals, and concert halls across Europe and Turkey.</p>
           </div>
           <div class="section-header-controls">
@@ -711,8 +963,8 @@
             <div class="video-highlights-block">
               <div class="block-header-flex reveal-up">
                 <div>
-                  <h3 class="block-heading">Documented Live Sessions & Broadcasts</h3>
-                  <p class="block-subheading">Click any performance to watch on YouTube in a new tab, or use the quick preview button to watch inline.</p>
+                  <h3 class="block-heading">Documented L<i>i</i>ve Sessi<i>o</i>ns &amp; Broadcasts</h3>
+                  <p class="block-subheading">Click any performance below to watch the official video on YouTube in a new tab.</p>
                 </div>
                 <a href="https://www.youtube.com/watch?v=PYSGcSNQ31A&list=PLGQhdL6kF5EwwzsOYn0Hay5Q1mp0iqGKw" target="_blank" rel="noopener noreferrer" class="btn btn-outline playlist-btn">
                   <span>View Full YouTube Playlist</span>
@@ -723,7 +975,7 @@
               <div class="video-grid">
                 
                 <!-- Video: Erkan Zeki Ar - Family -->
-                <a href="https://youtu.be/-bkj_ILZHN0" target="_blank" rel="noopener noreferrer" class="video-card reveal-up" data-video-id="-bkj_ILZHN0" data-video-title="Erkan Zeki Ar — Family">
+                <a href="https://youtu.be/-bkj_ILZHN0" target="_blank" rel="noopener noreferrer" class="video-card reveal-up">
                   <div class="video-thumb-wrap">
                     <img src="assets/images/video_family.jpg" alt="Erkan Zeki Ar - Family" loading="lazy">
                     <div class="play-overlay">
@@ -738,7 +990,7 @@
                 </a>
 
                 <!-- Video: Selin Sümbültepe - Akantüs -->
-                <a href="https://www.youtube.com/watch?v=H63IFpZecn0" target="_blank" rel="noopener noreferrer" class="video-card reveal-up" data-video-id="H63IFpZecn0" data-video-title="Selin Sümbültepe — Akantüs / Hatay'a Ağıt">
+                <a href="https://www.youtube.com/watch?v=H63IFpZecn0" target="_blank" rel="noopener noreferrer" class="video-card reveal-up">
                   <div class="video-thumb-wrap">
                     <img src="assets/images/extracted_17.jpg" alt="Selin Sümbültepe - Akantüs / Hatay'a Ağıt video session" loading="lazy">
                     <div class="play-overlay">
@@ -748,12 +1000,12 @@
                   </div>
                   <div class="video-details">
                     <h4>Selin Sümbültepe — Akantüs / Hatay'a Ağıt</h4>
-                    <p>Guitarist, Record, Mix & Mastering Engineer · YouTube ↗</p>
+                    <p>Guitarist, Record, Mix &amp; Mastering Engineer · YouTube ↗</p>
                   </div>
                 </a>
 
                 <!-- Video: Baturay Yarkın & Erkan Zeki Ar Duo -->
-                <a href="https://www.youtube.com/watch?v=uFofzaGF56E" target="_blank" rel="noopener noreferrer" class="video-card reveal-up" data-video-id="uFofzaGF56E" data-video-title="Erkan Zeki Ar & Baturay Yarkın Duo">
+                <a href="https://www.youtube.com/watch?v=uFofzaGF56E" target="_blank" rel="noopener noreferrer" class="video-card reveal-up">
                   <div class="video-thumb-wrap">
                     <img src="assets/images/extracted_20.jpg" alt="Baturay Yarkın & Erkan Zeki Ar Duo at Akbank Sanat" loading="lazy">
                     <div class="play-overlay">
@@ -762,13 +1014,13 @@
                     <div class="play-badge">AKBANK SANAT</div>
                   </div>
                   <div class="video-details">
-                    <h4>Erkan Zeki Ar & Baturay Yarkın Duo</h4>
+                    <h4>Erkan Zeki Ar &amp; Baturay Yarkın Duo</h4>
                     <p>Evin Caz Hali · Original jazz duo compositions · YouTube ↗</p>
                   </div>
                 </a>
 
                 <!-- Video: Erkan Zeki Ar - Sense (Sofar) -->
-                <a href="https://www.youtube.com/watch?v=vzaUtImUs04" target="_blank" rel="noopener noreferrer" class="video-card reveal-up" data-video-id="vzaUtImUs04" data-video-title="Erkan Zeki Ar — Sense (Live)">
+                <a href="https://www.youtube.com/watch?v=vzaUtImUs04" target="_blank" rel="noopener noreferrer" class="video-card reveal-up">
                   <div class="video-thumb-wrap">
                     <img src="assets/images/extracted_15.jpg" alt="Erkan Zeki Ar - Sense Live Sofar" loading="lazy">
                     <div class="play-overlay">
@@ -783,7 +1035,7 @@
                 </a>
 
                 <!-- Video: Suzin - Sır -->
-                <a href="https://www.youtube.com/watch?v=Ai3LVa8a90w" target="_blank" rel="noopener noreferrer" class="video-card reveal-up" data-video-id="Ai3LVa8a90w" data-video-title="Suzin — Sır // KİTAPÇI">
+                <a href="https://www.youtube.com/watch?v=Ai3LVa8a90w" target="_blank" rel="noopener noreferrer" class="video-card reveal-up">
                   <div class="video-thumb-wrap">
                     <img src="assets/images/extracted_16.jpg" alt="Suzin, Sır // KİTAPÇI video recording" loading="lazy">
                     <div class="play-overlay">
@@ -798,7 +1050,7 @@
                 </a>
 
                 <!-- Video: Simge Pınar -->
-                <a href="https://www.youtube.com/watch?v=HSagelVvGlI" target="_blank" rel="noopener noreferrer" class="video-card reveal-up" data-video-id="HSagelVvGlI" data-video-title="Simge Pınar — Yeni Bir Hayat (Live)">
+                <a href="https://www.youtube.com/watch?v=HSagelVvGlI" target="_blank" rel="noopener noreferrer" class="video-card reveal-up">
                   <div class="video-thumb-wrap">
                     <img src="assets/images/extracted_18.jpg" alt="Simge Pınar - Yeni Bir Hayat Sofar Sounds" loading="lazy">
                     <div class="play-overlay">
@@ -813,7 +1065,7 @@
                 </a>
 
                 <!-- Video: Selin Sümbültepe - Babylon -->
-                <a href="https://www.youtube.com/watch?v=byRBH-84nzs" target="_blank" rel="noopener noreferrer" class="video-card reveal-up" data-video-id="byRBH-84nzs" data-video-title="Selin Sümbültepe — Live at Babylon">
+                <a href="https://www.youtube.com/watch?v=byRBH-84nzs" target="_blank" rel="noopener noreferrer" class="video-card reveal-up">
                   <div class="video-thumb-wrap">
                     <img src="assets/images/extracted_19.jpg" alt="Selin Sümbültepe - Live at Babylon" loading="lazy">
                     <div class="play-overlay">
@@ -844,7 +1096,7 @@
           <span class="section-watermark" aria-hidden="true">04</span>
           <div class="section-header-main">
             <div class="section-pretitle">04 // LIVE ITINERARY</div>
-            <h2 class="section-title">Concerts & Tour Schedule</h2>
+            <h2 class="section-title">C<i>o</i>ncerts &amp; T<i>o</i>ur Sch<i>e</i>dule</h2>
             <p class="section-subtitle">Confirmed upcoming appearances in Istanbul and Paris, alongside completed European tour highlights.</p>
           </div>
           <div class="section-header-controls">
@@ -869,7 +1121,7 @@
                 <div class="tour-row header-row">
                   <div class="t-col date-col">DATE</div>
                   <div class="t-col city-col">CITY / COUNTRY</div>
-                  <div class="t-col venue-col">EVENT & ARTIST</div>
+                  <div class="t-col venue-col">EVENT &amp; ARTIST</div>
                   <div class="t-col status-col">STATUS</div>
                 </div>
 
@@ -945,7 +1197,7 @@
                 <div class="tour-row header-row">
                   <div class="t-col date-col">DATE</div>
                   <div class="t-col city-col">CITY / COUNTRY</div>
-                  <div class="t-col venue-col">VENUE & EVENT</div>
+                  <div class="t-col venue-col">VENUE &amp; EVENT</div>
                   <div class="t-col status-col">STATUS</div>
                 </div>
 
@@ -1038,19 +1290,19 @@
     </section>
 
 
-    <!-- 05 // BIOGRAPHY, EDUCATION & RESEARCH -->
-    <section id="biography" class="section bio-section foldable-section" data-section-title="05 // BIOGRAPHY">
+    <!-- 05 // BIOGRAPHY, EDUCATION & RESEARCH (Fresh Warm Alabaster Editorial Theme) -->
+    <section id="biography" class="section section-light bio-section foldable-section" data-section-title="05 // BIOGRAPHY">
       <div class="section-container">
         
         <div class="section-header" role="button" tabindex="0" aria-expanded="true" aria-controls="content-biography">
           <span class="section-watermark" aria-hidden="true">05</span>
           <div class="section-header-main">
-            <div class="section-pretitle">05 // PROFILE & ROLES</div>
-            <h2 class="section-title">Biography & Academic Depth</h2>
+            <div class="section-pretitle">05 // PROFILE &amp; ROLES</div>
+            <h2 class="section-title">Bi<i>o</i>graphy &amp; Acad<i>e</i>mic Depth</h2>
             <p class="section-subtitle">Bridging sociological analysis with intuitive musical craftsmanship.</p>
           </div>
           <div class="section-header-controls">
-            <span class="folded-summary-pill">Artist Statement · M.A. Thesis & Roles</span>
+            <span class="folded-summary-pill">Artist Statement · M.A. Thesis &amp; Roles</span>
             <button type="button" class="section-fold-btn" aria-label="Toggle section visibility">
               <span class="fold-btn-label">Fold</span>
               <span class="fold-icon" aria-hidden="true"></span>
@@ -1081,7 +1333,7 @@
                     <p>Ensemble curation, live arrangement, repertoire direction (Selin Sümbültepe and touring collectives).</p>
                   </div>
                   <div class="role-box">
-                    <h4>Audio Engineer & Producer (2018–Present)</h4>
+                    <h4>Audio Engineer &amp; Producer (2018–Present)</h4>
                     <p>Tracking, mixing, mastering, original theatre (<em>Apsolit</em>) and film (<em>Bağlanma Hali</em>) scores.</p>
                   </div>
                   <div class="role-box">
@@ -1098,7 +1350,7 @@
                   <ul class="timeline-list">
                     <li>
                       <span class="period">2018 – 2021</span>
-                      <strong>M.A. Music & Performing Arts</strong>
+                      <strong>M.A. Music &amp; Performing Arts</strong>
                       <span class="inst">Yıldız Technical University, Istanbul</span>
                       <span class="note">Thesis: "Alienation in Music Production"</span>
                     </li>
@@ -1111,24 +1363,24 @@
                 </div>
 
                 <div class="sub-block">
-                  <h4>Masterclasses & Mentors</h4>
+                  <h4>Masterclasses &amp; Mentors</h4>
                   <ul class="skills-bullets">
-                    <li><strong>Randy Esen (2024):</strong> Jazz Singing & Improvisation</li>
-                    <li><strong>Adham Farid (2018, 2019, 2024):</strong> Mixing & Mastering</li>
-                    <li><strong>Cenk Erdoğan (2017):</strong> Music Production & Fretless Techniques</li>
+                    <li><strong>Randy Esen (2024):</strong> Jazz Singing &amp; Improvisation</li>
+                    <li><strong>Adham Farid (2018, 2019, 2024):</strong> Mixing &amp; Mastering</li>
+                    <li><strong>Cenk Erdoğan (2017):</strong> Music Production &amp; Fretless Techniques</li>
                     <li><strong>Dave Allen (2016):</strong> Modern Jazz Guitar</li>
                     <li><strong>Nezih Yeşilnil:</strong> Early Professional Collaborations</li>
                   </ul>
                 </div>
 
                 <div class="sub-block">
-                  <h4>Disciplines & Tools</h4>
+                  <h4>Disciplines &amp; Tools</h4>
                   <div class="skills-chips">
                     <span>Acoustic Guitar</span>
                     <span>Electric Guitar</span>
                     <span>Fretless Guitar</span>
                     <span>Bass</span>
-                    <span>Keys & Piano</span>
+                    <span>Keys &amp; Piano</span>
                     <span>Ableton Live</span>
                     <span>Logic Pro</span>
                     <span>DaVinci Resolve</span>
@@ -1153,15 +1405,15 @@
     </section>
 
 
-    <!-- 06 // PRESS & CRITIQUE -->
-    <section id="press" class="section press-section foldable-section" data-section-title="06 // PRESS">
+    <!-- 06 // PRESS & CRITIQUE (Fresh Warm Alabaster Editorial Theme) -->
+    <section id="press" class="section section-light press-section foldable-section" data-section-title="06 // PRESS">
       <div class="section-container">
         
         <div class="section-header" role="button" tabindex="0" aria-expanded="true" aria-controls="content-press">
           <span class="section-watermark" aria-hidden="true">06</span>
           <div class="section-header-main">
-            <div class="section-pretitle">06 // PRESS & REVIEWS</div>
-            <h2 class="section-title">Critical Acclaim & Media</h2>
+            <div class="section-pretitle">06 // PRESS &amp; REVIEWS</div>
+            <h2 class="section-title">Cr<i>i</i>tical Accl<i>a</i>im &amp; M<i>e</i>dia</h2>
             <p class="section-subtitle">Excerpts from leading jazz journalists, cultural critics, and newspapers.</p>
           </div>
           <div class="section-header-controls">
@@ -1253,7 +1505,7 @@
     </section>
 
 
-    <!-- 07 // CONTACT & INQUIRIES -->
+    <!-- 07 // CONTACT & INQUIRIES (Preserving the exact 3 cards without contact pop-up) -->
     <section id="contact" class="section contact-section foldable-section" data-section-title="07 // CONTACT">
       <div class="section-container">
         
@@ -1261,11 +1513,11 @@
           <span class="section-watermark" aria-hidden="true">07</span>
           <div class="section-header-main">
             <div class="section-pretitle">07 // GET IN TOUCH</div>
-            <h2 class="section-title">Direct Inquiries & Booking</h2>
+            <h2 class="section-title">Dir<i>e</i>ct Inqu<i>i</i>ries &amp; B<i>o</i>oking</h2>
             <p class="section-subtitle">For concerts, international touring, music production, arrangements, and education.</p>
           </div>
           <div class="section-header-controls">
-            <span class="folded-summary-pill">Direct Email · Social & Bases</span>
+            <span class="folded-summary-pill">Direct Email · Social &amp; Bases</span>
             <button type="button" class="section-fold-btn" aria-label="Toggle section visibility">
               <span class="fold-btn-label">Fold</span>
               <span class="fold-icon" aria-hidden="true"></span>
@@ -1287,7 +1539,7 @@
                 </div>
 
                 <div class="info-card">
-                  <span class="info-label">Social & Streaming</span>
+                  <span class="info-label">Social &amp; Streaming</span>
                   <div class="social-pills-row">
                     <a href="https://instagram.com/erkanzekiar" target="_blank" rel="noopener noreferrer" class="social-pill">
                       <span>Instagram</span>
@@ -1302,8 +1554,8 @@
 
                 <div class="info-card location-card">
                   <span class="info-label">Bases of Activity</span>
-                  <p class="info-value">Istanbul, Turkey & Germany (confirmed 2026 tour)</p>
-                  <span class="avail-badge">Available for European & International Bookings</span>
+                  <p class="info-value">Istanbul, Turkey &amp; Germany (confirmed 2026 tour)</p>
+                  <span class="avail-badge">Available for European &amp; International Bookings</span>
                 </div>
               </div>
             </div>
@@ -1313,6 +1565,28 @@
 
       </div>
     </section>
+
+    <!-- Tigran Hamasyan Style Kinetic Typography Marquee -->
+    <div class="kinetic-marquee" aria-hidden="true">
+      <div class="kinetic-marquee-track">
+        <span>#erkanzekiar</span>
+        <span class="marquee-dot">·</span>
+        <span>Berlin — Istanbul</span>
+        <span class="marquee-dot">·</span>
+        <span>Tecelli &amp; Kontrast</span>
+        <span class="marquee-dot">·</span>
+        <span>Jazz / Production / Fretless &amp; Electric Guitar</span>
+        <span class="marquee-dot">·</span>
+        <span>#erkanzekiar</span>
+        <span class="marquee-dot">·</span>
+        <span>Berlin — Istanbul</span>
+        <span class="marquee-dot">·</span>
+        <span>Tecelli &amp; Kontrast</span>
+        <span class="marquee-dot">·</span>
+        <span>Jazz / Production / Fretless &amp; Electric Guitar</span>
+        <span class="marquee-dot">·</span>
+      </div>
+    </div>
 
   </main>
 

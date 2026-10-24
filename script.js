@@ -256,6 +256,48 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Inline 1-Click Spotify Track Preview on Every Catalogue Work
+  const previewBtns = document.querySelectorAll('.thumb-preview-btn');
+  const spotifyIframe = document.getElementById('spotify-embed-iframe');
+  const playerActiveTitle = document.getElementById('player-active-title');
+  const playerStatusEyebrow = document.getElementById('player-status-eyebrow');
+  const cataloguePlayerBar = document.getElementById('catalogue-player-bar');
+
+  previewBtns.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const spotifyUri = btn.getAttribute('data-spotify-uri');
+      const workTitle = btn.getAttribute('data-work-title');
+
+      if (spotifyIframe && spotifyUri) {
+        spotifyIframe.src = spotifyUri;
+      }
+      if (playerActiveTitle && workTitle) {
+        playerActiveTitle.textContent = workTitle;
+      }
+      if (playerStatusEyebrow) {
+        playerStatusEyebrow.textContent = 'NOW PREVIEWING TRACK';
+      }
+
+      previewBtns.forEach((b) => {
+        b.classList.remove('is-playing');
+        const span = b.querySelector('span');
+        if (span) span.textContent = '▶ Preview Track';
+      });
+
+      btn.classList.add('is-playing');
+      const activeSpan = btn.querySelector('span');
+      if (activeSpan) activeSpan.textContent = '♫ Loaded in Player ↑';
+
+      if (cataloguePlayerBar) {
+        const rect = cataloguePlayerBar.getBoundingClientRect();
+        if (rect.top < 0 || rect.bottom > window.innerHeight) {
+          cataloguePlayerBar.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }
+    });
+  });
+
 
   // =========================================================================
   // 6. INTERACTIVE LIGHTBOX WITH PREV/NEXT, KEYBOARD & SWIPE

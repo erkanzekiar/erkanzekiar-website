@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1c2430"/>
+      <stop offset="100%" stop-color="#11161e"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="20" y1="18" x2="100" y2="102" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#e8c882"/>
+      <stop offset="50%" stop-color="#c89b4b"/>
+      <stop offset="100%" stop-color="#a2742a"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded Nordic Slate Emblem Base -->
+  <rect x="4" y="4" width="112" height="112" rx="28" fill="url(#bgGrad)" stroke="url(#goldGrad)" stroke-width="3.5"/>
+  <!-- Outer Acoustic Resonance Ring (Ólafur-inspired organic arc) -->
+  <path d="M 32 36 A 36 36 0 1 0 88 36" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round" opacity="0.45"/>
+  <path d="M 42 26 A 36 36 0 0 1 78 26" stroke="#8ab4b0" stroke-width="2.5" stroke-linecap="round" opacity="0.7"/>
+  <!-- Stylized Fretless / Archtop Soundhole & Strings + Geometric Monogram -->
+  <circle cx="60" cy="60" r="24" stroke="url(#goldGrad)" stroke-width="3.5"/>
+  <!-- Three Harmonic Strings Crossing the Soundhole -->
+  <line x1="48" y1="20" x2="48" y2="100" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+  <line x1="60" y1="16" x2="60" y2="104" stroke="#f5efe6" stroke-width="3" stroke-linecap="round"/>
+  <line x1="72" y1="20" x2="72" y2="100" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+  <!-- Archtop f-hole / wave curves on left and right -->
+  <path d="M 25 48 C 31 54, 31 66, 25 72" stroke="url(#goldGrad)" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M 95 48 C 89 54, 89 66, 95 72" stroke="url(#goldGrad)" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Center Harmonic Node -->
+  <circle cx="60" cy="60" r="5.5" fill="#f5efe6"/>
+</svg>
