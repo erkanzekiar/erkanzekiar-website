@@ -648,12 +648,12 @@ main {
 .section-header {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1.35fr auto;
+  grid-template-columns: 1.25fr minmax(320px, 420px) auto;
   align-items: center;
   gap: 2.5rem;
   margin-bottom: 3.5rem;
-  padding: 2.4rem 2.8rem;
-  border-radius: 24px;
+  padding: 2.5rem 2.8rem;
+  border-radius: 22px;
   border: 1px solid rgba(235, 100, 52, 0.24);
   background: var(--bg-dark-card);
   cursor: pointer;
@@ -665,22 +665,6 @@ main {
               border-color 0.35s ease,
               box-shadow 0.35s ease,
               transform 0.3s ease;
-}
-
-/* When folded: the card occupies roughly half the height of the main page (viewport height ~48-50vh) */
-.section.is-folded .section-header {
-  margin-bottom: 0;
-  min-height: clamp(380px, 48vh, 520px);
-  padding: 3.2rem 3.5rem;
-  border-radius: 28px;
-  align-items: center;
-}
-
-/* When expanded: header transitions smoothly to title on left and collapse controls on the right */
-.section:not(.is-folded) .section-header {
-  grid-template-columns: 1fr auto;
-  padding: 2.2rem 2.8rem;
-  margin-bottom: 3.5rem;
 }
 
 /* On Warm Stone sections, the Section Header uses obsidian dark & copper gold for bold contrast! */
@@ -702,6 +686,10 @@ main {
   outline-offset: 4px;
 }
 
+.section.is-folded .section-header {
+  margin-bottom: 0;
+}
+
 .section-watermark {
   display: none !important;
 }
@@ -714,64 +702,62 @@ main {
 
 .section-pretitle {
   font-family: var(--font-heading);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-weight: 800;
   letter-spacing: 0.2em;
   color: var(--accent-gold);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.45rem;
 }
 
 .section-title {
   font-family: var(--font-heading);
-  font-size: 2.35rem;
+  font-size: 2.25rem;
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.18;
   color: var(--text-main);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.45rem;
   transition: font-size 0.45s cubic-bezier(0.16, 1, 0.3, 1),
               margin-bottom 0.45s ease;
 }
 
 .section.is-folded .section-title {
-  font-size: 2.15rem;
-  margin-bottom: 0.45rem;
+  font-size: 2.05rem;
+  margin-bottom: 0.35rem;
 }
 
 .section-subtitle {
-  font-size: 0.96rem;
+  font-size: 0.94rem;
   color: var(--text-muted);
-  max-width: 520px;
+  max-width: 580px;
   line-height: 1.6;
   transition: opacity 0.35s ease;
 }
 
 .section.is-folded .section-subtitle {
-  font-size: 0.94rem;
+  font-size: 0.90rem;
   opacity: 0.92;
 }
 
-/* Fixed and anchored controls on the far right */
 .section-header-controls {
   position: relative;
   z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 0.85rem;
+  gap: 0.65rem;
   flex-shrink: 0;
-  justify-self: end;
 }
 
 .folded-summary-pill {
   font-family: var(--font-heading);
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.06em;
   color: var(--accent-gold);
   background: rgba(235, 100, 52, 0.12);
-  border: 1px solid rgba(235, 100, 52, 0.35);
-  padding: 0.4rem 0.95rem;
+  border: 1px solid rgba(235, 100, 52, 0.32);
+  padding: 0.35rem 0.85rem;
   border-radius: var(--radius-pill);
   white-space: nowrap;
   pointer-events: none;
@@ -784,7 +770,7 @@ main {
 }
 
 /* ==========================================================================
-   FOLDER MEDIA HIGHLIGHT PREVIEWS (Rich highlight content extending right)
+   FOLDER MEDIA HIGHLIGHT PREVIEWS (Substantial Highlight Content inside Folders)
    ========================================================================== */
 
 .folder-peek-popup {
@@ -792,17 +778,17 @@ main {
   z-index: 3;
   display: flex;
   align-items: center;
-  gap: 1.25rem;
-  padding: 1.25rem 1.6rem;
-  background: rgba(18, 20, 29, 0.95);
+  gap: 1rem;
+  padding: 0.85rem 1.25rem 0.85rem 0.85rem;
+  background: rgba(22, 25, 36, 0.96);
   border: 1px solid rgba(235, 100, 52, 0.35);
-  border-radius: 20px;
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  box-shadow: 0 16px 38px -8px rgba(0, 0, 0, 0.45);
-  width: 100%;
-  max-width: 580px;
+  border-radius: 16px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 10px 26px -6px rgba(0, 0, 0, 0.35);
   min-width: 320px;
+  max-width: 420px;
+  flex-shrink: 0;
   opacity: 1 !important;
   transform: none !important;
   pointer-events: auto !important;
@@ -811,25 +797,25 @@ main {
 }
 
 .section-light .folder-peek-popup {
-  background: rgba(18, 20, 29, 0.95);
+  background: rgba(22, 25, 36, 0.96);
   border-color: rgba(235, 100, 52, 0.35);
 }
 
 .folder-peek-popup:hover {
   border-color: var(--accent-gold);
   transform: translateY(-2px);
-  box-shadow: 0 18px 42px -6px rgba(235, 100, 52, 0.35);
+  box-shadow: 0 14px 34px -4px rgba(235, 100, 52, 0.35);
 }
 
 .peek-media-thumb {
   position: relative;
-  width: 58px;
-  height: 58px;
-  border-radius: 14px;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
   overflow: hidden;
   flex-shrink: 0;
   background: #0c0d12;
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .peek-media-thumb img {
@@ -857,7 +843,7 @@ main {
 
 .peek-cal-month {
   font-family: var(--font-heading);
-  font-size: 0.6rem;
+  font-size: 0.54rem;
   font-weight: 800;
   letter-spacing: 0.12em;
   color: var(--accent-gold);
@@ -866,7 +852,7 @@ main {
 
 .peek-cal-day {
   font-family: var(--font-heading);
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 800;
   color: #ffffff;
 }
@@ -883,7 +869,7 @@ main {
 
 .peek-badge-glyph {
   font-family: var(--font-heading);
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 800;
   letter-spacing: -0.02em;
 }
@@ -897,7 +883,7 @@ main {
   background: rgba(0, 0, 0, 0.42);
   color: var(--accent-gold);
   font-family: var(--font-heading);
-  font-size: 0.72rem;
+  font-size: 0.62rem;
   font-weight: 700;
   letter-spacing: 0.04em;
 }
@@ -905,16 +891,15 @@ main {
 .peek-content {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  gap: 0.12rem;
   min-width: 0;
-  flex: 1;
 }
 
 .peek-eyebrow-row {
   display: flex;
   align-items: center;
-  gap: 0.45rem;
-  font-size: 0.64rem;
+  gap: 0.4rem;
+  font-size: 0.62rem;
   letter-spacing: 0.12em;
   font-weight: 700;
   text-transform: uppercase;
@@ -938,75 +923,39 @@ main {
 
 .peek-title {
   font-family: var(--font-heading);
-  font-size: 0.98rem;
+  font-size: 0.82rem;
   font-weight: 700;
-  color: #ffffff;
-  letter-spacing: -0.01em;
-  line-height: 1.35;
+  color: var(--text-main);
+  white-space: nowrap;
   overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  letter-spacing: -0.01em;
 }
 
 .peek-sub {
-  font-size: 0.78rem;
-  color: #9aa2b2;
-  line-height: 1.4;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-}
-
-.peek-tags-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-  margin-top: 0.55rem;
-}
-
-.peek-chip {
-  font-family: var(--font-heading);
   font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  color: #cbd3e1;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  padding: 0.22rem 0.65rem;
-  border-radius: var(--radius-pill);
+  color: var(--text-muted);
   white-space: nowrap;
-  transition: var(--transition-fast);
-}
-
-.peek-chip.highlight {
-  color: var(--accent-gold);
-  border-color: rgba(235, 100, 52, 0.45);
-  background: rgba(235, 100, 52, 0.14);
-}
-
-.folder-peek-popup:hover .peek-chip {
-  border-color: rgba(255, 255, 255, 0.24);
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .peek-action-hint {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  margin-left: 0.25rem;
-  padding: 0.4rem 0.75rem;
+  gap: 0.3rem;
+  margin-left: 0.35rem;
+  padding: 0.32rem 0.62rem;
   background: rgba(235, 100, 52, 0.14);
-  border: 1px solid rgba(235, 100, 52, 0.35);
+  border: 1px solid rgba(235, 100, 52, 0.32);
   border-radius: var(--radius-pill);
   font-family: var(--font-heading);
-  font-size: 0.68rem;
+  font-size: 0.64rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--accent-gold-light);
   flex-shrink: 0;
-  align-self: center;
   transition: var(--transition-fast);
 }
 
@@ -1023,20 +972,19 @@ main {
 .section-fold-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  padding: 0.75rem 1.6rem;
+  gap: 0.65rem;
+  padding: 0.65rem 1.35rem;
   border-radius: var(--radius-pill);
-  background: rgba(235, 100, 52, 0.18);
-  border: 1px solid rgba(235, 100, 52, 0.5);
+  background: rgba(235, 100, 52, 0.16);
+  border: 1px solid rgba(235, 100, 52, 0.45);
   color: #ffffff;
   font-family: var(--font-heading);
-  font-size: 0.8rem;
+  font-size: 0.76rem;
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   cursor: pointer;
   white-space: nowrap;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   transition: var(--transition-smooth);
 }
 
@@ -2820,9 +2768,7 @@ main {
   }
 
   .section.is-folded .section-header {
-    min-height: auto;
     align-items: stretch;
-    padding: 2.2rem 1.6rem;
   }
 
   .section-header-controls {
