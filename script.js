@@ -551,4 +551,46 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
+
+  // =========================================================================
+  // 11. SCROLL-TRIGGERED FOLDER MEDIA POP-UPS
+  // Emits minimal & significant media previews from folders as they scroll into view
+  // =========================================================================
+  const folderPopups = document.querySelectorAll('.folder-peek-popup');
+  if (folderPopups.length > 0) {
+    if ('IntersectionObserver' in window) {
+      const popupObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-popped');
+          } else {
+            entry.target.classList.remove('is-popped');
+          }
+        });
+      }, {
+        rootMargin: '0px 0px -10% 0px',
+        threshold: 0.1
+      });
+
+      folderPopups.forEach((popup) => {
+        popupObserver.observe(popup);
+      });
+    } else {
+      folderPopups.forEach((popup) => popup.classList.add('is-popped'));
+    }
+
+    // Clicking the peek popup smoothly expands its parent folder
+    folderPopups.forEach((popup) => {
+      popup.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const section = popup.closest('.foldable-section');
+        if (section) {
+          setSectionFolded(section, false);
+          section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  }
+
 });
+
