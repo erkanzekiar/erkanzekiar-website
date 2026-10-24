@@ -6,34 +6,57 @@
    ========================================================================== */
 
 :root {
-  /* Original Signature Dark & Burnished Gold Palette */
-  --bg-dark: #0c0d12;
-  --bg-dark-secondary: #13151d;
-  --bg-dark-card: #171a24;
-  --bg-dark-card-hover: #1d212e;
+  /* ========================================================================
+     ERKAN ZEKI AR — OFFICIAL LIVE CONCERT TITLE PALETTE
+     Directly matched from the BOVA live performance title typography:
+     - Deep Stage Midnight Background: #090a0e / #0f1017
+     - Crisp Stark White Headings & Names: #ffffff
+     - Fiery Stage Orange (PIANO:, BASS:, DRUMS:): #eb6434 / #f47647
+     - Warm Terracotta Copper ("FAMILY"): #cf8868 / #c0815b
+     ======================================================================== */
 
-  /* Warm Architectural Stone (not stark white/cream) for Alternating Contrast */
-  --bg-stone: #e8e2d5;
-  --bg-stone-secondary: #ded7c8;
-  --bg-stone-card: #f5f1e8;
+  /* 1. Backgrounds (Cinematic Stage Atmosphere) */
+  --bg-dark: #090a0e;
+  --bg-dark-secondary: #0f1017;
+  --bg-dark-card: #141620;
+  --bg-dark-card-hover: #1c1e2b;
 
-  --text-main: #f4f4f6;
-  --text-muted: #a3a9b5;
-  --text-subtle: #6e7585;
+  /* Subtle alternating section rhythm (02 Catalogue, 04 Tour, 06 Press) */
+  --bg-stone: #0d0e14;
+  --bg-stone-secondary: #13151f;
+  --bg-stone-card: #181a25;
 
-  --text-dark-main: #12141a;
-  --text-dark-muted: #464c58;
-  --text-dark-subtle: #687080;
+  /* 2. Text (Crisp White & Stage Neutrals) */
+  --text-main: #ffffff;
+  --text-muted: #a4abb8;
+  --text-subtle: #707684;
 
-  /* Original Burnished Gold Accents */
-  --accent-gold: #c5a059;
-  --accent-gold-light: #e0be7a;
-  --accent-gold-deep: #96722e;
-  --accent-gold-dim: rgba(197, 160, 89, 0.15);
+  --text-dark-main: #ffffff;
+  --text-dark-muted: #a4abb8;
+  --text-dark-subtle: #707684;
 
-  --border-subtle: rgba(255, 255, 255, 0.1);
-  --border-stone: rgba(18, 20, 26, 0.14);
-  --border-hover: rgba(197, 160, 89, 0.5);
+  /* 3. Primary Accent: Vibrant Live Stage Orange (from PIANO: BASS: DRUMS: in photo) */
+  --accent-orange: #eb6434;
+  --accent-orange-light: #f47647;
+  --accent-orange-deep: #c44c1f;
+  --accent-orange-dim: rgba(235, 100, 52, 0.16);
+
+  /* 4. Secondary Accent: Warm Terracotta Copper (from "FAMILY" in photo) */
+  --accent-copper: #cf8868;
+  --accent-copper-light: #df9b7e;
+  --accent-copper-deep: #ab6647;
+  --accent-copper-dim: rgba(207, 136, 104, 0.16);
+
+  /* Aliased accents to seamlessly upgrade all components across the site */
+  --accent-gold: var(--accent-orange);
+  --accent-gold-light: var(--accent-orange-light);
+  --accent-gold-deep: var(--accent-orange-deep);
+  --accent-gold-dim: var(--accent-orange-dim);
+
+  /* 5. Borders & Glows */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-stone: rgba(235, 100, 52, 0.2);
+  --border-hover: rgba(235, 100, 52, 0.55);
 
   --font-heading: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
   --font-body: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
@@ -47,9 +70,9 @@
   --radius-lg: 20px;
   --radius-pill: 9999px;
 
-  --shadow-card: 0 18px 42px -10px rgba(0, 0, 0, 0.45);
-  --shadow-stone-card: 0 18px 40px -12px rgba(18, 20, 26, 0.16);
-  --shadow-glow: 0 0 32px rgba(197, 160, 89, 0.25);
+  --shadow-card: 0 18px 42px -10px rgba(0, 0, 0, 0.6);
+  --shadow-stone-card: 0 18px 40px -12px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 32px rgba(235, 100, 52, 0.32);
 }
 
 /* Base Reset */
@@ -123,7 +146,7 @@ body {
 .glow-1 {
   top: -10vw;
   right: -10vw;
-  background: radial-gradient(circle, rgba(197, 160, 89, 0.35) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(235, 100, 52, 0.35) 0%, transparent 70%);
 }
 
 .glow-2 {
@@ -160,7 +183,7 @@ body {
   height: 100%;
   width: 0%;
   background: linear-gradient(90deg, var(--accent-gold), var(--accent-gold-light));
-  box-shadow: 0 0 12px rgba(197, 160, 89, 0.65);
+  box-shadow: 0 0 12px rgba(235, 100, 52, 0.65);
   transition: width 0.1s ease-out;
 }
 
@@ -293,12 +316,12 @@ body {
   height: 6px;
   border-radius: 50%;
   background: var(--accent-gold);
-  box-shadow: 0 0 8px rgba(197, 160, 89, 0.65);
+  box-shadow: 0 0 8px rgba(235, 100, 52, 0.65);
 }
 
 .corner-menu-btn {
   background: rgba(23, 26, 36, 0.95);
-  border: 1px solid rgba(197, 160, 89, 0.35);
+  border: 1px solid rgba(235, 100, 52, 0.35);
   border-radius: var(--radius-pill);
   color: var(--text-main);
   padding: 0.55rem 1.15rem;
@@ -418,8 +441,8 @@ body {
 }
 
 .fold-all-btn {
-  background: rgba(197, 160, 89, 0.12);
-  border: 1px solid rgba(197, 160, 89, 0.35);
+  background: rgba(235, 100, 52, 0.12);
+  border: 1px solid rgba(235, 100, 52, 0.35);
   color: var(--accent-gold);
   font-family: var(--font-heading);
   font-size: 0.68rem;
@@ -482,8 +505,8 @@ body {
 
 .nav-link:hover,
 .nav-link.active {
-  background: rgba(197, 160, 89, 0.1);
-  border-color: rgba(197, 160, 89, 0.4);
+  background: rgba(235, 100, 52, 0.1);
+  border-color: rgba(235, 100, 52, 0.4);
   transform: translateX(6px);
 }
 
@@ -613,7 +636,7 @@ main {
 .section-light .section-header {
   background: #14161f;
   color: var(--text-main);
-  border: 1px solid rgba(197, 160, 89, 0.28);
+  border: 1px solid rgba(235, 100, 52, 0.28);
   box-shadow: 0 18px 38px -12px rgba(12, 13, 18, 0.28);
 }
 
@@ -648,7 +671,7 @@ main {
 }
 
 .section-header:hover .section-watermark {
-  color: rgba(197, 160, 89, 0.09);
+  color: rgba(235, 100, 52, 0.09);
   transform: translateY(-50%) scale(1.04);
 }
 
@@ -711,8 +734,8 @@ main {
   font-weight: 700;
   letter-spacing: 0.04em;
   color: var(--accent-gold-light);
-  background: rgba(197, 160, 89, 0.14);
-  border: 1px solid rgba(197, 160, 89, 0.35);
+  background: rgba(235, 100, 52, 0.14);
+  border: 1px solid rgba(235, 100, 52, 0.35);
   padding: 0.38rem 0.85rem;
   border-radius: var(--radius-pill);
   opacity: 0;
@@ -738,7 +761,7 @@ main {
   gap: 0.85rem;
   padding: 0.48rem 0.95rem 0.48rem 0.48rem;
   background: rgba(18, 20, 29, 0.94);
-  border: 1px solid rgba(197, 160, 89, 0.35);
+  border: 1px solid rgba(235, 100, 52, 0.35);
   border-radius: var(--radius-md);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
@@ -757,7 +780,7 @@ main {
 
 .section-light .folder-peek-popup {
   background: #0d0f17;
-  border-color: rgba(197, 160, 89, 0.45);
+  border-color: rgba(235, 100, 52, 0.45);
   box-shadow: 0 14px 28px -6px rgba(0, 0, 0, 0.55);
 }
 
@@ -771,7 +794,7 @@ main {
 .folder-peek-popup:hover {
   border-color: var(--accent-gold);
   transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 14px 34px -4px rgba(197, 160, 89, 0.35);
+  box-shadow: 0 14px 34px -4px rgba(235, 100, 52, 0.35);
 }
 
 .peek-media-thumb {
@@ -802,7 +825,7 @@ main {
   align-items: center;
   justify-content: center;
   background: #14161f;
-  border: 1px solid rgba(197, 160, 89, 0.45);
+  border: 1px solid rgba(235, 100, 52, 0.45);
   line-height: 1;
   text-align: center;
   user-select: none;
@@ -829,7 +852,7 @@ main {
   align-items: center;
   justify-content: center;
   background: #14161f;
-  border: 1px solid rgba(197, 160, 89, 0.45);
+  border: 1px solid rgba(235, 100, 52, 0.45);
   color: var(--accent-gold);
   user-select: none;
 }
@@ -913,8 +936,8 @@ main {
   gap: 0.3rem;
   margin-left: 0.35rem;
   padding: 0.32rem 0.62rem;
-  background: rgba(197, 160, 89, 0.14);
-  border: 1px solid rgba(197, 160, 89, 0.32);
+  background: rgba(235, 100, 52, 0.14);
+  border: 1px solid rgba(235, 100, 52, 0.32);
   border-radius: var(--radius-pill);
   font-family: var(--font-heading);
   font-size: 0.64rem;
@@ -1081,7 +1104,7 @@ main {
 .btn-outline:hover {
   border-color: var(--accent-gold);
   color: var(--accent-gold-light);
-  background: rgba(197, 160, 89, 0.1);
+  background: rgba(235, 100, 52, 0.1);
   transform: translateY(-2px);
 }
 
@@ -1149,8 +1172,8 @@ main {
   max-height: 740px;
   transform: translateY(-50%);
   background:
-    radial-gradient(ellipse 55% 60% at 50% 40%, rgba(214, 168, 88, 0.28) 0%, transparent 70%),
-    radial-gradient(ellipse 60% 60% at 80% 80%, rgba(40, 60, 95, 0.32) 0%, transparent 70%);
+    radial-gradient(ellipse 55% 60% at 50% 40%, rgba(235, 100, 52, 0.28) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 60% at 80% 80%, rgba(207, 136, 104, 0.24) 0%, transparent 70%);
   mix-blend-mode: soft-light;
   pointer-events: none;
 }
@@ -1275,7 +1298,7 @@ main {
 .oa-scroll-line {
   width: 1px;
   height: 28px;
-  background: linear-gradient(180deg, rgba(197, 160, 89, 0.2), var(--accent-gold));
+  background: linear-gradient(180deg, rgba(235, 100, 52, 0.2), var(--accent-gold));
 }
 
 .oa-scroll-circle {
@@ -1363,7 +1386,7 @@ main {
   margin-bottom: 2.5rem;
   background: #14161f;
   color: var(--text-main);
-  border: 1px solid rgba(197, 160, 89, 0.3);
+  border: 1px solid rgba(235, 100, 52, 0.3);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-stone-card);
   transition: var(--transition-smooth);
@@ -1416,8 +1439,8 @@ main {
   letter-spacing: 0.04em;
   text-decoration: none;
   color: var(--accent-gold-light);
-  background: rgba(197, 160, 89, 0.14);
-  border: 1px solid rgba(197, 160, 89, 0.35);
+  background: rgba(235, 100, 52, 0.14);
+  border: 1px solid rgba(235, 100, 52, 0.35);
   transition: var(--transition-fast);
 }
 
@@ -1478,7 +1501,7 @@ main {
 }
 
 .filter-btn.active .filter-count {
-  background: rgba(197, 160, 89, 0.25);
+  background: rgba(235, 100, 52, 0.25);
   color: var(--accent-gold-light);
 }
 
@@ -1492,7 +1515,7 @@ main {
 .work-card {
   background: #14161f;
   color: var(--text-main);
-  border: 1px solid rgba(197, 160, 89, 0.22);
+  border: 1px solid rgba(235, 100, 52, 0.22);
   border-radius: var(--radius-lg);
   overflow: hidden;
   transition: var(--transition-smooth);
@@ -1534,7 +1557,7 @@ main {
   background: rgba(12, 13, 18, 0.88);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(197, 160, 89, 0.35);
+  border: 1px solid rgba(235, 100, 52, 0.35);
   padding: 0.35rem 0.85rem;
   border-radius: var(--radius-pill);
   font-size: 0.7rem;
@@ -1555,7 +1578,7 @@ main {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   color: var(--text-main);
-  border: 1px solid rgba(197, 160, 89, 0.48);
+  border: 1px solid rgba(235, 100, 52, 0.48);
   border-radius: var(--radius-pill);
   padding: 0.45rem 0.95rem;
   font-family: var(--font-heading);
@@ -1811,9 +1834,9 @@ main {
   color: var(--accent-gold);
   text-decoration: none;
   padding: 0.55rem 1.15rem;
-  border: 1px solid rgba(197, 160, 89, 0.38);
+  border: 1px solid rgba(235, 100, 52, 0.38);
   border-radius: var(--radius-pill);
-  background: rgba(197, 160, 89, 0.1);
+  background: rgba(235, 100, 52, 0.1);
   transition: var(--transition-smooth);
 }
 
@@ -1884,7 +1907,7 @@ main {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: rgba(197, 160, 89, 0.94);
+  background: rgba(235, 100, 52, 0.94);
   color: #0c0d12;
   display: flex;
   align-items: center;
@@ -1898,7 +1921,7 @@ main {
 .video-card:hover .play-icon-circle {
   transform: scale(1.15);
   background: var(--accent-gold-light);
-  box-shadow: 0 0 25px rgba(197, 160, 89, 0.65);
+  box-shadow: 0 0 25px rgba(235, 100, 52, 0.65);
 }
 
 .play-badge {
@@ -1950,7 +1973,7 @@ main {
 .tour-table-card {
   background: #14161f;
   color: var(--text-main);
-  border: 1px solid rgba(197, 160, 89, 0.28);
+  border: 1px solid rgba(235, 100, 52, 0.28);
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-stone-card);
@@ -1970,7 +1993,7 @@ main {
 }
 
 .tour-row:not(.header-row):hover {
-  background: rgba(197, 160, 89, 0.06);
+  background: rgba(235, 100, 52, 0.06);
 }
 
 .header-row {
@@ -2033,9 +2056,9 @@ main {
 }
 
 .badge.upcoming {
-  background: rgba(197, 160, 89, 0.16);
+  background: rgba(235, 100, 52, 0.16);
   color: var(--accent-gold-light);
-  border: 1px solid rgba(197, 160, 89, 0.45);
+  border: 1px solid rgba(235, 100, 52, 0.45);
 }
 
 .tour-table-section-title {
@@ -2070,7 +2093,7 @@ main {
   padding: 1.75rem 2rem;
   background: #14161f;
   color: var(--text-main);
-  border: 1px solid rgba(197, 160, 89, 0.3);
+  border: 1px solid rgba(235, 100, 52, 0.3);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-stone-card);
 }
@@ -2235,7 +2258,7 @@ main {
   margin-bottom: 2.5rem;
   padding: 0.45rem 0.9rem;
   background: #14161f;
-  border: 1px solid rgba(197, 160, 89, 0.3);
+  border: 1px solid rgba(235, 100, 52, 0.3);
   border-radius: var(--radius-pill);
 }
 
@@ -2274,7 +2297,7 @@ main {
 .press-quote-card {
   background: #14161f;
   color: var(--text-main);
-  border: 1px solid rgba(197, 160, 89, 0.25);
+  border: 1px solid rgba(235, 100, 52, 0.25);
   border-radius: var(--radius-lg);
   padding: 2.5rem;
   display: flex;
@@ -2357,7 +2380,7 @@ main {
 }
 
 .info-card:hover {
-  border-color: rgba(197, 160, 89, 0.38);
+  border-color: rgba(235, 100, 52, 0.38);
 }
 
 .info-label {
@@ -2429,7 +2452,7 @@ main {
 
 .social-pill:hover {
   border-color: var(--accent-gold);
-  background: rgba(197, 160, 89, 0.08);
+  background: rgba(235, 100, 52, 0.08);
   transform: translateY(-2px);
 }
 
@@ -2516,8 +2539,8 @@ main {
   font-weight: 700;
   letter-spacing: 0.16em;
   color: var(--accent-gold);
-  background: rgba(197, 160, 89, 0.14);
-  border: 1px solid rgba(197, 160, 89, 0.35);
+  background: rgba(235, 100, 52, 0.14);
+  border: 1px solid rgba(235, 100, 52, 0.35);
   padding: 0.3rem 0.75rem;
   border-radius: var(--radius-pill);
 }

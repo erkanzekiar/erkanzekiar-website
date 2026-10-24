@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
   <defs>
     <linearGradient id="bgGrad" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#1c2430"/>
-      <stop offset="100%" stop-color="#11161e"/>
+      <stop offset="0%" stop-color="#181a25"/>
+      <stop offset="100%" stop-color="#090a0e"/>
     </linearGradient>
     <linearGradient id="goldGrad" x1="20" y1="18" x2="100" y2="102" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#e8c882"/>
-      <stop offset="50%" stop-color="#c89b4b"/>
-      <stop offset="100%" stop-color="#a2742a"/>
+      <stop offset="0%" stop-color="#ff8a5c"/>
+      <stop offset="50%" stop-color="#eb6434"/>
+      <stop offset="100%" stop-color="#cf8868"/>
     </linearGradient>
   </defs>
   <!-- Rounded Nordic Slate Emblem Base -->
