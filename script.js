@@ -14,6 +14,18 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // =========================================================================
+  // 0. CYBERSECURITY: ANTI-CLICKJACKING & FRAME-BUSTING DEFENSE
+  // Protects user interactions from malicious iframe embedding and UI redressing
+  // =========================================================================
+  if (window.top !== window.self) {
+    try {
+      window.top.location = window.self.location;
+    } catch (_) {
+      window.location = 'about:blank';
+    }
+  }
+
+  // =========================================================================
   // 1. CORNER MENU & DRAWER TOGGLE
   // =========================================================================
   const menuToggle = document.getElementById('menu-toggle');
@@ -270,7 +282,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const spotifyUri = btn.getAttribute('data-spotify-uri');
       const workTitle = btn.getAttribute('data-work-title');
 
-      if (spotifyIframe && spotifyUri) {
+      // Security: Strictly whitelist trusted Spotify embed URIs to prevent arbitrary iframe hijacking
+      const isTrustedSpotifyUri = spotifyUri && /^https:\/\/open\.spotify\.com\/embed\/(track|album|playlist)\/[a-zA-Z0-9]+(\?.*)?$/.test(spotifyUri);
+      if (spotifyIframe && isTrustedSpotifyUri) {
         spotifyIframe.src = spotifyUri;
       }
       if (playerActiveTitle && workTitle) {
@@ -472,12 +486,13 @@ document.addEventListener('DOMContentLoaded', () => {
   obfuscatedEmails.forEach((link) => {
     const user = link.getAttribute('data-user');
     const domain = link.getAttribute('data-domain');
-    if (user && domain) {
+    // Security: Validate against CRLF injection or malicious header spoofing
+    if (user && domain && /^[a-zA-Z0-9._-]+$/.test(user) && /^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(domain)) {
       const fullAddress = `${user}@${domain}`;
       link.textContent = fullAddress;
       link.addEventListener('click', (e) => {
         e.preventDefault();
-        window.location.href = `mailto:${fullAddress}`;
+        window.location.href = `mailto:${encodeURIComponent(user)}@${encodeURIComponent(domain)}`;
       });
     }
   });
@@ -488,7 +503,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const user = btn.getAttribute('data-user');
       const domain = btn.getAttribute('data-domain');
       const fallbackCopy = btn.getAttribute('data-copy');
-      const textToCopy = user && domain ? `${user}@${domain}` : fallbackCopy;
+      let textToCopy = '';
+      if (user && domain && /^[a-zA-Z0-9._-]+$/.test(user) && /^[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(domain)) {
+        textToCopy = `${user}@${domain}`;
+      } else if (fallbackCopy && /^[a-zA-Z0-9._@-]+$/.test(fallbackCopy)) {
+        textToCopy = fallbackCopy;
+      }
 
       if (navigator.clipboard && textToCopy) {
         navigator.clipboard.writeText(textToCopy).then(() => {

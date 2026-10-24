@@ -1,0 +1,8 @@
+# Security Policy for Erkan Zeki Ar Official Portfolio
+# RFC 9116 standard: https://www.rfc-editor.org/rfc/rfc9116
+
+Contact: mailto:erkanzekiar@gmail.com
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: en, tr, de
+Canonical: https://erkanzekiar.com/.well-known/security.txt
+Policy: https://github.com/erkanzekiar/erkanzekiar-website/security/policy

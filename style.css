@@ -2038,7 +2038,7 @@ main {
 
 .tour-row {
   display: grid;
-  grid-template-columns: 140px 220px 1fr 140px;
+  grid-template-columns: 160px 240px 1fr;
   align-items: center;
   padding: 1.35rem 2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -2084,12 +2084,6 @@ main {
 .header-row .venue-col {
   color: #d1d8e6;
   font-size: 0.74rem;
-}
-
-.header-row .status-col {
-  color: var(--accent-gold);
-  font-size: 0.74rem;
-  text-align: right;
 }
 
 .tour-row:not(.header-row) .date-col .day {
@@ -2904,10 +2898,6 @@ main {
     display: none;
   }
 
-  .tour-row .status-col {
-    text-align: left;
-    margin-top: 0.4rem;
-  }
 
   .tour-cta {
     flex-direction: column;
