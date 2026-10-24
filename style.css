@@ -15,16 +15,20 @@
      - Warm Terracotta Copper ("FAMILY"): #cf8868 / #c0815b
      ======================================================================== */
 
-  /* 1. Backgrounds (Elevated Studio Mineral Slate — Lighter, richer tone outside boxes for sharp contrast) */
-  --bg-dark: #465067;
-  --bg-dark-secondary: #3b4458;
-  --bg-dark-card: #141722;
-  --bg-dark-card-hover: #1a1e2b;
+  /* 1. Backgrounds
+     - Headliner / Hero: Deep Studio Black (#0a0b10)
+     - Mixer Console Surface (behind folders): Matches studio mixing console chassis (#2c3444 / #30394b)
+     - Folders / Cards: Sleek dark obsidian black (#0c0e15 / #121520)
+  */
+  --bg-dark: #2c3444;
+  --bg-dark-secondary: #242a38;
+  --bg-dark-card: #0c0e15;
+  --bg-dark-card-hover: #121520;
 
   /* Subtle alternating section rhythm (02 Catalogue, 04 Tour, 06 Press) */
-  --bg-stone: #4e5872;
-  --bg-stone-secondary: #424a60;
-  --bg-stone-card: #141722;
+  --bg-stone: #30394b;
+  --bg-stone-secondary: #272e3d;
+  --bg-stone-card: #0c0e15;
 
   /* 2. Text (Crisp White & Luminous Slate Neutrals) */
   --text-main: #ffffff;
@@ -85,7 +89,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  background-color: var(--bg-dark);
+  background-color: #0a0b10;
   color: var(--text-main);
 }
 
@@ -97,7 +101,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   position: relative;
-  background-color: var(--bg-dark);
+  background-color: #0a0b10;
   color: var(--text-main);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -194,10 +198,10 @@ body {
   right: 0;
   height: 74px;
   padding: 0 2.5rem;
-  background: rgba(45, 52, 70, 0.92);
+  background: rgba(10, 11, 16, 0.90);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -625,7 +629,7 @@ main {
   cursor: pointer;
   user-select: none;
   overflow: hidden;
-  box-shadow: 0 18px 42px -10px rgba(0, 0, 0, 0.55), 0 4px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 48px -12px rgba(0, 0, 0, 0.7), 0 4px 18px rgba(0, 0, 0, 0.4);
   transition: margin-bottom 0.55s cubic-bezier(0.16, 1, 0.3, 1),
               background-color 0.35s ease,
               border-color 0.35s ease,
@@ -638,7 +642,7 @@ main {
   background: var(--bg-stone-card);
   color: var(--text-main);
   border: 1px solid rgba(235, 100, 52, 0.32);
-  box-shadow: 0 18px 42px -10px rgba(0, 0, 0, 0.55), 0 4px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 48px -12px rgba(0, 0, 0, 0.7), 0 4px 18px rgba(0, 0, 0, 0.4);
 }
 
 .section-header:hover {
@@ -1143,7 +1147,7 @@ main {
   flex-direction: column;
   justify-content: center;
   padding: 8rem 2.5rem 4rem;
-  background: var(--bg-dark);
+  background: #0a0b10;
   overflow: hidden;
   isolation: isolate;
 }
@@ -1187,17 +1191,17 @@ main {
   inset: 0;
   background:
     linear-gradient(90deg,
-      rgba(37, 43, 59, 0.96) 0%,
-      rgba(37, 43, 59, 0.90) 36%,
-      rgba(37, 43, 59, 0.68) 56%,
-      rgba(37, 43, 59, 0.25) 75%,
+      rgba(10, 11, 16, 0.97) 0%,
+      rgba(10, 11, 16, 0.92) 36%,
+      rgba(10, 11, 16, 0.70) 56%,
+      rgba(10, 11, 16, 0.25) 75%,
       transparent 90%
     ),
     linear-gradient(180deg,
-      rgba(37, 43, 59, 0.5) 0%,
+      rgba(10, 11, 16, 0.85) 0%,
       transparent 18%,
-      rgba(37, 43, 59, 0.45) 54%,
-      rgba(37, 43, 59, 0.88) 82%,
+      rgba(10, 11, 16, 0.15) 54%,
+      rgba(24, 29, 39, 0.70) 80%,
       var(--bg-dark) 100%
     );
   pointer-events: none;
@@ -1376,16 +1380,16 @@ main {
   .hero-bg-fade {
     background:
       linear-gradient(90deg,
-        rgba(37, 43, 59, 0.96) 0%,
-        rgba(37, 43, 59, 0.90) 45%,
-        rgba(37, 43, 59, 0.65) 70%,
+        rgba(10, 11, 16, 0.97) 0%,
+        rgba(10, 11, 16, 0.92) 45%,
+        rgba(10, 11, 16, 0.65) 70%,
         transparent 92%
       ),
       linear-gradient(180deg,
-        rgba(37, 43, 59, 0.5) 0%,
+        rgba(10, 11, 16, 0.85) 0%,
         transparent 16%,
-        rgba(37, 43, 59, 0.45) 55%,
-        rgba(37, 43, 59, 0.88) 80%,
+        rgba(10, 11, 16, 0.20) 55%,
+        rgba(24, 29, 39, 0.75) 80%,
         var(--bg-dark) 100%
       );
   }
@@ -1406,9 +1410,9 @@ main {
   .hero-bg-fade {
     background:
       linear-gradient(180deg,
-        rgba(37, 43, 59, 0.25) 0%,
-        rgba(37, 43, 59, 0.72) 26%,
-        var(--bg-dark) 48%,
+        rgba(10, 11, 16, 0.35) 0%,
+        rgba(10, 11, 16, 0.82) 26%,
+        rgba(10, 11, 16, 0.96) 48%,
         var(--bg-dark) 100%
       );
   }
