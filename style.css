@@ -17,18 +17,18 @@
 
   /* 1. Backgrounds
      - Headliner / Hero: Deep Studio Black (#0a0b10)
-     - Mixer Console Surface (behind folders): Matches studio mixing console chassis (#2c3444 / #30394b)
-     - Folders / Cards: Sleek dark obsidian black (#0c0e15 / #121520)
+     - Sections Background (outside boxes): Flat, line-free pale beige (#e8e4dc)
+     - Boxes / Content Cards: Sleek dark obsidian black (#0e1017 / #151822)
   */
-  --bg-dark: #2c3444;
-  --bg-dark-secondary: #242a38;
-  --bg-dark-card: #0c0e15;
-  --bg-dark-card-hover: #121520;
+  --bg-dark: #e8e4dc;
+  --bg-dark-secondary: #ded9cf;
+  --bg-dark-card: #0e1017;
+  --bg-dark-card-hover: #151822;
 
-  /* Subtle alternating section rhythm (02 Catalogue, 04 Tour, 06 Press) */
-  --bg-stone: #30394b;
-  --bg-stone-secondary: #272e3d;
-  --bg-stone-card: #0c0e15;
+  /* Seamless pale beige across sections */
+  --bg-stone: #e8e4dc;
+  --bg-stone-secondary: #ded9cf;
+  --bg-stone-card: #0e1017;
 
   /* 2. Text (Crisp White & Luminous Slate Neutrals) */
   --text-main: #ffffff;
@@ -589,25 +589,27 @@ main {
   position: relative;
   background-color: var(--bg-dark);
   color: var(--text-main);
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: none;
   transition: padding 0.55s cubic-bezier(0.16, 1, 0.3, 1),
               background-color 0.4s ease;
 }
 
 .section.is-folded {
-  padding: 2.15rem 2rem;
+  padding: 1.85rem 2rem;
   background-color: var(--bg-dark);
+  border-top: none;
 }
 
-/* Alternating Warm Stone Sections (02 Catalogue, 04 Tour, 06 Press) */
+/* Seamless Pale Beige Sections */
 .section.section-light {
   background-color: var(--bg-stone);
   color: var(--text-dark-main);
-  border-top: 1px solid var(--border-stone);
+  border-top: none;
 }
 
 .section.section-light.is-folded {
   background-color: var(--bg-stone);
+  border-top: none;
 }
 
 .section-container {
@@ -624,12 +626,12 @@ main {
   margin-bottom: 3.25rem;
   padding: 1.5rem 2rem;
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(235, 100, 52, 0.32);
+  border: 1px solid rgba(235, 100, 52, 0.28);
   background: var(--bg-dark-card);
   cursor: pointer;
   user-select: none;
   overflow: hidden;
-  box-shadow: 0 20px 48px -12px rgba(0, 0, 0, 0.7), 0 4px 18px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.22), 0 4px 14px rgba(0, 0, 0, 0.10);
   transition: margin-bottom 0.55s cubic-bezier(0.16, 1, 0.3, 1),
               background-color 0.35s ease,
               border-color 0.35s ease,
@@ -641,8 +643,8 @@ main {
 .section-light .section-header {
   background: var(--bg-stone-card);
   color: var(--text-main);
-  border: 1px solid rgba(235, 100, 52, 0.32);
-  box-shadow: 0 20px 48px -12px rgba(0, 0, 0, 0.7), 0 4px 18px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(235, 100, 52, 0.28);
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.22), 0 4px 14px rgba(0, 0, 0, 0.10);
 }
 
 .section-header:hover {
@@ -660,24 +662,7 @@ main {
 }
 
 .section-watermark {
-  position: absolute;
-  right: 11rem;
-  top: 50%;
-  transform: translateY(-50%);
-  font-family: var(--font-heading);
-  font-size: clamp(4.2rem, 7.5vw, 6.8rem);
-  font-weight: 800;
-  line-height: 1;
-  color: rgba(255, 255, 255, 0.035);
-  pointer-events: none;
-  letter-spacing: -0.05em;
-  transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1),
-              color 0.4s ease;
-}
-
-.section-header:hover .section-watermark {
-  color: rgba(235, 100, 52, 0.09);
-  transform: translateY(-50%) scale(1.04);
+  display: none !important;
 }
 
 .section-header-main {
@@ -1200,8 +1185,8 @@ main {
     linear-gradient(180deg,
       rgba(10, 11, 16, 0.85) 0%,
       transparent 18%,
-      rgba(10, 11, 16, 0.15) 54%,
-      rgba(24, 29, 39, 0.70) 80%,
+      transparent 64%,
+      rgba(10, 11, 16, 0.40) 80%,
       var(--bg-dark) 100%
     );
   pointer-events: none;
@@ -1388,8 +1373,8 @@ main {
       linear-gradient(180deg,
         rgba(10, 11, 16, 0.85) 0%,
         transparent 16%,
-        rgba(10, 11, 16, 0.20) 55%,
-        rgba(24, 29, 39, 0.75) 80%,
+        transparent 64%,
+        rgba(10, 11, 16, 0.40) 80%,
         var(--bg-dark) 100%
       );
   }
@@ -2681,8 +2666,8 @@ main {
 
 .site-footer {
   padding: 3.5rem 2.5rem;
-  border-top: 1px solid var(--border-subtle);
-  background: var(--bg-dark-secondary);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  background: #0a0b10;
   position: relative;
   z-index: 10;
 }
@@ -2759,12 +2744,6 @@ main {
 
   .section.is-folded .section-header {
     align-items: stretch;
-  }
-
-  .section-watermark {
-    right: 1.5rem;
-    top: 1.5rem;
-    transform: none;
   }
 
   .gallery-mosaic {
