@@ -796,6 +796,51 @@ main {
   transform: scale(1.08);
 }
 
+.peek-media-thumb.peek-date-thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #14161f;
+  border: 1px solid rgba(197, 160, 89, 0.45);
+  line-height: 1;
+  text-align: center;
+  user-select: none;
+}
+
+.peek-cal-month {
+  font-family: var(--font-heading);
+  font-size: 0.54rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: var(--accent-gold);
+  margin-bottom: 2px;
+}
+
+.peek-cal-day {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.peek-media-thumb.peek-badge-thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #14161f;
+  border: 1px solid rgba(197, 160, 89, 0.45);
+  color: var(--accent-gold);
+  user-select: none;
+}
+
+.peek-badge-glyph {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
 .peek-play-icon {
   position: absolute;
   inset: 0;

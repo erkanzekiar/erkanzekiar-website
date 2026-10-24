@@ -554,8 +554,44 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // =========================================================================
   // 11. SCROLL-TRIGGERED FOLDER MEDIA POP-UPS
-  // Emits minimal & significant media previews from folders as they scroll into view
+  // Dynamically catches thumbnails & highlights from inside each folder
   // =========================================================================
+  const foldableSectionsWithPopups = document.querySelectorAll('.foldable-section');
+
+  foldableSectionsWithPopups.forEach((section) => {
+    const popup = section.querySelector('.folder-peek-popup');
+    const collapsible = section.querySelector('.section-collapsible');
+    if (!popup || !collapsible) return;
+
+    // Dynamically catch all real images from inside this specific folder
+    const insideImgs = Array.from(collapsible.querySelectorAll('img')).filter(
+      (img) => img.src && !img.closest('.folder-peek-popup')
+    );
+
+    const thumbBox = popup.querySelector('.peek-media-thumb');
+    if (thumbBox && insideImgs.length > 0) {
+      // Ensure the popup's image catches the real primary image from inside the folder
+      let thumbImg = thumbBox.querySelector('img');
+      if (!thumbImg) {
+        thumbImg = document.createElement('img');
+        thumbImg.loading = 'lazy';
+        thumbBox.prepend(thumbImg);
+      }
+      thumbImg.src = insideImgs[0].src;
+      if (insideImgs[0].alt) thumbImg.alt = insideImgs[0].alt;
+
+      // When the user hovers over the popup, cycle through the actual photos/covers inside that folder
+      if (insideImgs.length > 1) {
+        let cycleIdx = 0;
+        popup.addEventListener('mouseenter', () => {
+          cycleIdx = (cycleIdx + 1) % insideImgs.length;
+          thumbImg.src = insideImgs[cycleIdx].src;
+          if (insideImgs[cycleIdx].alt) thumbImg.alt = insideImgs[cycleIdx].alt;
+        });
+      }
+    }
+  });
+
   const folderPopups = document.querySelectorAll('.folder-peek-popup');
   if (folderPopups.length > 0) {
     if ('IntersectionObserver' in window) {
