@@ -515,4 +515,40 @@ document.addEventListener('DOMContentLoaded', () => {
     yearEl.textContent = String(new Date().getFullYear());
   }
 
+
+  // =========================================================================
+  // 10. SUBTLE HERO PHOTO PARALLAX
+  // =========================================================================
+  const heroSec = document.getElementById('hero');
+  if (heroSec && !prefersReducedMotion && window.innerWidth > 1024) {
+    let targetX = 0, targetY = 0, currentX = 0, currentY = 0, rafId = null;
+
+    function renderParallax() {
+      currentX += (targetX - currentX) * 0.06;
+      currentY += (targetY - currentY) * 0.06;
+      heroSec.style.setProperty('--hero-px', `${currentX.toFixed(2)}px`);
+      heroSec.style.setProperty('--hero-py', `${currentY.toFixed(2)}px`);
+      if (Math.abs(targetX - currentX) > 0.1 || Math.abs(targetY - currentY) > 0.1) {
+        rafId = requestAnimationFrame(renderParallax);
+      } else {
+        rafId = null;
+      }
+    }
+
+    heroSec.addEventListener('mousemove', (e) => {
+      const rect = heroSec.getBoundingClientRect();
+      const normX = (e.clientX - rect.left) / rect.width - 0.5;
+      const normY = (e.clientY - rect.top) / rect.height - 0.5;
+      targetX = normX * -22;
+      targetY = normY * -14;
+      if (!rafId) rafId = requestAnimationFrame(renderParallax);
+    }, { passive: true });
+
+    heroSec.addEventListener('mouseleave', () => {
+      targetX = 0;
+      targetY = 0;
+      if (!rafId) rafId = requestAnimationFrame(renderParallax);
+    }, { passive: true });
+  }
+
 });

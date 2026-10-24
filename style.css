@@ -35,8 +35,8 @@
   --border-stone: rgba(18, 20, 26, 0.14);
   --border-hover: rgba(197, 160, 89, 0.5);
 
-  --font-heading: 'Syne', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
   --font-serif: 'Playfair Display', Georgia, serif;
 
   --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
@@ -85,16 +85,27 @@ body {
   color: #0c0d12;
 }
 
-/* Mixed Serif/Sans Editorial Typography */
+/* Headings render in one clean Montserrat voice (no mixed serif letters) */
 .section-title i,
 .nav-title i,
-.hero-name i,
 .block-heading i,
 .oa-scroll-text i {
-  font-family: var(--font-serif);
-  font-style: italic;
-  font-weight: 400;
-  letter-spacing: -0.01em;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: inherit;
+  letter-spacing: inherit;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* Ambient Lights & Subtle Film Grain */
@@ -875,105 +886,116 @@ main {
 }
 
 /* ==========================================================================
-   01 // HERO SECTION (Original Signature Dark & Gold Stage Presence)
+   01 // HERO SECTION — Immersive full-bleed stage photo
+   The portrait is no longer boxed: it is the backdrop itself, warm-graded,
+   dissolving into the charcoal on the left and into the next section below.
    ========================================================================== */
 
 .hero-section {
-  min-height: 94vh;
+  position: relative;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 7.5rem 2.5rem 3.5rem;
-  position: relative;
-  background: radial-gradient(circle at 75% 25%, rgba(197, 160, 89, 0.12) 0%, transparent 50%),
-              radial-gradient(circle at 20% 80%, rgba(45, 65, 95, 0.22) 0%, transparent 55%),
-              var(--bg-dark);
+  padding: 8rem 2.5rem 4rem;
+  background: var(--bg-dark);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.hero-bg-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 68%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 35% 18%;
+  filter: grayscale(100%) contrast(112%) brightness(88%);
+  /* Feather the photo edges into the background */
+  -webkit-mask-image:
+    linear-gradient(to right, transparent 0%, rgba(0,0,0,0.55) 22%, #000 48%),
+    linear-gradient(to bottom, #000 62%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to right, transparent 0%, rgba(0,0,0,0.55) 22%, #000 48%),
+    linear-gradient(to bottom, #000 62%, transparent 100%);
+  mask-composite: intersect;
+  transform: scale(1.06) translate3d(var(--hero-px, 0px), var(--hero-py, 0px), 0);
+  transform-origin: 60% 30%;
+  animation: hero-drift 22s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@keyframes hero-drift {
+  from { transform: scale(1.06) translate3d(var(--hero-px, 0px), var(--hero-py, 0px), 0); }
+  to   { transform: scale(1.12) translate3d(calc(var(--hero-px, 0px) - 14px), calc(var(--hero-py, 0px) - 8px), 0); }
+}
+
+/* Warm stage-light grade: gold glow where the stage light hits, cool shadow elsewhere */
+.hero-bg-tint {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 45% 55% at 70% 32%, rgba(214, 168, 88, 0.30) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 60% at 95% 90%, rgba(40, 60, 95, 0.35) 0%, transparent 70%);
+  mix-blend-mode: soft-light;
+}
+
+/* Readability veil for the text column + seamless bottom edge */
+.hero-bg-fade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, var(--bg-dark) 0%, rgba(12, 13, 18, 0.92) 30%, rgba(12, 13, 18, 0.35) 55%, transparent 75%),
+    linear-gradient(180deg, rgba(12, 13, 18, 0.55) 0%, transparent 18%, transparent 70%, var(--bg-dark) 100%);
 }
 
 .hero-container {
+  position: relative;
+  z-index: 2;
   max-width: 1280px;
   margin: 0 auto;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 4rem;
-  align-items: center;
 }
 
-.hero-tag-wrap {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.65rem;
-  padding: 0.45rem 1.05rem;
-  background: rgba(197, 160, 89, 0.1);
-  border: 1px solid rgba(197, 160, 89, 0.32);
-  border-radius: var(--radius-pill);
-  margin-bottom: 1.85rem;
-}
-
-.status-indicator {
-  width: 8px;
-  height: 8px;
-  background: #22c55e;
-  border-radius: 50%;
-  box-shadow: 0 0 10px #22c55e;
-  animation: pulse-dot 2s infinite;
-}
-
-@keyframes pulse-dot {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.45; transform: scale(0.85); }
-}
-
-.hero-tag {
-  font-family: var(--font-heading);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  color: var(--accent-gold);
-  text-transform: uppercase;
-}
-
-.hero-name {
-  font-family: var(--font-heading);
-  font-size: clamp(3.2rem, 6.4vw, 5.8rem);
-  font-weight: 800;
-  letter-spacing: -0.04em;
-  line-height: 0.98;
-  margin-bottom: 1.5rem;
-  color: var(--text-main);
-  display: flex;
-  flex-direction: column;
-}
-
-.name-last {
-  color: var(--text-main);
-  background: linear-gradient(135deg, #ffffff 25%, var(--accent-gold) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.hero-content {
+  max-width: 600px;
 }
 
 .hero-roles {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: var(--text-muted);
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 3.2vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--text-main);
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
-  align-items: center;
-  margin-bottom: 1.5rem;
+  gap: 0.15em 0.4em;
+  align-items: baseline;
+  margin-bottom: 1.6rem;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.45);
 }
 
 .hero-roles .sep {
   color: var(--accent-gold);
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .hero-statement {
-  font-size: 1.05rem;
-  line-height: 1.72;
+  font-size: 1.02rem;
+  line-height: 1.75;
   color: #c8cdd6;
-  max-width: 580px;
+  max-width: 540px;
   margin-bottom: 2.2rem;
 }
 
@@ -981,87 +1003,79 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 3.25rem;
+  margin-bottom: 3rem;
 }
 
 .hero-metrics {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--border-subtle);
-  max-width: 600px;
+  padding-top: 1.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  max-width: 560px;
 }
 
 .metric-num {
   display: block;
   font-family: var(--font-heading);
-  font-size: 1.65rem;
+  font-size: 1.6rem;
   font-weight: 800;
   color: var(--accent-gold-light);
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
 }
 
 .metric-label {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 600;
   color: var(--text-muted);
-  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Broadcast-style lower third, echoing the live-session video captions */
+.hero-credit {
+  position: absolute;
+  right: 3rem;
+  bottom: 5.5rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.2rem;
+  font-family: var(--font-heading);
+  text-align: right;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.6);
+}
+
+.credit-title {
+  font-size: 1.35rem;
+  font-weight: 700;
   letter-spacing: 0.02em;
+  color: #ffffff;
 }
 
-/* Hero Visual Frame */
-.hero-visual-frame {
-  position: relative;
+.credit-title em {
+  font-style: normal;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
 }
 
-.hero-visual-frame .image-wrapper {
-  position: relative;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  border: 1px solid rgba(197, 160, 89, 0.3);
-  box-shadow: var(--shadow-card);
-  background: var(--bg-dark-secondary);
+.credit-line {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #ffffff;
 }
 
-.hero-img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-  filter: contrast(104%) brightness(96%);
+.credit-line b {
+  color: var(--accent-gold);
+  font-weight: 700;
+  margin-left: 0.5rem;
 }
 
-.hero-visual-frame:hover .hero-img {
-  transform: scale(1.03);
-}
-
-.image-gradient-blend {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, transparent 55%, rgba(12, 13, 18, 0.85) 100%);
-  pointer-events: none;
-}
-
-.image-caption-pill {
-  position: absolute;
-  bottom: 1.35rem;
-  left: 1.35rem;
-  right: 1.35rem;
-  padding: 0.6rem 1rem;
-  background: rgba(14, 16, 22, 0.82);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(197, 160, 89, 0.25);
-  border-radius: var(--radius-pill);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.65rem;
-  font-size: 0.8rem;
-  color: var(--text-main);
+.credit-line b:first-child {
+  margin-left: 0;
 }
 
 .live-dot {
@@ -1073,8 +1087,10 @@ main {
 
 /* Scroll Indicator */
 .oa-scroll-indicator {
+  position: relative;
+  z-index: 2;
   align-self: center;
-  margin-top: 2.25rem;
+  margin-top: 2.5rem;
   text-decoration: none;
   display: inline-flex;
   flex-direction: column;
@@ -1086,7 +1102,7 @@ main {
 
 .oa-scroll-text {
   font-family: var(--font-heading);
-  font-size: 0.74rem;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -1126,6 +1142,40 @@ main {
   color: var(--accent-gold-light);
   transform: translateY(3px);
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg-img { animation: none; }
+}
+
+@media (max-width: 1024px) {
+  .hero-bg-img {
+    width: 100%;
+    object-position: 60% 15%;
+    -webkit-mask-image: linear-gradient(to bottom, #000 45%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 45%, transparent 100%);
+  }
+  .hero-bg-fade {
+    background:
+      linear-gradient(180deg, rgba(12, 13, 18, 0.35) 0%, rgba(12, 13, 18, 0.55) 40%, rgba(12, 13, 18, 0.92) 70%, var(--bg-dark) 100%);
+  }
+  .hero-section {
+    justify-content: flex-end;
+    padding-top: 55vh;
+  }
+  .hero-credit {
+    top: 6.5rem;
+    bottom: auto;
+    right: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section { padding: 48vh 1.25rem 3rem; }
+  .hero-metrics { grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
+  .credit-title { font-size: 1.05rem; }
+  .credit-line { font-size: 0.62rem; }
+}
+
 
 /* ==========================================================================
    02 // SELECTED WORKS & CATALOGUE (Warm Stone Backdrop + Dark/Gold Contrast)
@@ -2444,16 +2494,6 @@ main {
 }
 
 @media (max-width: 1024px) {
-  .hero-container {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-
-  .hero-visual-frame {
-    max-width: 480px;
-    margin: 0 auto;
-  }
-
   .spotify-player-bar,
   .bio-grid {
     grid-template-columns: 1fr;
@@ -2518,14 +2558,6 @@ main {
 
   .folded-summary-pill {
     display: none;
-  }
-
-  .hero-section {
-    padding: 6.25rem 1.25rem 3rem;
-  }
-
-  .hero-name {
-    font-size: 2.8rem;
   }
 
   .hero-metrics {
